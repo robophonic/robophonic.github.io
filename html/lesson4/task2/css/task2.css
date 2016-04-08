@@ -1,0 +1,36 @@
+.navi_top {
+  background-color: #b70eb7;
+  font-family: Economica;
+  font-weight: bold;
+}
+
+.menu_center_container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.menu {
+  padding: 5px 15px 5px 15px;
+  background-color: #b70eb7;
+  float: left;
+  text-decoration: none;
+  color: white;
+}
+
+.button_MORE {
+  float: right;
+  padding: 5px 15px 5px 15px;
+  background-color: #b70eb7;
+  color: white;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.menu:hover,
+.button_MORE:hover {
+  background-color: #b7b7b7;
+}
+
+.clear {
+  clear: both;
+}

@@ -1,0 +1,21 @@
+.menu_center_container {
+  display: inline-block;
+  font-family: Economica;
+  font-weight: bold;
+}
+
+.menu:hover {
+  background-color: #b7b7b7;
+}
+
+.menu {
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.navi_top {
+  background-color: #b70eb7;
+  padding: 5px;
+  text-align: center;
+}

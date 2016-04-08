@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+a[href*="ya"] {
+  color: #f70;
+}
+
+a[href*="google"] {
+  color: #666;
+}
+
+a[target="_blank"]:after {
+    display: inline-block;
+    margin-left: 5px;
+    content: " \21f1";
+    -webkit-transform: rotate(90deg);
+
+}
+  </style>
+  </head>
+<body>
+
+<div>
+    <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/news">Новости</a></li>
+        <li><a href="http://ya.ru">Яндекс</a></li>
+        <li><a href="https://mail.ya.ru">Яндекс.Почта</a></li>
+        <li><a href="http://maps.yandex.ru" target="_blank">Яндекс.Почта</a></li>
+        <li><a href="http://google.com">Google</a></li>
+        <li><a href="http://maps.google.com">Google Maps</a></li>
+        <li><a href="http://news.google.com">Google News</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
