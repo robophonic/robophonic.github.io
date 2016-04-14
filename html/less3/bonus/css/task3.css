@@ -1,0 +1,84 @@
+body {
+  background: url(../images/background.png) no-repeat;
+  width: 960px;
+  height: 883px;
+  padding: 0;
+  margin: 0;
+  color: #e6e6e6;
+}
+
+
+/*HEADER*/
+
+[src="images/logo.png"],
+[src="images/palm-tree.png"],
+.underlogo {
+  position: absolute;
+}
+
+.contacts {
+  position: relative;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  top: 152px;
+  left: 784px;
+  right: 87px;
+  font: 400 10px Tahoma;
+}
+
+[src="images/logo.png"] {
+  top: 132px;
+  left: 71px;
+}
+
+[src="images/palm-tree.png"] {
+  top: 57px;
+  left: 212px;
+}
+
+.underlogo {
+  top: 177px;
+  left: 155px;
+  font: 400 12px Tahoma;
+}
+
+
+/*CONTENT*/
+
+.content {
+  position: relative;
+  height: 451px;
+  width: 823px;
+  top: 202px;
+  left: 67px;
+  right: 70px;
+  margin: 0;
+}
+
+.content img {
+  border: 3px solid #bcb7b7;
+  margin: 0 13.5px 0 0;
+  padding: 1px;
+  width: 250px;
+  height: 178px;
+}
+
+.content div {
+  display: inline-block;
+}
+
+.content li {
+  list-style: none;
+  text-align: center;
+  font: 400 18px Tahoma;
+}
+
+
+/*footer*/
+
+footer {
+  position: absolute;
+  top: 841px;
+  left: 401px;
+}

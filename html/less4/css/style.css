@@ -1,0 +1,155 @@
+body {
+  background: url(../images/background.png);
+}
+
+.body {
+  width: 1000px;
+  height: 991px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: -3px 3px 3px 0px rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+}
+
+
+/*HEADER*/
+
+.logo {
+  margin: 36px 300px 0px 30px;
+  float: left;
+}
+
+.countries {
+  margin-right: 30px;
+  float: right;
+}
+
+.countries td {
+  text-align: center;
+  width: 53px;
+  height: 9px;
+}
+
+.countries a {
+  color: #128aa7;
+  font: 400 10px Tahoma;
+}
+
+.contacts {
+  list-style: none;
+  color: rgba(18, 138, 167, 0.8);
+  font: 40 39.97px Tahoma;
+  margin: 20px 30px 35px 0;
+  float: right;
+}
+
+.contacts li:first-child {
+  color: rgba(18, 138, 167, 0.8);
+  font: 12px Tahoma;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/*NAVIGATION*/
+
+#nav,
+#nav ul,
+#nav7li {
+  margin: 0;
+  padding: 0;
+}
+
+#nav,
+#nav ul {
+  background-color: #333333;
+  padding: 5px 0;
+}
+
+#nav {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+
+#nav ul {
+  position: absolute;
+  z-index: 5;
+  display: none;
+}
+
+#nav li:hover ul {
+  display: block;
+}
+
+#nav li {
+  display: table-cell;
+  text-align: center;
+}
+
+#nav ul li {
+  display: block;
+  text-align: center;
+}
+
+#nav .right {
+  direction: rtl;
+}
+
+#nav .right ul {
+  right: 0;
+}
+
+#nav .right li {
+  direction: ltr;
+}
+
+#nav a {
+  display: block;
+  padding: 3px 0;
+  text-decoration: none;
+  color: #ffffff;
+  font: 400 14px Tahoma;
+}
+
+#nav ul a {
+  padding: 5px 25px;
+}
+
+
+/*END NAVIGATION*/
+
+.columm {
+  width: 189px;
+  height: 100%;
+  background-color: #edeef0;
+  padding: 10px 15px;
+  color: #424c43;
+  font: 400 14px / 24px Tahoma;
+  text-align: justify;
+}
+
+.columm h3 {
+  text-align: center;
+  padding: 0 0 5px 0;
+  margin: 0;
+  font: 400 18px Tahoma;
+  font-weight: bold;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.8);
+  font: 40 39.97px Tahoma;
+  width: 1000px;
+  text-align: center;
+  display: block;
+  margin: 5px auto;
+}

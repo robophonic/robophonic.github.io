@@ -1,0 +1,83 @@
+.Pricing {
+  margin: 0 auto;
+  width: 288px;
+  height: 460px;
+  position: relative;
+  box-shadow: 0px 0px 12.87px 0.13px #0874b2;
+  
+}
+.bg {
+  width: 288px;
+  height: 460px;
+  border: 3px solid #ee8129;
+  border-radius: 5px;
+}
+.header_bg {
+  font: 700 24px / 68px 'Trebuchet MS';
+  color: #ffffff;
+  text-align: center;
+  background: #ee8129;
+  text-transform: uppercase;
+}
+.bg li{
+  color: #3f4042;
+  font: 400 24px / 68px 'Trebuchet MS';
+  text-align: center;
+  list-style: none;
+  
+}
+.bg .price {
+  font: 700 72px / 60px 'Trebuchet MS';
+  margin-top: -15px;
+}
+.bg .price i {
+  vertical-align: super;
+  font: 700 36px / 60px 'Trebuchet MS';
+}
+.bg .price i + i{font: 400 18px / 60px 'Trebuchet MS';
+vertical-align: sub;
+}
+.list>li {
+  position: relative;
+  display: block;
+  color: #888c94;
+  font: 400 15px 'Trebuchet MS';
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 63px;
+  padding: 10px 0 10px 63px;
+  background-color: #edf5fd;
+  margin: 1px;
+  bottom: 20px;
+  right: 20px
+}
+
+.list>li:nth-child(even) {
+  background-color: #f5f5f6;
+}
+
+.list>li:before {	
+  position: absolute;
+  width: 14px;
+  height: 15px;
+  left: 33px;
+  margin-left: 0px;
+  background: url(images/Shape-4-copy-6.png) no-repeat;
+  content: '';
+}
+
+.button {
+  width: 253px;
+  background: #ee8129;
+  color: #ffffff;
+  font: 700 16px / 41px 'Trebuchet MS';
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 3px 0px 0.00px #b3560b;
+  position: absolute;
+  left: 21px;
+  bottom: 25px;
+  text-transform: uppercase;
+}
+.button:hover {box-shadow: none;}
