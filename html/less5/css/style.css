@@ -1,0 +1,133 @@
+body{
+ background: url(../images/Background-copy.png) no-repeat;
+ background-size: cover;
+  margin: 0;
+}
+/*HEADER*/
+header {
+  background-color: #085596;
+  text-align: right;
+  width: 100%;
+  font: 400 14px / 14px Tahoma;
+/*
+  position: absolute;
+  top: 0;
+  left: 0;
+*/
+}
+
+.menu_background {
+/*  position: absolute;*/
+  border-left: 1px solid #53a4dd;
+  top: 5px;
+  right: 315px;
+  padding-left: 15px;
+}
+header a {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #53a4dd;
+  padding: 10px;
+}
+header a:last-child {
+  margin-right: 21px;
+}
+header a:nth-child(6){
+  padding-left: 35px;
+  margin-left: 15px;
+}
+header a:hover {
+  background-color: #4eabda;
+  color: white;
+  
+}
+
+.menu {
+  width: 750px;
+float: right;
+}
+
+/*END HEADER*/
+
+  
+/*CONTENT*/
+.modal_container{
+  position: fixed;
+  width: 560px;
+  height: 613px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+    color: #cccccc;
+  font: 400 14px / 16px Tahoma;
+}
+
+.modal_container h2 {
+  font: 400 24px / 16px Tahoma;
+  padding: 20px 0;
+  margin: 0;
+  border-bottom: 2px solid white;
+}
+
+[src="images/Layer-3-copy.png"] {
+  margin: 35px 0 0 0;
+}
+[type="text"] {
+  margin: 10px 0;
+  width: 261px;
+  height: 35px;
+  padding-left: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 0px;
+  border-bottom: 2px solid #484948;
+  color: #cccccc;
+  font: 400 14px / 16px Tahoma;
+
+}
+[type="text"]:focus  {
+  background-color: #1b5288;
+  box-shadow: 0px 0px 5px 2px #689bcd;
+}
+[type="checkbox"] {
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+[type="submit"] {
+  width: 149px;
+  height: 35px;
+  background-color: #2e7bc4;
+  color: #ffffff;
+  font: 400 14px / 16px Tahoma;
+  border: 0;
+  border-radius: 5px;
+  margin: 8px 0;
+  box-shadow: inset 0px 2px 20px 0px rgba(107,184,231,1);
+}
+
+[type="submit"]:hover {
+  box-shadow: none;
+}
+
+p {
+  color: #cccccc;
+  font: 400 11px / 16px Tahoma;
+}
+/* выранивание окна по центру*/
+/*
+.fixed-overlay {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -280px;
+    margin-top: -306px;
+}*/

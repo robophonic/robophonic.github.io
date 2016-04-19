@@ -1,3 +1,7 @@
+[type="checkbox"] {
+  display: none;
+}
+
 [for="red"] {
   color: red;
   text-decoration: underline;
