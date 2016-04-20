@@ -1,52 +1,43 @@
 body{
- background: url(../images/Background-copy.png) no-repeat;
+ background: url(../images/Background-copy.png) no-repeat center center fixed;
  background-size: cover;
-  margin: 0;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ margin: 0;
+ min-height: 1000px;
 }
 /*HEADER*/
-header {
-  background-color: #085596;
-  text-align: right;
-  width: 100%;
-  font: 400 14px / 14px Tahoma;
-/*
-  position: absolute;
-  top: 0;
-  left: 0;
-*/
-}
-
-.menu_background {
-/*  position: absolute;*/
-  border-left: 1px solid #53a4dd;
-  top: 5px;
-  right: 315px;
-  padding-left: 15px;
-}
-header a {
+li {
+  list-style: none;
   display: inline-block;
-  text-decoration: none;
-  vertical-align: middle;
-  color: #53a4dd;
-  padding: 10px;
 }
-header a:last-child {
-  margin-right: 21px;
+header {
+  background-color: #074e8c;
 }
-header a:nth-child(6){
-  padding-left: 35px;
-  margin-left: 15px;
-}
-header a:hover {
-  background-color: #4eabda;
-  color: white;
+.menu {
+  margin: 0;
+  padding: 0;
   
 }
 
-.menu {
-  width: 750px;
-float: right;
+header a {
+  text-decoration: none;
+  color: #53a4dd;
+  padding: 10px;
+  
 }
+
+.flag:before {
+  content: url(../images/inventicons-29.png);
+}
+
+header a:hover {
+  background-color: #4eabda;
+  color: white;
+}
+
+
 
 /*END HEADER*/
 
@@ -114,20 +105,12 @@ p {
   font: 400 11px / 16px Tahoma;
 }
 /* выранивание окна по центру*/
-/*
-.fixed-overlay {
-    position: fixed;
-    overflow: auto;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
 
 .modal {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
+  min-height: 613px;
     margin-left: -280px;
-    margin-top: -306px;
-}*/
+    margin-top: -200px;
+}
