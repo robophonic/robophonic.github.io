@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.reviews_box {
+  background: url(images/MergedLayers.png);
+  background-size: cover;
+  min-width: 1000px;
+  min-height: 315px;
+}
+
+.container {
+  width: 975px;
+  margin: 0 auto;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #3170a8;
+  text-align: center;
+  margin-top: 0;
+  padding: 51px 0;
+}
+
+.first_word_title {
+  color: #ee8129;
+}
+
+.reviews {
+  display: inline-block;
+  width: 485px;
+  margin: 0 auto;
+}
+
+.comments_box {
+  background-color: #f7f7f7;
+  display: inline-block;
+  width: 380px;
+  min-height: 98px;
+  vertical-align: top;
+}
+.header {
+  color: #3070a8;
+  font: italic 13px / 24px 'Trebuchet MS';
+  border-bottom: 1px dotted black;
+  position: relative;
+}
+.status {
+  position: absolute;
+  right: 10px;
+}
+.name {
+  padding-left: 10px
+}
+.name:before {
+  content: "- ";
+}
+.comments {
+  display: inline-block;
+  padding: 10px;
+}

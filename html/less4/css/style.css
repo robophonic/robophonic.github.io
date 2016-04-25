@@ -2,6 +2,8 @@ body {
   background: url(../images/background.png);
   margin-top: 0;
   font-family: sans-serif;
+  background size: cover;
+  background-repeat: repeat-x;
 }
 
 .container {
@@ -37,7 +39,7 @@ body {
 
 .countries a {
   color: #128aa7;
-  font: 400 10px Tahoma;
+  font: 400 70% Tahoma;
   vertical-align: top;
 }
 
@@ -166,7 +168,6 @@ body {
 /*END NAVIGATION*/
 
 .columm {
-  width: 189px;
   height: 100%;
   background-color: #edeef0;
   padding: 10px 15px;
@@ -184,17 +185,19 @@ body {
 }
 
 .left {
+  width: 208px;
   float: left;
   border-right: 1px solid #c7cacf;
 }
 
 .right {
+  width: 209px;;
   float: right;
   border-left: 1px solid #c7cacf;
 }
 .center {
   float: left;
-  width: 529px;
+  width: 49%;
 }
 
 footer {
