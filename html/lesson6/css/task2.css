@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  width: 1050px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -22,7 +22,8 @@ body {
   font: 400 40px / 18px 'Trebuchet MS';
   text-align: center;
   margin-top: 0;
-  padding: 50px 0 30px 0;
+  margin-left: -110px;
+  padding: 56px 0 22px 0;
 }
 
 .first_word_title {
@@ -31,25 +32,27 @@ body {
 
 .reviews {
   display: inline-block;
-  width: 520px;
+  width: 490px;
   position: relative;
+  margin-right: 36px;
 }
 
 .comments_box {
   background-color: #f7f7f7;
   display: inline-block;
-  width: 380px;
+  width: 363px;
   min-height: 98px;
   vertical-align: top;
   border: 1px solid #e0e0e0;
   margin-left: 20px;
 }
+
 .triangle {
-    border: 12px solid transparent;
-    border-right: 20px solid #f7f7f7;
-    position: absolute;
-    bottom: 40px;
-    left: 93px;
+  border: 14px solid transparent;
+  border-right: 20px solid #f7f7f7;
+  position: absolute;
+  bottom: 40px;
+  left: 93px;
 }
 
 .header {
@@ -57,7 +60,8 @@ body {
   font: italic 13px / 24px 'Trebuchet MS';
   border-bottom: 1px dotted black;
   position: relative;
-  margin: 0 10px;
+  margin: 10px 20px 0px 20px;
+  padding-bottom: 2px;
 }
 
 .status {
@@ -68,7 +72,11 @@ body {
 .name:before {
   content: "- ";
 }
+
 .comments {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 5px 10px 18px;
+  color: #666666;
+  font: 400 85% / 20px 'Trebuchet MS';
+  margin-right: 24px;
 }

@@ -1,7 +1,8 @@
 body {
-font-family: 'Trebuchet MS', sans-serif;
-margin: 0;
-padding: 0;}
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 .pricing_box {
   width: 890px;
@@ -17,7 +18,9 @@ padding: 0;}
   margin-bottom: 65px;
 }
 
-.best_value, .ultimate, .standard {
+.best_value,
+.ultimate,
+.standard {
   position: relative;
   display: inline-block;
   border-radius: 5px;
@@ -37,6 +40,7 @@ padding: 0;}
   width: 287px;
   height: 440px;
 }
+
 .standard {
   left: 8px;
   border: 1px solid #e8eaec;
@@ -45,7 +49,7 @@ padding: 0;}
 }
 
 .best_value .header {
-  font: 600 24px / 72px 'Trebuchet MS',	Sans-serif;
+  font: 600 24px / 72px 'Trebuchet MS', Sans-serif;
   color: #ffffff;
   text-align: center;
   background: #ee8129;
@@ -53,7 +57,7 @@ padding: 0;}
 }
 
 .ultimate .header {
-  font: 600 24px / 62px 'Trebuchet MS',	Sans-serif;
+  font: 600 24px / 62px 'Trebuchet MS', Sans-serif;
   color: #ffffff;
   text-align: center;
   background: #1cb79a;
@@ -61,16 +65,16 @@ padding: 0;}
 }
 
 .standard .header {
-  font: 600 24px / 62px 'Trebuchet MS',	Sans-serif;
+  font: 600 24px / 62px 'Trebuchet MS', Sans-serif;
   color: #ffffff;
   text-align: center;
   background: #37c2d3;
   text-transform: uppercase;
 }
 
-.text {  
+.text {
   color: #3f4042;
-  font: 400 24px / 75px 'Trebuchet MS',	Sans-serif;
+  font: 400 24px / 75px 'Trebuchet MS', Sans-serif;
   text-align: center;
   list-style: none;
   margin-top: -5px;
@@ -78,15 +82,14 @@ padding: 0;}
 
 li {
   color: #3f4042;
-  font: 400 24px / 68px 'Trebuchet MS',	Sans-serif;
+  font: 400 24px / 68px 'Trebuchet MS', Sans-serif;
   text-align: center;
   list-style: none;
-  
 }
 
 .price {
   color: #3f4042;
-  font: 700 72px / 0px 'Trebuchet MS',	Sans-serif;
+  font: 700 72px / 0px 'Trebuchet MS', Sans-serif;
   margin-top: -14px;
   text-align: center;
   list-style: none;
@@ -98,7 +101,7 @@ li {
 }
 
 .price sub {
-  font: 400 18px / 85px 'Trebuchet MS',	Sans-serif;
+  font: 400 18px / 85px 'Trebuchet MS', Sans-serif;
   vertical-align: sub;
 }
 
@@ -117,7 +120,7 @@ li {
   right: 20px;
 }
 
-.list>li:before {	
+.list>li:before {
   position: absolute;
   width: 14px;
   height: 15px;
@@ -134,7 +137,7 @@ li {
 .button {
   width: 253px;
   color: #ffffff;
-  font: 700 16px / 41px 'Trebuchet MS',	Sans-serif;
+  font: 700 16px / 41px 'Trebuchet MS', Sans-serif;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
@@ -142,19 +145,19 @@ li {
   left: 20px;
   text-transform: uppercase;
 }
+
 .ultimate .button,
-.standard .button{
+.standard .button {
   background: #3371a6;
   box-shadow: 0px 3px 0px 0.00px #16436a;
   bottom: 20px;
 }
+
 .best_value .button {
   background: #ee8129;
   box-shadow: 0px 3px 0px 0.00px #b3560b;
   bottom: 30px;
 }
-
-
 
 .button:hover {
   box-shadow: none;
