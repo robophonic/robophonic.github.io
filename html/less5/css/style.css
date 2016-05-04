@@ -73,11 +73,11 @@ header a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   color: #cccccc;
-  font: 400 14px / 16px Tahoma;
+  font: 400 14px / 16px Tahoma, sans-serif;
 }
 
 .modal_container h2 {
-  font: 400 24px / 16px Tahoma;
+  font: 400 24px / 16px Tahoma, sans-serif;
   padding: 20px 0;
   margin: 0;
   border-bottom: 2px solid white;
@@ -101,7 +101,7 @@ header a:hover {
   border: 0px;
   border-bottom: 2px solid #484948;
   color: #cccccc;
-  font: 400 14px / 16px Tahoma;
+  font: 400 14px / 16px Tahoma, sans-serif;
 }
 
 .input:focus {
@@ -119,7 +119,7 @@ header a:hover {
   height: 35px;
   background-color: #2e7bc4;
   color: #ffffff;
-  font: 400 14px / 16px Tahoma;
+  font: 400 14px / 16px Tahoma, sans-serif;
   border: 0;
   border-radius: 5px;
   margin: 8px 0;
@@ -132,5 +132,5 @@ header a:hover {
 
 p {
   color: #cccccc;
-  font: 400 11px / 16px Tahoma;
+  font: 400 11px / 16px Tahoma, sans-serif;
 }

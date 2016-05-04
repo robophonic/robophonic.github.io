@@ -39,7 +39,7 @@ body {
 
 .countries a {
   color: #128aa7;
-  font: 400 70% Tahoma;
+  font: 400 70% Tahoma, sans-serif;
   vertical-align: top;
 }
 
@@ -53,7 +53,7 @@ body {
 
 .contacts li:first-child {
   color: rgba(18, 138, 167, 0.8);
-  font: 12px Tahoma;
+  font: 12px Tahoma, sans-serif;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -157,7 +157,7 @@ body {
   padding: 9px 0;
   text-decoration: none;
   color: #ffffff;
-  font: 400 14px Tahoma;
+  font: 400 14px Tahoma, sans-serif;
 }
 
 #nav a:hover {
@@ -176,7 +176,7 @@ body {
   background-color: #edeef0;
   padding: 10px 15px;
   color: #424c43;
-  font: 400 14px / 24px Tahoma;
+  font: 400 14px / 24px Tahoma, sans-serif;
   text-align: justify;
 }
 
@@ -184,7 +184,7 @@ body {
   text-align: center;
   padding: 0 0 5px 0;
   margin: 0;
-  font: 400 18px Tahoma;
+  font: 400 18px Tahoma, sans-serif;
   font-weight: bold;
 }
 
@@ -207,7 +207,7 @@ body {
 
 footer {
   color: rgba(255, 255, 255, 0.8);
-  font: 40 39.97px Tahoma;
+  font: 40 39.97px Tahoma, sans-serif;
   width: 1000px;
   text-align: center;
   display: block;

@@ -130,7 +130,6 @@ header {
 .button_block1:hover {
   background-color: white;
   color: black;
-  border-radius: 10px;
 }
 
 
@@ -511,8 +510,12 @@ header {
 }
 
 .box1 .email:before {
-  content: url(../images/email.png);
+/*  content: url(../images/email.png);*/
+  content: '';
+  background: url(../images/email.png) no-repeat;
   position: absolute;
+  width: 23px;
+  height: 16px;
   top: 8px;
   left: 0;
 }
