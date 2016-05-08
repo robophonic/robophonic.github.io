@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "League Gothic";
+  src: url("../fonts/LeagueGothicRegular/LeagueGothicRegular.eot");
+  src: url("../fonts/LeagueGothicRegular/LeagueGothicRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/LeagueGothicRegular/LeagueGothicRegular.woff") format("woff"), url("../fonts/LeagueGothicRegular/LeagueGothicRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/georgia-italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+
+/*HEADER*/
+
+header {
+  background: url(../images/bg.png) no-repeat;
+  background-size: cover;
+  min-width: 960px;
+  min-height: 869px;
+}
+
+.header_container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  margin: 65px 150px 0 0;
+}
+
+.header__menu {
+  min-width: 620px;
+  margin-top: 65px;
+  display: inline-block;
+  float: right;
+}
+
+.header__list {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+  padding: 0 10px;
+}
+
+.header__list:last-child {
+  margin: 0;
+}
+
+.header__list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font: 400 24px / 33.724px 'League Gothic', sans-serif;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.header__list:hover {
+  border-bottom: 3px solid #c39ad3;
+}
+
+.slaider {
+  position: absolute;
+  top: 280px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 400px;
+  min-width: 960px;
+}
+
+.iPhone {
+  position: absolute;
+  top: -20px;
+  left: 720px;
+}
+
+.box_iPhone {
+  position: relative;
+}
+
+.btn__play {
+  position: absolute;
+  top: 150px;
+  right: 65px;
+}
+
+.slaider__container {
+  position: relative;
+  width: 960px;
+  min-height: 400px;
+  margin: 0 auto;
+}
+
+.arrow__right {
+  position: absolute;
+  top: 180px;
+  right: -150px;
+}
+
+.arrow__left {
+  position: absolute;
+  top: 180px;
+  left: -150px;
+}
+
+.box1__slaider {
+  position: relative;
+  margin: 83px 115px 0 0;
+  display: inline-block;
+  width: 520px;
+  height: 236px;
+}
+
+.box1__slaider h2 {
+  color: #fefefe;
+  font: 400 60px / 36px 'League Gothic', sans-serif;
+}
+
+.box1__slaider h3 {
+  color: #eebfff;
+  font: 400 32px / 36px 'League Gothic', sans-serif;
+  padding-top: 10px;
+}
+
+.box1__slaider p {
+  color: #ffffff;
+  font: 300 18px / 30px 'Open Sans', sans-serif;
+}
+
+.slaider .circle__box {
+  position: absolute;
+  bottom: -90px;
+  right: 140px;
+  height: 16px;
+  width: 100px;
+}
+
+.slaider .circle {
+  display: inline-block;
+  margin: 2px;
+  width: 12px;
+  height: 12px;
+  background: #626262;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 3px solid #626262;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.39);
+}
+
+.slaider .circle:hover {
+  background-color: white;
+}
+
+
+/*BLOCK_1*/
+
+.block1 {
+  background: url(../images/blurb_bg.png) no-repeat;
+  background-size: cover;
+  min-height: 359px;
+  min-width: 960px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid #33253a;
+}
+
+.block1__container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.block1__column {
+  width: 226px;
+  display: inline-block;
+  position: relative;
+  margin: 80px 0 0 100px;
+}
+
+.block1__column:first-child {
+  margin: 80px 0 0 60px;
+}
+
+.block1__column h2 {
+  color: #ffffff;
+  font: 400 30px / 24px 'League Gothic', sans-serif;
+  margin-bottom: 18px;
+}
+
+.block1__column p {
+  color: #ffffff;
+  font: 300 16px / 24px 'Open Sans', sans-serif;
+}
+
+.block1__column a {
+  color: #ffffff;
+  font: 400 18px / 24px 'League Gothic', sans-serif;
+  text-decoration: none;
+  float: right;
+  margin-top: 20px;
+}
+
+.block1__column a:hover {
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+.block1--icon3:after {
+  content: "";
+  background: url(../images/Layer-36.png) no-repeat;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+
+.block1--icon2:after {
+  content: "";
+  background: url(../images/Layer-35.png) no-repeat;
+  width: 30px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+
+.block1--icon1:after {
+  content: "";
+  background: url(../images/Layer-34.png) no-repeat;
+  width: 30px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+
+
+/*BLOCK_2*/
+
+.block2 {
+  position: relative;
+  background-color: #edbfff;
+  min-height: 488px;
+  min-width: 960px;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #4e2020;
+  box-shadow: inset 0px 5px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+.block2__container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.box1__block2 {
+  display: inline-block;
+  position: relative;
+  width: 427px;
+  height: 292px;
+  margin: 130px 0 0 10px;
+  background-color: white;
+  box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.05);
+}
+
+.block2 .triangle {
+  position: absolute;
+  bottom: -19px;
+  right: 40px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid white;
+  border-left: 20px solid transparent;
+}
+
+.block2 .circle__box {
+  position: absolute;
+  bottom: -30px;
+  right: 173px;
+  height: 16px;
+  width: 100px;
+}
+
+.block2 .circle {
+  display: inline-block;
+  margin: 2px;
+  width: 12px;
+  height: 12px;
+  background: white;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 3px solid white;
+  box-shadow: 0px 0px 0px 2px rgb(163, 135, 135);
+}
+
+.block2 .circle:hover {
+  background-color: #626262;
+}
+
+.box1__block2:after {
+  content: "";
+  background: url(../images/Layer-82.png) no-repeat;
+  position: absolute;
+  top: 15px;
+  left: -25px;
+  width: 49px;
+  height: 49px;
+  box-shadow: 0px 2px 0px 0.00px #ffffff;
+}
+
+.title__box1__block2 {
+  color: #454545;
+  font: 400 30px / 24px 'League Gothic', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 0px #ffffff;
+  padding: 32px 0 0 35px;
+}
+
+.box1__block2 span {
+  color: #edbfff;
+  font: 400 30px / 24px 'League Gothic', sans-serif;
+}
+
+.box1__block2 p {
+  color: #454545;
+  font: 300 16px / 24px 'Open Sans', sans-serif;
+  padding: 19px 0 0 35px;
+}
+
+.box2__block2 {
+  display: inline-block;
+  margin: 0px 0 0 55px;
+  width: 447px;
+}
+
+.title__box2__block2 {
+  color: #454545;
+  font: 400 30px / 24px 'League Gothic', sans-serif;
+  margin: 0 0 10px 0;
+}
+
+.box2__block2 div {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.box2__block2 img {
+  display: inline-block;
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.box2__block2 h4 {
+  display: inline-block;
+  color: #454545;
+  font: 700 16px / 24px 'Open Sans', sans-serif;
+}
+
+.box2__block2 p {
+  display: inline-block;
+  color: #454545;
+  font: 300 16px / 24px 'Open Sans', sans-serif;
+}
+
+.box2__block2 a {
+  color: #454545;
+  font: 400 18px / 24px 'League Gothic', sans-serif;
+  text-shadow: 0px 1px 0px #ffffff;
+  text-decoration: none;
+  float: right;
+  margin: 10px 0 0 0;
+}
+
+.box2__block2 a:hover {
+  text-shadow: 0px 0px 8px rgba(31, 29, 29, 0.8);
+}
+
+
+/*BLOCK_2.1*/
+
+.block2_1 {
+  background-color: #f9f9f9;
+  min-height: 122px;
+  min-width: 960px;
+  border-top: 1px solid white;
+}
+
+.block2_1__container {
+  width: 760px;
+  margin: 0px auto;
+  padding: 15px 0 0 0;
+}
+
+.logos1 {
+  display: inline-block;
+  content: "";
+  background: url("../images/logos.png") no-repeat 0 0;
+  width: 69px;
+  height: 65px;
+  margin: 0 50px 0 0;
+}
+
+.logos2 {
+  display: inline-block;
+  content: "";
+  background: url("../images/logos.png") no-repeat;
+  background-position: -135px 0;
+  width: 72px;
+  height: 65px;
+  margin: 0 50px 0 0;
+}
+
+.logos3 {
+  display: inline-block;
+  content: "";
+  background: url("../images/logos.png") no-repeat;
+  background-position: -267px 0;
+  width: 72px;
+  height: 65px;
+  margin: 0 50px 0 0;
+}
+
+.logos4 {
+  display: inline-block;
+  content: "";
+  background: url("../images/logos.png") no-repeat;
+  background-position: -406px 0;
+  width: 59px;
+  height: 65px;
+  margin: 0 50px 0 0;
+}
+
+.logos5 {
+  display: inline-block;
+  content: "";
+  background: url("../images/logos.png") no-repeat;
+  background-position: -526px 0;
+  width: 107px;
+  height: 65px;
+  margin: 0 50px 0 0;
+}
+
+.logos6 {
+  display: inline-block;
+  content: "";
+  background: url("../images/logos.png") no-repeat;
+  background-position: -695px 0;
+  width: 82px;
+  height: 65px;
+}
+
+
+/*BLOCK_3*/
+
+.block3 {
+  background-color: #ececec;
+  min-height: 510px;
+  min-width: 960px;
+}
+
+.block3__container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.block3__column {
+  display: inline-block;
+  width: 283px;
+  margin: 100px 47px 0 0;
+  vertical-align: top;
+}
+
+.block3__column:last-child {
+  margin: 100px 0 0 0;
+  ;
+}
+
+.block3__column p {
+  margin-top: 15px;
+  color: #787878;
+  font: 300 16px / 24px 'Open Sans', sans-serif;
+}
+
+.block3__column h2 {
+  color: #454444;
+  font: 400 30px / 24px 'League Gothic', sans-serif;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.block3__column span {
+  margin-top: 23px;
+  display: inline-block;
+  color: #c5c5c5;
+  font: italic 16px / 24px Georgia, sans-serif;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+
+/*FOOTER*/
+
+footer {
+  background: url(../images/bg-copy.png) no-repeat;
+  background-size: cover;
+  min-height: 114px;
+  min-width: 960px;
+}
+
+.footer__container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.footer__menu {
+  display: inline-block;
+  margin-top: 50px;
+  min-width: 600px;
+}
+
+.footer__list {
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+.footer__list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font: 400 20px / 33.724px 'League Gothic', sans-serif;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.footer__list:hover {
+  border-bottom: 3px solid #9471a2;
+}
+
+.footer__comp__name {
+  color: #ffffff;
+  font: 300 12px / 33.724px 'Open Sans', sans-serif;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  float: right;
+  margin-top: 52px;
+}
+
+.footer__comp__name span {
+  color: #ffffff;
+  font: 700 12px / 33.724px 'Open Sans', sans-serif;
+}
