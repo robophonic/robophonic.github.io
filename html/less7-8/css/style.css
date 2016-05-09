@@ -18,23 +18,26 @@
   font-weight: normal;
 }
 
+.container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
 
 /*HEADER*/
+
 
 header {
   background: url(../images/bg.png) no-repeat;
   background-size: cover;
   min-width: 960px;
   min-height: 869px;
-}
-
-.header_container {
-  width: 960px;
-  margin: 0 auto;
+  position: relative;
 }
 
 .header__logo {
-  margin: 65px 150px 0 0;
+  margin: 65px 140px 0 0;
 }
 
 .header__menu {
@@ -65,6 +68,7 @@ header {
 
 .header__list:hover {
   border-bottom: 3px solid #c39ad3;
+  cursor: pointer;
 }
 
 .slaider {
@@ -74,6 +78,12 @@ header {
   width: 100%;
   height: 400px;
   min-width: 960px;
+}
+
+.slaider__container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .iPhone {
@@ -92,23 +102,16 @@ header {
   right: 65px;
 }
 
-.slaider__container {
-  position: relative;
-  width: 960px;
-  min-height: 400px;
-  margin: 0 auto;
-}
-
 .arrow__right {
   position: absolute;
   top: 180px;
-  right: -150px;
+  right: 0px;
 }
 
 .arrow__left {
   position: absolute;
   top: 180px;
-  left: -150px;
+  left: -40px;
 }
 
 .box1__slaider {
@@ -137,23 +140,23 @@ header {
 
 .slaider .circle__box {
   position: absolute;
-  bottom: -90px;
+  text-align: center;
+  bottom: -100px;
   right: 140px;
-  height: 16px;
-  width: 100px;
+  width: 120px;
 }
 
 .slaider .circle {
   display: inline-block;
   margin: 2px;
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   background: #626262;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  border: 3px solid #626262;
-  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.39);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #626262;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
 }
 
 .slaider .circle:hover {
@@ -163,6 +166,7 @@ header {
 
 /*BLOCK_1*/
 
+
 .block1 {
   background: url(../images/blurb_bg.png) no-repeat;
   background-size: cover;
@@ -170,11 +174,6 @@ header {
   min-width: 960px;
   border-bottom: 1px solid black;
   border-top: 1px solid #33253a;
-}
-
-.block1__container {
-  width: 960px;
-  margin: 0 auto;
 }
 
 .block1__column {
@@ -244,6 +243,7 @@ header {
 
 /*BLOCK_2*/
 
+
 .block2 {
   position: relative;
   background-color: #edbfff;
@@ -252,11 +252,6 @@ header {
   border-bottom: 1px solid #d8d8d8;
   border-top: 1px solid #4e2020;
   box-shadow: inset 0px 5px 20px -10px rgba(0, 0, 0, 0.75);
-}
-
-.block2__container {
-  width: 960px;
-  margin: 0 auto;
 }
 
 .box1__block2 {
@@ -281,23 +276,23 @@ header {
 
 .block2 .circle__box {
   position: absolute;
-  bottom: -30px;
+  text-align: center;
+  bottom: -35px;
   right: 173px;
-  height: 16px;
-  width: 100px;
+  width: 120px;
 }
 
 .block2 .circle {
   display: inline-block;
   margin: 2px;
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   background: white;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  border: 3px solid white;
-  box-shadow: 0px 0px 0px 2px rgb(163, 135, 135);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 0px 1px rgb(163, 135, 135);
 }
 
 .block2 .circle:hover {
@@ -312,7 +307,6 @@ header {
   left: -25px;
   width: 49px;
   height: 49px;
-  box-shadow: 0px 2px 0px 0.00px #ffffff;
 }
 
 .title__box1__block2 {
@@ -392,12 +386,6 @@ header {
   border-top: 1px solid white;
 }
 
-.block2_1__container {
-  width: 760px;
-  margin: 0px auto;
-  padding: 15px 0 0 0;
-}
-
 .logos1 {
   display: inline-block;
   content: "";
@@ -465,11 +453,6 @@ header {
   min-width: 960px;
 }
 
-.block3__container {
-  width: 960px;
-  margin: 0 auto;
-}
-
 .block3__column {
   display: inline-block;
   width: 283px;
@@ -510,11 +493,6 @@ footer {
   background-size: cover;
   min-height: 114px;
   min-width: 960px;
-}
-
-.footer__container {
-  width: 960px;
-  margin: 0 auto;
 }
 
 .footer__menu {
