@@ -6,6 +6,9 @@
   <title>Document</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,300italic,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <link rel='stylesheet' media='all and (min-width: 768px) and (max-width: 960px)' href='css/768x960.css' />
+  <link rel='stylesheet' media='all and (min-width: 480px) and (max-width: 767px)' href='css/480x768.css' />
+  <link rel='stylesheet' media='all and (min-width: 320px) and (max-width: 479px)' href='css/320x480.css' />
 </head>
 
 <body>
@@ -17,25 +20,32 @@
   <header>
     <div class="container">
       <img class="header__logo" src="images/Logo.png" alt="logo">
-      <ul class="header__menu">
-        <li class="header__list"><a href="#">Home</a></li>
-        <li class="header__list"><a href="#">About</a></li>
-        <li class="header__list"><a href="#">Blog</a></li>
-        <li class="header__list"><a href="#">Products</a></li>
-        <li class="header__list"><a href="#">Ipsum</a></li>
-        <li class="header__list"><a href="#">Dolor Sit Amet</a></li>
+
+      <ul class="main__menu">
+        <li class="main__btn"><a href="#">Home</a>
+
+          <ul class="header__menu">
+            <li class="header__list"><a href="#">About</a></li>
+            <li class="header__list"><a href="#">Blog</a></li>
+            <li class="header__list"><a href="#">Products</a></li>
+            <li class="header__list"><a href="#">Lorem Ipsum</a></li>
+            <li class="header__list"><a href="#">Dolor Sit Amet</a></li>
+          </ul>
+
       </ul>
+      </li>
+      </ul>
+
     </div>
-    
-    
-         
+
+
   </header>
 
   <div class="slaider">
     <div class="slaider__container">
 
 
- <a href="#" class="arrow__right">
+      <a href="#" class="arrow__right">
         <img src="images/Shape-14-copy-2.png" alt="Shape-14-copy-2">
       </a>
       <a href="#" class="arrow__left">
@@ -63,6 +73,7 @@
         <p>Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis,
           euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
       </div>
+
       <img src="images/iPhone-4-copy.png" alt="iPhone-4-copy">
 
     </div>
@@ -138,7 +149,8 @@
           <h4>Nunc turpis neque feugiat eget</h4>
           <p>Posted by Admin on March 13 2012 in Blocg Updates</p>
         </div>
-        <a href="#">READ MORE HERE</a>
+        <a class="px960" href="#">READ MORE HERE</a>
+        <a class="px768" href="#">MORE BLOG POSTS</a>
       </div>
 
     </div>
@@ -168,7 +180,7 @@
   <div class="block3">
     <div class="container">
 
-      <div class="block3__column">
+      <div class="block3__column first__column">
         <img class="block3__logo" src="images/Logo.png" alt="logo">
         <span>Copyright 2013, Pingbull AS</span>
         <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul</p>
@@ -185,6 +197,13 @@
         <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum
           in, venenatis quis</p>
       </div>
+
+      <div class="block3__column last__column">
+        <h2>NEWS CATEGORIES</h2>
+        <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum
+          in, venenatis quis</p>
+      </div>
+
 
     </div>
   </div>
