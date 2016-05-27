@@ -85,7 +85,9 @@ header {
 }
 
 .iPhone {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 50px;
 }
 
 .box1__slaider {
