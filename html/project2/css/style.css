@@ -18,13 +18,11 @@
   font-weight: normal;
 }
 
-.container,
-.slaider__container {
+.container {
   width: 960px;
   margin: 0 auto;
   position: relative;
 }
-
 
 /*HEADER*/
 
@@ -32,170 +30,172 @@ header {
   background: url(../images/bg.jpg) no-repeat;
   background-size: cover;
   min-width: 960px;
-  min-height: 848px;
   position: relative;
+  overflow: hidden;
 }
 
 .header__logo {
-  float: left;
   display: inline-block;
-  margin: 70px 100px 150px 0;
-  float: left;
+  padding: 70px 100px 150px 0;
 }
 
-.main__btn {
+.header__menu {
+  display: inline-block;
+  width: 67%;
+}
+
+.main__list {
   float: left;
 }
 
 .header__list,
-.main__btn {
-  box-sizing: border-box;
-  margin: 70px 30px 0 0;
-  list-style: none;
+.main__list {
   display: inline-block;
-  cursor: pointer;
+  margin: 0 20px 0 0;
+  list-style: none;
 }
 
 .header__list:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 
-.header__list>a,
-.main__btn>a {
+.header__menu a {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   font: 400 24px / 33.724px 'League Gothic', sans-serif;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 
-.header__list>a:hover,
-.main__btn>a:hover {
+.header__menu a:hover {
   border-bottom: 3px solid #a364bc;
-  cursor: pointer;
 }
 
-.slaider {
+.slide {
   position: relative;
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 400px;
-  min-width: 960px;
+  margin-bottom: 160px;
 }
 
-.iPhone {
-  position: absolute;
-  top: 0;
-  right: 50px;
+.iphone {
+  display: inline-block;
+  vertical-align: top;
+  width: 274px;
+  height: 434px;
+  background: url(../images/iPhone-4.png);
 }
 
-.box1__slaider {
-  position: relative;
-  margin: 89px 05px 0 0;
+.header_slide_text {
+  margin: 89px 85px 0 0;
   display: inline-block;
   width: 520px;
   height: 236px;
 }
 
-.box1__slaider h2 {
+.header_slide_text h2 {
   color: #fefefe;
-  font: 400 60px / 36px 'League Gothic', sans-serif;
+  font: 400 60px / 40px 'League Gothic', sans-serif;
 }
 
-.box1__slaider h3 {
+.header_slide_text h3 {
   color: #eebfff;
-  font: 400 32px / 36px 'League Gothic', sans-serif;
-  padding-top: 10px;
+  font: 400 32px / 1 'League Gothic', sans-serif;
 }
 
-.box1__slaider p {
+.header_slide_text p {
   color: #ffffff;
   font: 300 18px / 25px 'Open Sans', sans-serif;
 }
 
-
 /*BLOCK_1*/
 
-.block1 {
+.about {
   background: url(../images/blurb_bg.png) no-repeat;
   background-size: cover;
-  min-height: 340px;
   min-width: 960px;
   border-bottom: 1px solid black;
   border-top: 1px solid #33253a;
 }
 
-.block1__column {
-  width: 220px;
+.about_col_1,
+.about_col_2,
+.about_col_3 {
+  width: 33%;
   display: inline-block;
   position: relative;
-  margin: 8% 0 0 10%;
+  padding: 70px 20px;
+  float: right;
 }
 
-.block1__column:first-child {
-  margin: 8% 0 0 2%;
-}
+.about_col_1 {}
 
-.block1__column h2 {
+.about_head {
   color: #ffffff;
-  font: 400 30px / 0px 'League Gothic', sans-serif;
-  margin-bottom: 8%;
+  font: 400 30px / 30px 'League Gothic', sans-serif;
+  margin-bottom: 3%;
 }
 
-.block1__column p {
+.about_text {
   color: #ffffff;
   font: 300 16px / 24px 'Open Sans', sans-serif;
+  height: 170px;
+  overflow: hidden;
 }
 
-.block1__column a {
+.about_link {
   color: #ffffff;
   font: 400 18px / 24px 'League Gothic', sans-serif;
   text-decoration: none;
   float: right;
   margin-top: 17px;
+  cursor: pointer;
 }
 
-.block1__column a:hover {
+.about_link:hover,
+.about_link:active,
+.about_link:visited {
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.block1--icon3:after {
+.about_col_1:after {
   content: "";
   background: url(../images/Layer-36.png) no-repeat;
   width: 28px;
   height: 28px;
   position: absolute;
-  top: 0;
-  left: -50px;
+  top: 80px;
+  left: -30px;
 }
 
-.block1--icon2:after {
+.about_col_2:after {
   content: "";
   background: url(../images/Layer-35.png) no-repeat;
   width: 30px;
   height: 28px;
   position: absolute;
-  top: 0;
-  left: -50px;
+  top: 80px;
+  left: -30px;
 }
 
-.block1--icon1:after {
+.about_col_3:after {
   content: "";
   background: url(../images/Layer-34.png) no-repeat;
   width: 30px;
   height: 28px;
   position: absolute;
-  top: 0;
-  left: -50px;
+  top: 80px;
+  left: -30px;
 }
-
 
 /*BLOCK_2*/
 
-.block2 {
+.blog {
   position: relative;
-  background-color: #edbfff;
+  background-color: #d8d2d2;
   min-height: 485px;
   min-width: 960px;
   border-bottom: 1px solid #d8d8d8;
@@ -203,19 +203,39 @@ header {
   box-shadow: inset 0px 5px 20px -10px rgba(0, 0, 0, 0.75);
 }
 
-.box1__block2 {
+.blog_col1 {
+  margin: 20px 0 0 0;
   display: inline-block;
-  position: relative;
-  width: 427px;
-  height: 272px;
-  margin: 10% 0 0 2%;
-  background-color: white;
-  box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.05);
+  width: 48%;
+  height: 350px;
+  overflow: hidden;
 }
 
-.block2 .triangle {
+.blog_col1 .background-color {
+  background-color: rgb(216, 210, 210);
+}
+
+.wrapper {
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.05);
+  margin: 0 25px 25px 25px;
+}
+
+.blog_col2 {
+  display: inline-block;
+  float: right;
+  width: 48%;
+  margin: 20px 0 0 0;
+}
+
+.item {
+  position: relative;
+}
+
+.item .triangle {
   position: absolute;
-  bottom: -19px;
+  bottom: -16px;
   right: 40px;
   width: 0;
   height: 0;
@@ -223,32 +243,7 @@ header {
   border-left: 20px solid transparent;
 }
 
-.block2 .circle__box {
-  position: absolute;
-  text-align: center;
-  bottom: -45px;
-  right: 153px;
-  width: 120px;
-}
-
-.block2 .circle {
-  display: inline-block;
-  margin: 2px;
-  width: 11px;
-  height: 11px;
-  background: white;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  border: 2px solid white;
-  box-shadow: 0px 0px 0px 1px rgb(163, 135, 135);
-}
-
-.block2 .circle:hover {
-  background-color: #626262;
-}
-
-.box1__block2:after {
+.wrapper:after {
   content: "";
   background: url(../images/Layer-82.png) no-repeat;
   position: absolute;
@@ -263,33 +258,22 @@ header {
   font: 400 30px / 24px 'League Gothic', sans-serif;
   text-transform: uppercase;
   text-shadow: 0px 1px 0px #ffffff;
-  padding: 32px 0 0 38px;
+  padding: 32px 0 0 50px;
 }
 
 .carousel-indicators {
   bottom: -50px;
 }
 
-.carousel-inner {
-  overflow: visible;
-}
-
-.box1__block2 span {
+.blog_col1 span {
   color: #edbfff;
   font: 400 30px / 24px 'League Gothic', sans-serif;
 }
 
-.box1__block2 p {
+.blog_col1 p {
   color: #454545;
   font: 300 16px / 24px 'Open Sans', sans-serif;
   padding: 10px 35px 0 38px;
-}
-
-.box2__block2 {
-  display: inline-block;
-  margin: 10% 0 0 4%;
-  width: 447px;
-  float: right;
 }
 
 .title__box2__block2 {
@@ -300,24 +284,24 @@ header {
   display: inline-block;
 }
 
-.box2__block2 div {
+.blog_col2 div {
   display: inline-block;
   margin: 4px 0;
 }
 
-.box2__block2 img {
+.blog_col2 img {
   display: inline-block;
   float: left;
   margin: 0 15px 0 0;
 }
 
-.box2__block2 h4 {
+.blog_col2 h4 {
   display: inline-block;
   color: #454545;
   font: 700 16px / 24px 'Open Sans', sans-serif;
 }
 
-.box2__block2 p {
+.blog_col2 p {
   display: inline-block;
   color: #454545;
   font: 300 16px / 24px 'Open Sans', sans-serif;
@@ -342,16 +326,15 @@ header {
   display: none;
 }
 
-.box2__block2 a:hover {
+.blog_col2 a:hover {
+  text-decoration: none;
   text-shadow: 0px 0px 8px rgba(31, 29, 29, 0.8);
 }
 
-
 /*BLOCK_2.1*/
 
-.block2_1 {
+.products {
   background-color: #f9f9f9;
-  min-height: 122px;
   min-width: 960px;
   border-top: 1px solid white;
 }
@@ -362,7 +345,7 @@ header {
   background: url("../images/logos.png") no-repeat 0 0;
   width: 69px;
   height: 65px;
-  margin: 23px 60px 0 100px;
+  margin: 23px 60px 23px 100px;
 }
 
 .logos2 {
@@ -372,7 +355,7 @@ header {
   background-position: -135px 0;
   width: 72px;
   height: 65px;
-  margin: 0 60px 0 0;
+  margin: 0 60px 23px 0;
 }
 
 .logos3 {
@@ -382,7 +365,7 @@ header {
   background-position: -267px 0;
   width: 72px;
   height: 65px;
-  margin: 0 60px 0 0;
+  margin: 0 60px 23px 0;
 }
 
 .logos4 {
@@ -392,7 +375,7 @@ header {
   background-position: -406px 0;
   width: 59px;
   height: 65px;
-  margin: 0 60px 0 0;
+  margin: 0 60px 23px 0;
 }
 
 .logos5 {
@@ -402,7 +385,7 @@ header {
   background-position: -526px 0;
   width: 107px;
   height: 65px;
-  margin: 0 60px 0 0;
+  margin: 0 60px 23px 0;
 }
 
 .logos6 {
@@ -412,47 +395,37 @@ header {
   background-position: -695px 0;
   width: 82px;
   height: 65px;
+  margin: 0 0 23px 0;
 }
-
 
 /*BLOCK_3*/
 
-.block3 {
+.news {
   background-color: #ececec;
-  min-height: 390px;
   min-width: 960px;
 }
 
-.block3__column {
+.news_col {
   display: inline-block;
-  width: 275px;
-  margin: 7% 3% 0 0;
   vertical-align: top;
+  width: 32%;
+  padding: 100px 15px;
   text-align: justify;
 }
 
-.last__column {
-  display: none;
-}
-
-.block3__column:last-child {
-  margin: 100px 0 0 0;
-  ;
-}
-
-.block3__column p {
+.news_col p {
   margin-top: 10px;
   color: #787878;
   font: 300 16px / 24px 'Open Sans', sans-serif;
 }
 
-.block3__column h2 {
+.news_col h2 {
   color: #454444;
   font: 400 30px / 24px 'League Gothic', sans-serif;
   text-shadow: 0px 1px 0px #ffffff;
 }
 
-.block3__column span {
+.news_col span {
   margin-top: 10px;
   display: inline-block;
   color: #c5c5c5;
@@ -460,27 +433,24 @@ header {
   text-shadow: 0px 1px 0px #ffffff;
 }
 
-
 /*FOOTER*/
 
 footer {
   background: url(../images/bg-copy.png) no-repeat;
   background-size: cover;
-  min-height: 114px;
   min-width: 960px;
 }
 
 .footer__menu {
   display: inline-block;
-  margin: 45px 0 0 0;
-  min-width: 600px;
+  padding: 50px 0;
+  text-align: center;
 }
 
 .footer__list {
   display: inline-block;
   list-style: none;
   margin-right: 20px;
-  padding: 0 10px;
 }
 
 .footer__list a {
@@ -489,22 +459,21 @@ footer {
   color: #ffffff;
   font: 400 20px / 33.724px 'League Gothic', sans-serif;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
 }
 
-.footer__list:hover {
+.footer__list>a:hover {
   border-bottom: 3px solid #9471a2;
-}
-
-.footer__comp__name {
-  color: #ffffff;
-  font: 300 12px / 33.724px 'Open Sans', sans-serif;
-  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
-  display: inline-block;
-  float: right;
-  margin-top: 52px;
 }
 
 .footer__comp__name span {
   color: #ffffff;
-  font: 700 12px / 33.724px 'Open Sans', sans-serif;
+  font: 300 12px / 33.724px 'Open Sans', sans-serif;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.footer__comp__name {
+  display: inline-block;
+  float: right;
+  margin-top: 45px;
 }
