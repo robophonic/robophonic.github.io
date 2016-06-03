@@ -2,12 +2,12 @@
   width: 768px;
 }
 
-.header__menu {
+.header_menu {
   width: 100%;
   margin: 40px 0 90px 0;
 }
 
-.header__logo {
+.header_logo {
   padding: 70px 0 0 0;
 }
 
@@ -29,6 +29,7 @@
   font: 300 16px / 30px 'Open Sans', sans-serif;
 }
 
+
 /*BLOCK_1*/
 
 .about_head {
@@ -40,70 +41,46 @@
   margin-top: 0;
 }
 
+
 /*BLOCK_2*/
 
-.box1__block2 {
-  width: 310px;
-  height: 270px;
-  margin: 100px 0 0 25px;
-}
-
-.title__box1__block2 {
+.title_blog_col1 {
   display: inline-block;
-  width: 90px;
+  width: 50%;
   font: 400 24px / 24px 'League Gothic', sans-serif;
 }
 
-.box1__block2 span {
+.title_blog_col1 {
+  padding: 0 0 0 50px;
+}
+
+.blog_col1 span {
   font: 400 24px / 24px 'League Gothic', sans-serif;
 }
 
-.box1__block2 p {
-  margin: 0 15px 0 0;
-  padding: 2px 5px 0 35px;
-  overflow: hidden;
-  height: 147px;
+.blog_col1 p {
+  padding: 0 10px 20px 45px;
 }
 
-.block2 .triangle {
+.item .triangle {
   opacity: 0;
 }
 
-.block2 .circle__box {
-  bottom: -45px;
-  right: 95px;
+.blog_col1 .carousel-indicators {
+  bottom: -20px;
 }
 
-.box2__block2 {
+.blog_col2 {
   width: 340px;
-  margin: 100px 0 0 0;
+  margin: 90px 0 70px 0;
 }
 
-.box2__block2 p {
+.blog_col2 p {
   overflow: hidden;
   width: 267px;
   height: 30px;
 }
 
-.px960 {
-  display: none;
-}
-
-.px768 {
-  display: inline-block;
-}
-
-.logos1 {
-  margin: 23px 50px 23px 0;
-}
-
-.logos2,
-.logos3,
-.logos4,
-.logos5 {
-  margin: 23px;
-  50px 23px 0;
-}
 
 /*BLOCK_3*/
 

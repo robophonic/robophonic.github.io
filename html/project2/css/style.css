@@ -24,6 +24,7 @@
   position: relative;
 }
 
+
 /*HEADER*/
 
 header {
@@ -34,41 +35,42 @@ header {
   overflow: hidden;
 }
 
-.header__logo {
+.header_logo {
   display: inline-block;
   padding: 70px 100px 150px 0;
 }
 
-.header__menu {
+.header_menu {
   display: inline-block;
   width: 67%;
 }
 
-.main__list {
+.main_list {
   float: left;
 }
 
-.header__list,
-.main__list {
+.header_list,
+.main_list {
   display: inline-block;
   margin: 0 20px 0 0;
   list-style: none;
 }
 
-.header__list:last-child {
+.header_list:last-child {
   margin-right: 0;
 }
 
-.header__menu a {
+.header_menu a {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   font: 400 24px / 33.724px 'League Gothic', sans-serif;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
   padding: 5px 10px;
+  cursor: pointer;
 }
 
-.header__menu a:hover {
+.header_menu a:hover {
   border-bottom: 3px solid #a364bc;
 }
 
@@ -77,6 +79,10 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   margin-bottom: 160px;
+}
+
+header .carousel-indicators {
+  bottom: 0px;
 }
 
 .iphone {
@@ -108,6 +114,7 @@ header {
   color: #ffffff;
   font: 300 18px / 25px 'Open Sans', sans-serif;
 }
+
 
 /*BLOCK_1*/
 
@@ -191,6 +198,7 @@ header {
   left: -30px;
 }
 
+
 /*BLOCK_2*/
 
 .blog {
@@ -204,10 +212,10 @@ header {
 }
 
 .blog_col1 {
-  margin: 20px 0 0 0;
+  margin: 90px 0 0 0;
   display: inline-block;
   width: 48%;
-  height: 350px;
+  height: 410px;
   overflow: hidden;
 }
 
@@ -215,22 +223,11 @@ header {
   background-color: rgb(216, 210, 210);
 }
 
-.wrapper {
+.blog_col1 .wrapper {
   position: relative;
   background-color: white;
   box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.05);
   margin: 0 25px 25px 25px;
-}
-
-.blog_col2 {
-  display: inline-block;
-  float: right;
-  width: 48%;
-  margin: 20px 0 0 0;
-}
-
-.item {
-  position: relative;
 }
 
 .item .triangle {
@@ -253,7 +250,7 @@ header {
   height: 49px;
 }
 
-.title__box1__block2 {
+.title_blog_col1 {
   color: #454545;
   font: 400 30px / 24px 'League Gothic', sans-serif;
   text-transform: uppercase;
@@ -261,8 +258,8 @@ header {
   padding: 32px 0 0 50px;
 }
 
-.carousel-indicators {
-  bottom: -50px;
+.blog_col1 .carousel-indicators {
+  bottom: -30px;
 }
 
 .blog_col1 span {
@@ -273,7 +270,14 @@ header {
 .blog_col1 p {
   color: #454545;
   font: 300 16px / 24px 'Open Sans', sans-serif;
-  padding: 10px 35px 0 38px;
+  padding: 10px 35px 20px 38px;
+}
+
+.blog_col2 {
+  display: inline-block;
+  float: right;
+  width: 49%;
+  margin: 105px 0 0 0;
 }
 
 .title__box2__block2 {
@@ -292,7 +296,7 @@ header {
 .blog_col2 img {
   display: inline-block;
   float: left;
-  margin: 0 15px 0 0;
+  margin: 10px 15px 0 0;
 }
 
 .blog_col2 h4 {
@@ -307,23 +311,13 @@ header {
   font: 300 16px / 24px 'Open Sans', sans-serif;
 }
 
-.px960 {
+.blog_col2 a {
   color: #454545;
   font: 400 18px / 24px 'League Gothic', sans-serif;
   text-shadow: 0px 1px 0px #ffffff;
   text-decoration: none;
   float: right;
-  margin: 0 15px 0 0;
-}
-
-.px768 {
-  color: #454545;
-  font: 400 18px / 24px 'League Gothic', sans-serif;
-  text-shadow: 0px 1px 0px #ffffff;
-  text-decoration: none;
-  float: right;
-  margin: 0 15px 0 0;
-  display: none;
+  padding: 10px;
 }
 
 .blog_col2 a:hover {
@@ -331,74 +325,24 @@ header {
   text-shadow: 0px 0px 8px rgba(31, 29, 29, 0.8);
 }
 
-/*BLOCK_2.1*/
 
-.products {
+/*BLOCK_3*/
+
+.partners {
   background-color: #f9f9f9;
   min-width: 960px;
   border-top: 1px solid white;
 }
 
-.logos1 {
+.logos {
   display: inline-block;
-  content: "";
-  background: url("../images/logos.png") no-repeat 0 0;
-  width: 69px;
-  height: 65px;
-  margin: 23px 60px 23px 100px;
+  width: 16%;
+  text-align: center;
+  margin: 30px auto;
 }
 
-.logos2 {
-  display: inline-block;
-  content: "";
-  background: url("../images/logos.png") no-repeat;
-  background-position: -135px 0;
-  width: 72px;
-  height: 65px;
-  margin: 0 60px 23px 0;
-}
 
-.logos3 {
-  display: inline-block;
-  content: "";
-  background: url("../images/logos.png") no-repeat;
-  background-position: -267px 0;
-  width: 72px;
-  height: 65px;
-  margin: 0 60px 23px 0;
-}
-
-.logos4 {
-  display: inline-block;
-  content: "";
-  background: url("../images/logos.png") no-repeat;
-  background-position: -406px 0;
-  width: 59px;
-  height: 65px;
-  margin: 0 60px 23px 0;
-}
-
-.logos5 {
-  display: inline-block;
-  content: "";
-  background: url("../images/logos.png") no-repeat;
-  background-position: -526px 0;
-  width: 107px;
-  height: 65px;
-  margin: 0 60px 23px 0;
-}
-
-.logos6 {
-  display: inline-block;
-  content: "";
-  background: url("../images/logos.png") no-repeat;
-  background-position: -695px 0;
-  width: 82px;
-  height: 65px;
-  margin: 0 0 23px 0;
-}
-
-/*BLOCK_3*/
+/*BLOCK_4*/
 
 .news {
   background-color: #ececec;
@@ -433,6 +377,7 @@ header {
   text-shadow: 0px 1px 0px #ffffff;
 }
 
+
 /*FOOTER*/
 
 footer {
@@ -460,20 +405,18 @@ footer {
   font: 400 20px / 33.724px 'League Gothic', sans-serif;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 .footer__list>a:hover {
   border-bottom: 3px solid #9471a2;
 }
 
-.footer__comp__name span {
-  color: #ffffff;
-  font: 300 12px / 33.724px 'Open Sans', sans-serif;
-  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
-}
-
 .footer__comp__name {
   display: inline-block;
   float: right;
-  margin-top: 45px;
+  margin-top: 55px;
+  color: #ffffff;
+  font: 300 12px / 33.724px 'Open Sans', sans-serif;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
 }

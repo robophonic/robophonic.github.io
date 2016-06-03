@@ -1,10 +1,11 @@
-var menuElem = document.querySelector('.header__menu');
-var titleElem = menuElem.querySelector('.main__list');
+var menuElem = document.querySelector('.header_menu');
+var titleElem = menuElem.querySelector('.main_list');
 
 titleElem.onclick = function() {
   menuElem.classList.toggle('open');
 };
 
+//read more
 $(function() {
   var h = 300,
     t = $('#about_1'),
@@ -65,10 +66,31 @@ $(function() {
   })
 })
 
-////планый ScrollTo
-//$('a[href^="#"]').click(function(){
-////Сохраняем значение атрибута href в переменной:
-//var target = $(this).attr('href');
-//$('html, body').animate({scrollTop: $(target).offset().top}, 800);
-//return false;
-//});
+//ScrollTo
+$('.header_link_about').click(function() {
+  var destination = $("#about").offset().top - 50;
+  $("body,html").animate({
+    scrollTop: destination
+  }, 500);
+});
+
+$('.header_link_blog').click(function() {
+  var destination = $("#blog").offset().top - 50;
+  $("body,html").animate({
+    scrollTop: destination
+  }, 500);
+});
+
+$('.header_link_partners').click(function() {
+  var destination = $("#partners").offset().top - 50;
+  $("body,html").animate({
+    scrollTop: destination
+  }, 500);
+});
+
+$('.header_link_news').click(function() {
+  var destination = $("#news").offset().top - 50;
+  $("body,html").animate({
+    scrollTop: destination
+  }, 500);
+});
