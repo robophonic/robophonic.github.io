@@ -3,24 +3,53 @@
   padding: 0;
 }
 
-::-webkit-input-placeholder {color:#1fc4f3;}
-::-moz-placeholder          {color:#1fc4f3;}/* Firefox 19+ */
-:-moz-placeholder           {color:#1fc4f3;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#1fc4f3;}
+::-webkit-input-placeholder {color: #1fc4f3;}
+::-moz-placeholder {color: #1fc4f3;}/* Firefox 19+ */
+:-moz-placeholder {color: #1fc4f3;}/* Firefox 18- */
+:-ms-input-placeholder {color: #1fc4f3;}
 
 body {
   background-color: #c1bdba;
 }
 
 .login_form {
-  padding: 50px;
   width: 50%;
+  min-width: 300px;
+  padding: 50px;
   margin: 3% auto;
   background-color: #ffffff;
   border-radius: 5px;
   -moz-box-shadow: 0px 0px 10px #000000;
   -webkit-box-shadow: 0px 0px 10px #000000;
   box-shadow: 0px 0px 10px #000000;
+}
+
+.tabs_caption {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.tabs_caption li {
+  display: inline-block;
+  width: 49%;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #e8ecec;
+  color: #a6c6dd;
+  font: 500 20px / 25px 'Open Sans', sans-serif;
+}
+
+.tabs_caption .active {
+  background-color: #0bbff2;
+  color: #ffffff;
+}
+
+.tabs_content {
+  display: none;
+}
+
+.tabs_content.active {
+  display: block;
 }
 
 input {
@@ -31,6 +60,10 @@ input {
   padding: 10px;
   margin: 20px auto;
   box-sizing: border-box;
+}
+
+.last_name {
+  float: right;
 }
 
 .password,
@@ -44,33 +77,4 @@ input {
   color: white;
   padding: 20px 0;
   font: 500 24px / 25px 'Open Sans', sans-serif;
-}
-
-.tabs_caption {
-  list-style: none;
-}
-
-.tabs_caption li {
-  display: inline-block;
-  width: 49%;
-  padding: 25px 0;
-  margin-bottom: 10px;
-  text-align: center;
-  background-color: #e8ecec;
-  color: #a6c6dd;
-  font: 500 20px / 25px 'Open Sans', sans-serif;
-}
-
-.tabs_caption .active {
-  background-color: #0bbff2;
-  color: #ffffff;
-  font: 500 20px / 25px 'Open Sans', sans-serif;
-}
-
-.tabs_content {
-  display: none;
-}
-
-.tabs_content.active {
-	display: block;
 }
