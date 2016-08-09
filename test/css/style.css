@@ -14,7 +14,7 @@ body {
 
 .login_form {
   width: 50%;
-  min-width: 300px;
+  min-width: 280px;
   padding: 50px;
   margin: 3% auto;
   background-color: #ffffff;
@@ -77,4 +77,15 @@ input {
   color: white;
   padding: 20px 0;
   font: 500 24px / 25px 'Open Sans', sans-serif;
+}
+
+.reg_form_button:hover,
+.tabs_caption li:hover {
+  cursor: pointer;
+}
+
+@media all and (max-width: 320px) {
+  .login_form {
+    padding: 50px 20px;
+  }
 }

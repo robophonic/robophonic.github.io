@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "NexaLight";
+  src: url("../fonts/Nexa Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "NexaBold";
+  src: url("../fonts/Nexa Bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "FeltTipWoman";
+  src: url("../fonts/Felt Tip Woman.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
