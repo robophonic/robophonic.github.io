@@ -31,3 +31,14 @@ $('.contact_link').click(function() {
 $(document).ready(function() {
   $(".fancybox").fancybox();
 });
+
+//CustomScrollbar
+$(document).ready(
+
+  function() { 
+
+    $("html").niceScroll();
+
+  }
+
+);

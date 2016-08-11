@@ -97,6 +97,7 @@ a:hover {
   background-color: #ffffff;
   background-size: cover;
   width: 100%;
+  min-height: 700px;
 }
 
 .grey {
@@ -114,7 +115,7 @@ a:hover {
 }
 
 .about_me_left_column img {
-  width: 100%;
+  width: 600px;
 }
 
 .about_me_right_column {
@@ -154,6 +155,7 @@ a:hover {
 
 .scroll_wrapper {
   text-align: center;
+  margin: 0 auto;
 }
 
 
