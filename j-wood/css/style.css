@@ -112,6 +112,7 @@ a:hover {
   float: left;
   margin-top: 100px;
   width: 49%;
+  overflow: hidden;
 }
 
 .about_me_left_column img {
@@ -186,12 +187,16 @@ a:hover {
   display: inline-block;
 }
 
+
 .fancybox img {
   width: 210px;
   height: 210px;
   margin: 10px;
 }
 
+.fancybox img:hover {
+  transform: scale(1.1,1.1);
+}
 
 /*contacts*/
 
@@ -227,3 +232,18 @@ a:hover {
   font: 400 18px NexaLight;
   border-top: 1px solid #bebebe;
 }
+
+
+@media screen and (max-width: 1110px) {
+  .about_me_left_column {
+    float: none;
+    margin: 60px auto 0;
+    text-align: center;
+    width: 100%;
+}
+  .about_me_right_column {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+   }
