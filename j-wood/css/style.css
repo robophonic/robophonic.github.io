@@ -234,7 +234,7 @@ a:hover {
 }
 
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 600px) {
   .about_me_left_column {
     float: none;
     margin: 60px auto 0;
