@@ -13,6 +13,7 @@ $(function() {
     var noSpace = tabs_price.replace(/\s+/g, '');
     var n = parseFloat(noSpace);
     $('.credit_price').text(n + ' ГРН');
+    $('.payments li:nth-child(1)').trigger('click');
   });
 
   $('.payments').on('click', 'li:not(.active)', function() {
