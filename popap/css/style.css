@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .credit_window {
   width: 70%;
   min-width: 800px;
@@ -255,9 +250,54 @@
   .credit_body {
     width: 100%;
     padding: 20px;
-    min-width: 450px;
+    min-width: 320px;
   }
   .credit_text {
     padding-top: 15px;
+  }
+}
+@media screen and (max-width: 720px) {
+  #myModal1 {
+    padding-left: 0px;
+  }
+  .credit_window {
+    width: 100%;
+    margin-left: 0;
+    min-width: 310px;
+  }
+  .credit_body {
+    padding: 0;
+  }
+  .credit_title {
+    font: 300 32px / 32.564px GothamProLight;
+    padding: 0;
+  }
+  .tabs_credit li {
+    width: 138px;
+    height: 78px;
+  }
+  .payments p,
+  .credit_price_box p {
+    text-align: center;
+    float: none;
+  }
+  .credit_price_box {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .tabs_title {
+    font: 700 12px / 20px GothamProBold;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .tabs_price {
+    font: 700 20px / 30px GothamProBold;
+  }
+  .tabs_info {
+    padding: 3px;
+    font: 300 10px / 12px GothamProLight;
+  }
+  .sub_modal_text {
+    font: 400 13px / 18px GothamProRegular;
   }
 }

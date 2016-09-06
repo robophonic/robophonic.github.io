@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "HelveticaNeueCyrLight";
+  src: url("../fonts/HelveticaNeueCyr-Thin.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyrUltraLight";
+  src: url("../fonts/HelveticaNeueCyr-UltraLight_0.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
