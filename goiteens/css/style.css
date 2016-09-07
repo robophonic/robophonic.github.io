@@ -41,10 +41,12 @@ a:hover {
   float: left;
 }
 
+/*
 .f_logo {
   width: 18px;
   height: 34px;
 }
+*/
 
 .nav {
   display: inline-block;
@@ -82,7 +84,7 @@ a:hover {
 }
 
 .about_text {
-  margin-top: 770px;
+  margin-top: 820px;
   text-align: center;
 }
 
@@ -164,7 +166,7 @@ a:hover {
 }
 
 .program_cnt {
-  margin-top: 350px;
+  margin-top: 250px;
   width: 100%;
 }
 
@@ -172,10 +174,9 @@ a:hover {
   font-size: 4vw;
   text-align: right;
   margin-top: 250px;
-  margin-bottom: 50px;
+/*  margin-bottom: 50px;*/
   font-family: HelveticaNeueCyrUltraLight;
 }
-
 
 /*format*/
 
@@ -252,10 +253,12 @@ a:hover {
   font-size: 2vw;
 }
 
-.format_text p {
+.format_text li {
   padding-bottom: 10px;
 }
-
+.format_text li:first-child {
+    list-style: none;
+}
 
 /*legend*/
 
@@ -335,6 +338,7 @@ a:hover {
   font-weight: 400;
   padding: 5px 15px;
   margin-top: 30px;
+  margin-bottom: 200px;
 }
 
 .center {
@@ -343,6 +347,28 @@ a:hover {
 
 .center p {
   padding-bottom: 20px;
+}
+/*--------------------------------------------------------*/
+.details {
+    background-color: #1d1d1d;
+}
+
+.details_title {
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 15px;
+  font-family: HelveticaNeueCyrUltraLight;
+}
+.details_cnt {
+  margin-top: 150px;
+    margin-bottom: 100px;
+  width: 100%;
+}
+.details_margin {
+    font-family: HelveticaNeueCyrLight;
+    font-size: 3vw;
+    margin-top: 30px;
 }
 
 footer {
@@ -373,8 +399,22 @@ footer {
 .footer-logo {
   float: left;
 }
+.f_logo span,
+.fb_schedule span{
+    color: white;
+    font-size: 2.5vw;
+    font-family: KlavikaBold;
+}
 
-
+.program_clm .border {
+  position: relative;
+  padding-bottom: 0;
+  padding: 5px 25px 5px 25px;
+  margin-bottom: 5px;
+  display: inline-block;
+  border: 1.5px solid white;
+  border-radius: 10px; 
+}
 /*animate.css*/
 
 .hidden_animation {
@@ -400,7 +440,7 @@ footer {
   }
   .arrow:after {
     right: -120px;
-    top: -5px;
+    top: 0px;
   }
   .nav_footer a {
     margin-left: 30px;
