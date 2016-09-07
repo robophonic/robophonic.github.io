@@ -41,6 +41,7 @@ a:hover {
   float: left;
 }
 
+
 /*
 .f_logo {
   width: 18px;
@@ -174,9 +175,10 @@ a:hover {
   font-size: 4vw;
   text-align: right;
   margin-top: 250px;
-/*  margin-bottom: 50px;*/
+  /*  margin-bottom: 50px;*/
   font-family: HelveticaNeueCyrUltraLight;
 }
+
 
 /*format*/
 
@@ -256,9 +258,11 @@ a:hover {
 .format_text li {
   padding-bottom: 10px;
 }
+
 .format_text li:first-child {
-    list-style: none;
+  list-style: none;
 }
+
 
 /*legend*/
 
@@ -266,6 +270,8 @@ a:hover {
   background: url(../images/bg-leg.png) no-repeat 90%;
   ;
   -background-size: cover;
+  min-height: 400px;
+  position: relative;
 }
 
 .legend_title {
@@ -296,11 +302,20 @@ a:hover {
 
 .fire {
   position: absolute;
-  z-index: 1;
-  top: -300px;
-  right: -440px;
+  top: 0;
+  right: 0;
+  background: url(../images/fire-1.png);
+  /*        no-repeat 100%;*/
+  background-size: cover;
+  /*
+    width: 300px;
+    height: 300px;
+*/
+  display: inline-block;
   float: right;
-  width: 100%;
+  height: 400px;
+  width: 700px;
+  ;
 }
 
 
@@ -348,9 +363,13 @@ a:hover {
 .center p {
   padding-bottom: 20px;
 }
+
+
 /*--------------------------------------------------------*/
+
 .details {
-    background-color: #1d1d1d;
+  background-color: #1d1d1d;
+  text-align: center;
 }
 
 .details_title {
@@ -360,15 +379,17 @@ a:hover {
   letter-spacing: 15px;
   font-family: HelveticaNeueCyrUltraLight;
 }
+
 .details_cnt {
   margin-top: 150px;
-    margin-bottom: 100px;
+  margin-bottom: 100px;
   width: 100%;
 }
+
 .details_margin {
-    font-family: HelveticaNeueCyrLight;
-    font-size: 3vw;
-    margin-top: 30px;
+  font-family: HelveticaNeueCyrLight;
+  font-size: 3vw;
+  margin-top: 30px;
 }
 
 footer {
@@ -399,11 +420,12 @@ footer {
 .footer-logo {
   float: left;
 }
+
 .f_logo span,
-.fb_schedule span{
-    color: white;
-    font-size: 2.5vw;
-    font-family: KlavikaBold;
+.fb_schedule span {
+  color: white;
+  font-size: 2.5vw;
+  font-family: KlavikaBold;
 }
 
 .program_clm .border {
@@ -413,8 +435,10 @@ footer {
   margin-bottom: 5px;
   display: inline-block;
   border: 1.5px solid white;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
+
+
 /*animate.css*/
 
 .hidden_animation {
@@ -444,5 +468,195 @@ footer {
   }
   .nav_footer a {
     margin-left: 30px;
+  }
+  .legend {
+    min-height: 350px;
+  }
+  .fire {
+    height: 350px;
+    width: 630px;
+    ;
+  }
+}
+
+.fire_head {
+  display: none;
+}
+
+
+/*Адаптив----------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+  .head {
+    background: url(../images/bg-copy-2.jpg) no-repeat 50%;
+  }
+  .about_text p {
+    font-size: 16px;
+  }
+  .container {
+    padding: 25px;
+  }
+  .about_text {
+    margin-top: 70px;
+  }
+  .about_left,
+  .about_right {
+    margin: 0;
+    text-align: center;
+  }
+  .fire_head {
+    margin-left: 30px;
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 50px;
+  }
+  .goiteens_logo {
+    float: none;
+  }
+  .info {
+    margin-top: 20px;
+    float: none;
+  }
+  .nav {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .nav a,
+  .registration {
+    font-size: 16px;
+  }
+  .f_logo span {
+    font-size: 22px;
+  }
+  .nav a {
+    margin-right: 20px;
+  }
+  .prg_text:after,
+  .arrow:after {
+    display: none;
+  }
+  .program_clm {
+    width: 32%;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .program_cnt {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .descr,
+  .lines,
+  .prg_text {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .program_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .format_1 {
+    background: url(../images/bg-format1.png) no-repeat 40%;
+  }
+  .format_2 {
+    background: url(../images/bg-format2.png) no-repeat 30%;
+  }
+  .format_3 {
+    background: url(../images/bg-format3.png) no-repeat 30%;
+  }
+  .format_title {
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+    padding-left: 0;
+    font-size: 24px;
+  }
+  .format_sub_title {
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  .format_description {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 50px;
+  }
+  .items_box {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .items {
+    margin-top: 50px;
+  }
+  .format_text {
+    font-size: 14px;
+    width: 50%;
+  }
+  .legend_title {
+    font-size: 20px;
+  }
+  .legend_text {
+    font-size: 12px;
+  }
+  .registration_schedule {
+    margin-top: 100px;
+  }
+  .fb_schedule {
+    margin-bottom: 100px;
+  }
+  .program_clm:last-child .details_margin {
+    margin-top: 10px;
+  }
+  .details_cnt {
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+  .nav_footer a {
+    margin-left: 5px;
+  }
+  .legend {
+    min-height: 320px;
+  }
+  .fire {
+    top: 80px;
+    height: 120px;
+    width: 250px;
+  }
+  .program_title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .fire_head {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+  }
+  .legend_title {
+    width: 100%;
+  }
+  .legend_text {
+    width: 100%;
+  }
+  .fire {
+    top: 220px;
+    width: 190px;
+    height: 100px;
+  }
+  .reg_legend {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 40%;
+  }
+  .program_clm .border {
+    padding: 5px 10px 5px 10px;
+  }
+  .program_clm {
+    font-size: 12px;
   }
 }
