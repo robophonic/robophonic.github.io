@@ -92,13 +92,13 @@ a:hover {
 .about_right {
   display: inline-block;
   text-align: right;
-  margin-left: 6%;
+  margin-left: 10%;
 }
 
 .about_left {
   display: inline-block;
   text-align: left;
-  margin-right: 6%;
+  margin-right: 10%;
 }
 
 .about_text p {
@@ -173,8 +173,8 @@ a:hover {
 
 .program_title {
   font-size: 4vw;
-  text-align: right;
-  margin-top: 250px;
+  text-align: center;
+  margin-top: 150px;
   /*  margin-bottom: 50px;*/
   font-family: HelveticaNeueCyrUltraLight;
 }
@@ -381,8 +381,7 @@ a:hover {
 }
 
 .details_cnt {
-  margin-top: 150px;
-  margin-bottom: 100px;
+  margin-top: 100px;
   width: 100%;
 }
 
@@ -449,15 +448,22 @@ footer {
   opacity: 1;
 }
 
+.margin_details {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/*Адаптив----------------------------------------------*/
+
 @media screen and (max-width: 1370px) {
   .about_text {
     margin-top: 890px;
   }
   .about_right {
-    margin-left: 7%;
+    margin-left: 11%;
   }
   .about_left {
-    margin-right: 7%;
+    margin-right: 11%;
   }
   .nav a {
     margin-right: 50px;
@@ -482,8 +488,6 @@ footer {
   display: none;
 }
 
-
-/*Адаптив----------------------------------------------*/
 
 @media screen and (max-width: 480px) {
   .head {
@@ -613,6 +617,8 @@ footer {
   .details_cnt {
     margin-top: 100px;
     margin-bottom: 0;
+      padding-left: 150px;
+      padding-right: 150px;
   }
   .nav_footer a {
     margin-left: 5px;
