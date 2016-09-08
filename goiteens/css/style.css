@@ -126,6 +126,7 @@ a:hover {
   box-sizing: border-box;
   text-align: right;
   margin-right: 30px;
+    margin-bottom: 100px;
 }
 
 .descr {
@@ -167,7 +168,7 @@ a:hover {
 }
 
 .program_cnt {
-  margin-top: 250px;
+  margin-top: 180px;
   width: 100%;
 }
 
@@ -335,7 +336,7 @@ a:hover {
   font-size: 2vw;
   font-weight: 400;
   padding: 5px 15px;
-  margin-top: 150px;
+  margin-top: 0px;
 }
 
 .registration_schedule:hover,
@@ -353,7 +354,7 @@ a:hover {
   font-weight: 400;
   padding: 5px 15px;
   margin-top: 30px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .center {
