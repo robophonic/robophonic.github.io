@@ -152,9 +152,15 @@ line-height: 32px;
 .program {
    background-color: #52a1c7;
 }
-
+.program  .head_btn_clr:before {
+    border-radius: 2px;
+    background-color: #61a6cb;
+}
+.program  .head_btn_clr:hover, .registration:focus, .registration:active {
+    color: #61a6cb;
+}
 .program .nav a:hover {
-    background: #76acd0;
+    background: #61a6cb;
     border-radius: 10px;
 }
 
@@ -231,6 +237,13 @@ line-height: 22px;
 .trimester1 {
     background-image: radial-gradient(circle 1430px at center, #79e5d4 0%, #79e5d4 1%, #4bb9a8 100%);
 }
+.trimester1  .head_btn_clr:before {
+    border-radius: 2px;
+    background-color: #66d3c2;
+}
+.trimester1  .head_btn_clr:hover, .registration:focus, .registration:active {
+    color: #66d3c2;
+}
 .trimester1 .box {
     background-color: #3ed6ca;
     text-align: left;.
@@ -286,9 +299,20 @@ line-height: 22px;
 .trimester1 .col-md-2 {
     margin-left: 80px;
 }
+.trimester1 .nav a:hover {
+    background-color: #5ecbb9;
+    border-radius: 10px;
+}
 /*trimester2_____________________________________________________*/
 .trimester2 {
     background-image: radial-gradient(circle 4603px at center, #fece68 0%, #fdbb3b 100%);
+}
+.trimester2  .head_btn_clr:before {
+    border-radius: 2px;
+    background-color: #fdc555;
+}
+.trimester2  .head_btn_clr:hover, .registration:focus, .registration:active {
+    color: #fdc555;
 }
 .trimester2 .box {
     background-color: #fec95c;
@@ -352,10 +376,20 @@ line-height: 22px;
 .trimester2 .row .col-md-3 {
     margin-left: 70px;
 }
-
+.trimester2 .nav a:hover {
+    background-color: #e9b750;
+    border-radius: 10px;
+}
 /*trimester3_____________________________________________________*/
 .trimester3 {
     background-image:  radial-gradient(circle 1430px at center, #edd84e 0%, #e6da1c 100%);
+}
+.trimester3  .head_btn_clr:before {
+    border-radius: 2px;
+    background-color: #ead938;
+}
+.trimester3  .head_btn_clr:hover, .registration:focus, .registration:active {
+    color: #ead938;
 }
 .trimester3 .box {
     background-color: #ecd94a;
@@ -423,12 +457,21 @@ line-height: 22px;
 .trimester3 .col-md-2 {
     margin-left: 50px;
 }
-
+.trimester3 .nav a:hover {
+    background-color: #dccc32;
+    border-radius: 10px;
+}
 /*beside------------------------------*/
 .beside {
     background: #f7bc61;
 }
-
+.beside  .head_btn_clr:before {
+    border-radius: 2px;
+    background-color: #f4b95e;
+}
+.beside  .head_btn_clr:hover, .registration:focus, .registration:active {
+    color: #f4b95e;
+}
 .beside .box {
     box-shadow: 0 0 81px rgba(59, 63, 140, 0.35);
     position: relative;
@@ -475,10 +518,20 @@ line-height: 32px;
     position: relative;
     top: 120px;
 }
-
+.beside .nav a:hover {
+    background-color: #edb156;
+    border-radius: 10px;
+}
 /*result_____________________________________________________*/
 .result {
     background-image:  radial-gradient(circle 8183px at center, #f78765 0%, #f75a35 100%);
+}
+.result  .head_btn_clr:before {
+    border-radius: 2px;
+    background-color: #f67450;
+}
+.result  .head_btn_clr:hover, .registration:focus, .registration:active {
+    color: #f67450;
 }
 .result .box {
     background-color: #f7825f;
@@ -505,10 +558,21 @@ line-height: 22px;
 .result .col-md-3 {
     margin-left: 70px;
 }
+.result .nav a:hover {
+    background-color: #f77b59;
+    border-radius: 10px;
+}
 /*footer____________________________________*/
 
 .footer {
     background-image: radial-gradient(circle 8183px at center, #f7657a 0%, #e555e0 100%);
+}
+.footer  .head_btn_clr:before {
+    border-radius: 2px;
+    background-color: #f3628b;
+}
+.footer  .head_btn_clr:hover, .registration:focus, .registration:active {
+    color: #f3628b;
 }
 .footer .box {
     background-color: #f3628b;
@@ -537,7 +601,10 @@ font-size: 22px;
 font-weight: 400;
 line-height: 32px;
 }
-
+.footer .nav a:hover {
+    background-color: #f84a7b;
+    border-radius: 10px;
+}
 
 @media screen and (max-width: 700px) {
 
@@ -594,4 +661,101 @@ line-height: 32px;
     margin-left: 0;
 }
 
+}
+
+
+/*modal*/
+.modal-title {
+  color: #282828;
+  font: 600 62px / 1 SegoeUI;
+  text-transform: uppercase;
+  margin-top: 52px;
+  letter-spacing: 10px;
+}
+
+.modal-content {
+  text-align: center
+}
+
+.modal-info {
+  color: #282828;
+  font: 400 17.39px / 16.368px 'SegoeUI';
+  margin-bottom: 38px;
+  margin-top: 11px;
+}
+
+.modal-content form {
+  width: 398px;
+  margin: 0 auto;
+}
+
+.modal-header {
+  border: 0;
+}
+
+.close {
+  color: #25d9ad;
+  font-size: 30px;
+}
+.close:hover {
+  color: #25d9ad;
+}
+.select {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none!important;
+  -moz-appearance: none; 
+  width: 100%;
+  padding: 14px 17px;
+  position: relative;
+  background: #f5f4f4 url("images/arr_down.png") no-repeat;
+  background-position-x: 97%;
+  background-position-y: 50%;
+  border: 0;
+  color: #282828;
+  font: 300 17.39px / 16.368px 'SegoeUI';
+  margin-top: 5px;
+}
+
+.input-text {
+  border: 0;
+  width: 100%;
+  padding: 14px 17px;
+  color: #282828;
+  font: 300 17.39px / 16.368px 'SegoeUI';
+  background-color: #f5f4f4;
+  margin-top: 5px;
+}
+
+.input-submit {
+  border: 1px solid #6d72b3;
+  background-color: #6d72b3;
+  text-align: center;
+  color: #ffffff;
+  font: 400 17.39px / 16.368px 'SegoeUI';
+  margin-top: 37px;
+  width: 100%;
+  height: 48px;
+}
+.input-submit:hover {
+  background-color: #fff;
+  color: #25d9ad;
+}
+
+.form-box {
+  padding: 0 65px 65px; 
+    text-align: left;
+}
+.input-text::-webkit-input-placeholder {color: #282828;}
+.input-text::-moz-placeholder          {color: #282828;}/* Firefox 19+ */
+.input-text:-moz-placeholder           {color: #282828;}/* Firefox 18- */
+.input-text:-ms-input-placeholder      {color: #282828;}
+.block3 .item {
+  height: auto;
+}
+.item {
+  height: 590px;
+}
+.item img {
+  width: 100%;
 }

@@ -1,72 +1,102 @@
+//ScrollTo
+$('.week-link').click(function() {
+  var destination = $('.reviews2').offset().top - 0;
+  $('body,html').animate({
+    scrollTop: destination
+  }, 1000);
+});
+$('.why_java-link').click(function() {
+  var destination = $('.tel_box').offset().top - 0;
+  $('body,html').animate({
+    scrollTop: destination
+  }, 1000);
+});
+$('.career-link-menu').click(function() {
+  var destination = $('.types').offset().top - 0;
+  $('body,html').animate({
+    scrollTop: destination
+  }, 1000);
+});
+$('.program_link').click(function() {
+  var destination = $('.programs').offset().top - 0;
+  $('body,html').animate({
+    scrollTop: destination
+  }, 1000);
+});
+
 //price
 $(function() {
-$('.order-add').click(function() {
-    $('#orderType').val('order-add');
-    $('.live_workshops_yes').addClass('active');
-    $('.live_workshops_no').removeClass('active');
+//  $('.order-add').click(function() {
+//    $('#orderType').val('order-add');
+//    $('.live_workshops_yes').addClass('active');
+//    $('.live_workshops_no').removeClass('active');
+//
+//  });
+//  $('.order-no').click(function() {
+//    $('#orderType').val('order-no');
+//    $('.live_workshops_no').addClass('active');
+//    $('.live_workshops_yes').removeClass('active');
+//  });
 
-  });
- $('.order-no').click(function() {
-    $('#orderType').val('order-no');
-    $('.live_workshops_no').addClass('active');
-    $('.live_workshops_yes').removeClass('active');
-  });
-    
-// meetings  
- $('.meetings_indicators1').click(function() {
+  // meetings  
+  $('.meetings_indicators1').click(function() {
     $('.meetings_indicators1').addClass('active');
     $('.meetings_indicators2, .meetings_indicators3 ').removeClass('active');
-  });   
-    
-     $('.meetings_indicators2').click(function() {
+  });
+
+  $('.meetings_indicators2').click(function() {
     $('.meetings_indicators2').addClass('active');
     $('.meetings_indicators1, .meetings_indicators3 ').removeClass('active');
-  });   
-    
-    $('.meetings_indicators3').click(function() {
+  });
+
+  $('.meetings_indicators3').click(function() {
     $('.meetings_indicators3').addClass('active');
     $('.meetings_indicators2, .meetings_indicators1 ').removeClass('active');
-  });   
-    
-var caunt = 0;
-    
-    $('.meetings_right1').click(function() {
-        
-var n = 3;
-     
-       var next = $('.qw div.active').next(); 
-       $('.qw div').removeClass('active');
-       next.addClass('active');
-       console.log (next);
-       caunt++;
+  });
 
-        
-     if (caunt == n) { 
-         $('.qw div').removeClass('active');
-         $('.qw div').first().addClass('active');;
-         caunt = 0;
-     }  
+  var caunt = 0;
 
+  $('.meetings_right1').click(function() {
+
+    var n = 3;
+
+    var next = $('.qw div.active').next();
+    $('.qw div').removeClass('active');
+    next.addClass('active');
+    console.log(next);
+    caunt++;
+
+    if (caunt == n) {
+      $('.qw div').removeClass('active');
+      $('.qw div').first().addClass('active');;
+      caunt = 0;
+    }
+
+    console.log(caunt);
+  });
+
+  // ways
+  $('.ways_box1').mouseenter(function() {
+    $('.ways_box1').addClass('active');
+    $('.ways_box2').removeClass('active');
+    $('.ways_img_1white').addClass('active1');
+    $('.ways_img_1').removeClass('active1');  
+  });
+  $('.ways_box1').mouseleave(function() {
+    $('.ways_box1').removeClass('active');
+      $('.ways_img_1').addClass('active1');
+    $('.ways_img_1white').removeClass('active1');
+  });
     
-    console.log (caunt);
-   });  
     
-// ways
- $('.ways_box1').mouseenter(function() {
-     $('.ways_box1').addClass('active');
-     $('.ways_box2').removeClass('active');
+  $('.ways_box2').mouseenter(function() {
+    $('.ways_box2').addClass('active');
+  });
+  $('.ways_box2').mouseleave(function() {
+    $('.ways_box2').removeClass('active');
+  });
+
 });
-    $('.ways_box1').mouseleave(function() {
-     $('.ways_box1').removeClass('active');
-});
-     $('.ways_box2').mouseenter(function() {
-     $('.ways_box2').addClass('active');
-});
-    $('.ways_box2').mouseleave(function() {
-     $('.ways_box2').removeClass('active');
-});
-    
-     });
 
 //хедер
 $(window).scroll(function() {
@@ -77,16 +107,81 @@ $(window).scroll(function() {
   return $('.no_active').toggleClass("call-me-btn", $(window).scrollTop() > 100);
 });
 
-//tell  !!!!!!!!!!!!!
-$(function(){ 
-    $('.tel img:nth-child(2), .phone_text li').mouseenter(function(){
-    $('.phone_text li:nth-child(1)').animate({color:'blue'},2500);
-                            });
-    $('.tel img:nth-child(2), .phone_text li').mouseleave(function(){
-    $('.phone_text li:nth-child(1)').css("color","black");
+//tell
+$(function() {
+  $('.part_tel_1, .phone_text1').mouseenter(function() {
+    $('.phone_text1').css({
+      color: 'blue'
     });
-//    $('.phone_text li').mouseenter(function(){
-//    $('.phone_text li:nth-child(1)').css("color","blue");
-//    });
+  });
+ $('.part_tel_1, .phone_text1').mouseleave(function() {
+    $('.phone_text1').css({
+      color: 'black'
+    });
+  });
+     $('.part_tel_2, .phone_text2').mouseenter(function() {
+    $('.phone_text2').css({
+      color: 'blue'
+    });
+  });
+ $('.part_tel_2, .phone_text2').mouseleave(function() {
+    $('.phone_text2').css({
+      color: 'black'
+    });
+  });
+     $('.part_tel_3, .phone_text3').mouseenter(function() {
+    $('.phone_text3').css({
+      color: 'blue'
+    });
+  });
+ $('.part_tel_3, .phone_text3').mouseleave(function() {
+    $('.phone_text3').css({
+      color: 'black'
+    });
+  });
+
+});
+
+
+
+$(function() {
     
-    });
+$('.achievements').waypoint( function() {   
+    $('.achievements_img1, .achievements_box2').delay(100).animate({opacity: 1}, 1000);
+    $('.achievements_img2, .achievements_box1').delay(1100).animate({opacity: 1}, 1000);
+    $('.achievements_img3, .achievements_box3').delay(2100).animate({opacity: 1}, 1000); 
+});
+   
+    
+$('.value').waypoint( function() {     
+    $(".value_img").animate({left:'+=700px'}, 4600);
+    $('.value4').delay(100).animate({opacity: 1}, 1000);
+    $('.value2').delay(1100).animate({opacity: 1}, 1000); 
+    $('.value1').delay(2100).animate({opacity: 1}, 1000);
+    $('.value3').delay(3600).animate({opacity: 1}, 1000);
+});
+ 
+    $('.ways_box2').waypoint( function() {     
+    $(".help_img_2").animate({right:'+=20px'}, 500);
+    $(".help_img_2").animate({top:'+=35px'}, 500);
+    $(".help_img_2").animate({right:'+=35px'}, 1500);
+    $(".help_img_2").animate({top:'+=33px'}, 500);
+    $(".help_img_2").animate({right:'+=35px'}, 1500);
+    $(".help_img_2").animate({top:'+=33px'}, 500);
+    $('.li_4').delay(500).animate({opacity: 1}, 1000);
+    $('.li_1').delay(2500).animate({opacity: 1}, 1000); 
+    $('.li_2, .li_3').delay(4500).animate({opacity: 1}, 1000);
+});
+
+$('.selection').waypoint( function() {     
+    $('.selection1').delay(100).animate({opacity: 1}, 1000);
+    $('.selection2').delay(1100).animate({opacity: 1}, 1000); 
+    $('.selection3').delay(2100).animate({opacity: 1}, 1000);
+});
+
+});    
+
+
+   
+
+  
