@@ -387,6 +387,8 @@ display: inline-block;
   left: 0;
   width: 100%;
   z-index: 1;
+    min-height: 1000px;
+    max-height: 1000px;
 }
 
 .practice_box {
@@ -1097,19 +1099,37 @@ line-height: 35px;
     width: 100%;
 }
 
-.mentor2 img {
-    width: 100%;
-}
+/*
 .mentor2 {
+    display: inline-block;
    position: relative;
-    right: 50px;
-    bottom: 20px;
+    width: 40%;
+}
+*/
+.mentor_col  img {
+    top: -100px;
+    left: 350px;
+    position: absolute;
+    width: 60%;
 }
 .mentor_col {
     position: relative;
-    right: 90px;
+     display: inline-block;
     margin-bottom: 100px;
     margin-top: 50px;
+    -margin-left: 50px;
+    width: 55%;
+    padding-right: 30%;
+    text-align: left;
+    
+}
+.mentor_col2 {
+     display: inline-block;
+    width: 25%;
+    text-align: left;
+}
+.mentor .row {
+    text-align: center;
 }
 .mentor_col2 li{
     color: black;
@@ -1118,7 +1138,7 @@ font-size: 20px;
 font-weight: 400;
     list-style: none;
     margin-bottom: 10px;
-        padding-left: 50px;
+        padding-left: 80px;
     width: 100%;
 }
 .mentor_col2 li:nth-child(1):after {
@@ -1144,13 +1164,6 @@ font-weight: 400;
     position: absolute;
     left: 20px;
     top: 235px;
-}
-.mentor .mentor_col2 {
-    display: inline-block;
-    position: relative;
-    margin-top: 100px;
-    right: 100px;
-    width: 200px;
 }
 
 
@@ -1625,12 +1638,16 @@ font-family: OpenSans;
 font-size: 30px;
 font-weight: 400; 
 }
+
+.wrapper {
+    width: 100%;
+    text-align: center;
+}
 .get_box {
     display: inline-block;
-    margin-top: 200px;
     position: relative;
     width: 800px;
-    margin-left: 200px;
+    margin: 200px auto 0;
 
 }
 .get_box h,
@@ -1644,6 +1661,7 @@ font-weight: 400;
     top: 0px;
     right: 0px;
     z-index: 1;
+
 }
 
 /*questions____________________________*/
@@ -1699,4 +1717,86 @@ line-height: 35px;
     .footer .menu .menu-item {
         margin-right: 10px;
     }
+}
+@media screen and (max-width: 1000px) { 
+.teachers_img,
+.price_img,
+    .countres_tr{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .how .row img {
+        display: none;
+    }
+    .price__order_offset {
+        margin-left: 0;
+    }
+   
+    .mentor_col2 {
+        width: 70%;
+    }
+    .mentor_col {
+        margin-left: 50px;
+        width: 100%;
+    }
+    .get_box img,
+    .teachers_img,
+    .types_bg_top,
+    .selection_img,
+    .mentor_bg,
+    .reviews2 .item .rev,
+    .mentor_col  img{
+        display: none;
+    }
+    .get_box {
+        width: 200px;
+    }
+    .head .row .menu li {
+        display: none;
+    }
+       .head .row .menu li:last-child {
+        display: inline-block;
+           margin-left: 20px;
+    }
+    .tel_title,
+    .get_title {
+        width: 100%; 
+        margin: 10px;
+    }
+    .teachers_carousel p {
+        width: 60%;
+    }
+    .teachers_title{ font-size: 30px;}
+    .get_title {
+        color: black;
+    }
+    .get p {
+        color: black;
+        font-size: 25px;
+    }
+    .reviews2_right,
+    .reviews2_left {
+        top: 500px;
+        left: 100px;
+    }
+    .reviews2_right {
+        left: 150px;
+    } 
+    .reviews2_box h4:before {
+        top: 0px;
+        left: 250px;
+    }
+    .reviews2_margin {
+        margin-bottom: 100px;
+    }
+}
+@media screen and (min-width: 1450px) { 
+.mentor_col  img {
+    top: -100px;
+    left: 380px;
+    position: absolute;
+    width: 65%;
+}
 }
