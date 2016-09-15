@@ -1030,6 +1030,23 @@ list-style: none;
   -min-height: 800px;
 }
 
+.how h5:hover {
+    cursor: pointer;
+}
+
+.how p {
+    position: relative;
+    opacity: 0;
+    z-index: 1;
+}
+.how h5 {
+    position: relative;
+    top: 25px;
+    z-index: 2;
+}
+
+
+
 .how_bg img {
   width: 100%;
   position: absolute;
@@ -1117,9 +1134,21 @@ list-style: none;
 
 .row_img4 {
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: -100px;
-  -moz-transform: rotate(-8deg);
+  -moz-transform: rotate(0deg);
+  /* Для Firefox */
+  -ms-transform: rotate(0deg);
+  /* Для IE */
+  -webkit-transform: rotate(0deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(0deg);
+  /* Для Opera */
+  transform: rotate(0deg);
+}
+.row_img4.active2 {
+    top: 25px;
+    -moz-transform: rotate(-8deg);
   /* Для Firefox */
   -ms-transform: rotate(-8deg);
   /* Для IE */
@@ -1128,13 +1157,28 @@ list-style: none;
   -o-transform: rotate(-8deg);
   /* Для Opera */
   transform: rotate(-8deg);
+     -moz-transition: all .1s ease-out; 
+        -o-transition: all .1s ease-out; 
+        -webkit-transition: all .1s ease-out;
+    transition: 1s
 }
-
 .row_img5 {
   position: absolute;
-  top: 27px;
+  top: 35px;
   left: -100px;
-  -moz-transform: rotate(-8deg);
+  -moz-transform: rotate(2deg);
+  /* Для Firefox */
+  -ms-transform: rotate(2deg);
+  /* Для IE */
+  -webkit-transform: rotate(2deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(2deg);
+  /* Для Opera */
+  transform: rotate(2deg);
+}
+.row_img5.active2 {
+    top: 27px;
+    -moz-transform: rotate(-8deg);
   /* Для Firefox */
   -ms-transform: rotate(-8deg);
   /* Для IE */
@@ -1143,28 +1187,59 @@ list-style: none;
   -o-transform: rotate(-8deg);
   /* Для Opera */
   transform: rotate(-8deg);
+     -moz-transition: all .1s ease-out; 
+        -o-transition: all .1s ease-out; 
+        -webkit-transition: all .1s ease-out;
+    transition: 1s
 }
 
 .row_img6 {
   position: absolute;
-  top: -20px;
+  top: -10px;
   left: 200px;
-  -moz-transform: rotate(-8deg);
+  -moz-transform: rotate(-18deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-18deg);
+  /* Для IE */
+  -webkit-transform: rotate(-18deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-18deg);
+  /* Для Opera */
+  transform: rotate(-18deg);
+}
+.row_img6.active2 {
+    top: -20px;
+    -moz-transform: rotate(-8deg);
   /* Для Firefox */
   -ms-transform: rotate(-8deg);
   /* Для IE */
   -webkit-transform: rotate(-8deg);
   /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-8deg);
+  -o-transform: rotate(0deg);
   /* Для Opera */
   transform: rotate(-8deg);
+     -moz-transition: all .1s ease-out; 
+        -o-transition: all .1s ease-out; 
+        -webkit-transition: all .1s ease-out;
+    transition: 1s
 }
 
 .row_img7 {
   position: absolute;
-  top: -30px;
+  top: -23px;
   left: 180px;
-  -moz-transform: rotate(-8deg);
+  -moz-transform: rotate(-16deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-16deg);
+  /* Для IE */
+  -webkit-transform: rotate(-16deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-16deg);
+  /* Для Opera */
+  transform: rotate(-16deg);
+}
+.row_img7.active2 {
+    -moz-transform: rotate(-8deg);
   /* Для Firefox */
   -ms-transform: rotate(-8deg);
   /* Для IE */
@@ -1173,8 +1248,12 @@ list-style: none;
   -o-transform: rotate(-8deg);
   /* Для Opera */
   transform: rotate(-8deg);
+    top: -30px;
+     -moz-transition: all .1s ease-out; 
+        -o-transition: all .1s ease-out; 
+        -webkit-transition: all .1s ease-out;
+    transition: 1s
 }
-
 
 /*programs______________________________________*/
 

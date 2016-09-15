@@ -34,7 +34,30 @@ $('.program_link').click(function() {
 });  
       
 
-      
+    $('.how1 h5').mouseenter(function() {  
+        $(".how1 h5").animate({top:'0px'}, 1000);
+        $('.how1 p').delay(500).animate({opacity: 1}, 1000);
+        $('.row_img4').addClass('active2');
+        
+    });
+      $('.how3 h5').mouseenter(function() {  
+        $(".how3 h5").animate({top:'0px'}, 1000);
+        $('.how3 p').delay(500).animate({opacity: 1}, 1000);
+        $('.row_img6').addClass('active2');
+        
+    });
+      $('.how2 h5').mouseenter(function() {  
+        $(".how2 h5").animate({top:'0px'}, 1000);
+        $('.how2 p').delay(500).animate({opacity: 1}, 1000);
+        $('.row_img5').addClass('active2');
+        
+    });
+      $('.how4 h5').mouseenter(function() {  
+        $(".how4 h5").animate({top:'0px'}, 1000);
+        $('.how4 p').delay(500).animate({opacity: 1}, 1000);
+        $('.row_img7').addClass('active2');
+        
+    });
   // ways
   $('.ways_box1').mouseenter(function() {
     $('.ways_box1').addClass('active');
