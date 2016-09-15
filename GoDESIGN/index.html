@@ -6,9 +6,11 @@
   <title>GoDESIGN</title>
   <link rel="shortcut icon" href="images/head_logo.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/jquery.parallax.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  
 </head>
 
 <body>
@@ -37,21 +39,22 @@
 
 
   <section class="godesignfinal">
-    <img src="images/godesignfinal.jpg" alt="godesignfinal" class="godesignfinal_img">
+    <img src="images/head_main.png" alt="" class="head_main_img">
+    <img src="images/513300980-2-jpg.png" alt="godesignfinal" class="godesignfinal_img parallax-layer">
     <div class="container">
       <h2 class="godesignfinal_title">Курс <br><span>GoDESIGN</span></h2>
-      <p class="godesignfinal_text">Приобретите навыки для работы с большими проектами в web-дизайне за 2 месяца
+      <p class="godesignfinal_text">Приобрети навыки для работы с большими проектами в web-дизайне за 2 месяца
         <img src="images/data.png" alt="data" class="data">
       </p>
       <a class="registration_btn godesignfinal_btn" data-toggle="modal" data-target="#myModal">Забронировать место</a>
-      <span class="godesignfinal_span">Осталось 8 мест из 30</span>
+      <span class="godesignfinal_span">Осталось 8 мест</span>
     </div>
   </section>
 
 
   <section class="tel_box">
     <div class="container">
-      <h1 class="tel_title">ПОЧЕМУ КАРЬЕРА ДИЗАЙНЕРА  <br> <span>- ЭТО АКТУАЛЬНО В 2016</span></h1>
+      <h1 class="tel_title">ПОЧЕМУ КАРЬЕРА ДИЗАЙНЕРА  <br> <span>- АКТУАЛЬНА В 2016</span></h1>
       <div class="tel">
         <img src="images/tell.png" alt="">
         <img src="images/part_tel_1.png" alt="part_tel_1" class="part_tel_1">
@@ -59,9 +62,9 @@
         <img src="images/part_te_l3.png" alt="part_tel_3" class="part_tel_3">
       </div>
       <ul class="phone_text">
-        <li class="phone_text1" >Дизайнеры нужны каждому бизнесу, которые заботятся о своем бренде, занимаются веб разработками и рекламой</li>
-        <li class="phone_text2">Дизайнер создает видимую упаковку бизнеса, которая на прямую влияет на продажи. Поэтому все больше бизнесов требуют качественный дизайн, который понравится их потенциальным клиентам</li>
-        <li class="phone_text3" id="phone_text3">Дизайнер может работать с проектами из любой точки земного шара и иметь стабильную высокооплачивае-мую работу</li>
+        <li class="phone_text1" >Дизайнеры необходимы каждому бизнесу, который развивает свой продукт, нуждается в растет и меняется </li>
+        <li class="phone_text2">Дизайнер создает видимую упаковку бизнеса, которая напрямую влияет на продажи. Поэтому все больше бизнесов требуют качественный дизайн, который реализует поставленные цели и даст результат</li>
+        <li class="phone_text3" id="phone_text3">Дизайнер может работать с проектами из любой точки земного шара и иметь стабильную высокооплачиваемую работу</li>
       </ul>
     </div>
   </section>
@@ -97,8 +100,8 @@
   <section class="value">
     <div class="container">
       <img src="images/bg_achievements_bottom.png" alt="tr" class="bg_achievements_bottom">
-      <h2 class="value_title">НАВЫКИ КОТОРЫЕ ФОРМИРУЮТ <span>ЦЕННОСТЬ ДИЗАЙНЕРА</span></h2>
-      <p class="value_sub_title">Какому дизайнеру заказчик может доверить заказ от 300 до 3000$?</p>
+      <h2 class="value_title"><span>ЗА ЧТО ПЛАТЯТ ДИЗАЙНЕРУ</span></h2>
+      <p class="value_sub_title">Какому дизайнеру заказчик может доверить заказ от 300$ до 3000$?</p>
       <div class="value_box">
         <img src="images/ellipse-1.png" alt="ellipse" class="value_img">
       </div>
@@ -145,7 +148,7 @@
     <div class="practice_img_box">
       <img src="images/practice.png" alt="">
       <div class="practice_box">
-        <h3 class="practice_title">НА КУРСЕ ВЫ ОТТОЧИТЕ ПЕРЕЧИСЛЕННЫЕ НАВЫКИ</h3>
+        <h3 class="practice_title">НА КУРСЕ ВЫ ПОЛУЧИТЕ ПЕРЕЧИСЛЕННЫЕ НАВЫКИ</h3>
         <p class="practice_text">К концу обучения мы поможем с нуля грамотно получить и зафиналить проект для вашего портфолио.</p>
         <p class="practice_text">Да-да, готовьтесь не только передвигать пиксели, но и собирать команду и общаться с клиентами.</p>
         <a class="registration_btn" data-toggle="modal" data-target="#myModal">Начать практику</a>
@@ -158,32 +161,36 @@
       <h2 class="meetings_title">104 ЧАСА ЖИВЫХ ВСТРЕЧ <br><span>ЗА 2 МЕСЯЦЕВ ОБУЧЕНИЯ</span></h2>
       <div id="carousel-example-generic" class="carousel slide meetings_carousel" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
-        <div class="qw">
-          <div class="meetings_indicators1 col-md-3 col-sm-3 col-sm-offset-1 col-md-offset-1 active" data-target="#carousel-example-generic" data-slide-to="0">
+        <div class="carousel-indicators">
+          <div class="meetings_indicators1 col-md-3 col-sm-3 active" data-target="#carousel-example-generic" data-slide-to="0">
             <span>Тренинги по Soft Skills</span>
             <img src="images/meetings1.png" alt="meetings1" class="meetings1">
           </div>
-          <div class="meetings_indicators2 col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1" data-target="#carousel-example-generic" data-slide-to="1">
+          <div class="meetings_indicators2 col-md-3 col-sm-3" data-target="#carousel-example-generic" data-slide-to="1">
             <span>Регулярные занятия <br> по Tech Skills </span>
             <img src="images/meetings1.png" alt="meetings1" class="meetings2">
           </div>
-          <div class="meetings_indicators3 col-md-3 col-sm-3 col-sm-offset-1 col-md-offset-1" data-target="#carousel-example-generic" data-slide-to="2">
+          <div class="meetings_indicators3 col-md-3 col-sm-3" data-target="#carousel-example-generic" data-slide-to="2">
             <span>Тренинги по английскому</span>
             <img src="images/meetings1.png" alt="meetings1" class="meetings3">
           </div>
         </div>
+        
+        
+
+    <img src="images/meetings_left.png" alt="meetings_left" class="meetings_left1 active2" href="#carousel-example-generic" data-slide="prev" data-target="#carousel-example-generic">
+    <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right1 active2" href="#carousel-example-generic" data-slide="next" data-target="#carousel-example-generic">
+    <img src="images/meetings_left.png" alt="meetings_left" class="meetings_left2" href="#carousel-example-generic" data-slide="prev" data-target="#carousel-example-generic">
+    <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right2" href="#carousel-example-generic" data-slide="next" data-target="#carousel-example-generic">
+    <img src="images/meetings_left.png" alt="meetings_left" class="meetings_left3" href="#carousel-example-generic" data-slide="prev" data-target="#carousel-example-generic">
+    <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right3" href="#carousel-example-generic" data-slide="next" data-target="#carousel-example-generic">   
         <!-- Controls -->
         <!--
-    <img src="images/meetings_left.png" alt="meetings_left" class="meetings_left1 active" href="#carousel-example-generic" data-slide="prev">
-    <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right1 active" href="#carousel-example-generic" data-slide="next">
-    <img src="images/meetings_left.png" alt="meetings_left" class="meetings_left2" href="#carousel-example-generic" data-slide="prev">
-    <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right2" href="#carousel-example-generic" data-slide="next">
-    <img src="images/meetings_left.png" alt="meetings_left" class="meetings_left3" href="#carousel-example-generic" data-slide="prev">
-    <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right3" href="#carousel-example-generic" data-slide="next">
+    
 -->
         <!-- Wrapper for slides -->
         <div class="carousel-inner meetings_carousel_inner">
-          <div class="item meetings_item">
+          <div class="item meetings_item active">
             <h3><span>10</span>  онлайн модулей  + <span>10</span> оффлайн встреч</h3>
             <div class="col-md-7 col-sm-7 col-sm-offset-4 col-md-offset-4">
               <p>Каждую неделю в рамках курса в офисе GoIT в Киеве мы организовываем живые практикумы с преподавателями и менторами.</p>
@@ -192,7 +199,7 @@
             </div>
             <img src="images/3-layers.png" alt="">
           </div>
-          <div class="item meetings_item active ">
+          <div class="item meetings_item">
             <h3><span>10</span>  онлайн модулей  + <span>10</span> оффлайн встреч</h3>
             <div class="col-md-7 col-sm-7 col-sm-offset-4 col-md-offset-4">
               <p>Каждую неделю в рамках курса в офисе GoIT в Киеве мы организовываем живые практикумы с преподавателями и менторами.</p>
@@ -222,15 +229,15 @@
         <div class="types_foto1">
           <img src="images/123.png" alt="types_trg" class="types_trgl1">
         </div>
-        <h4>Работники других сфер, которые хотят получить первую работу в дизайне</h4>
-        <p> <span>Что будет полезно:</span> <br> За 2 месяца полученные инструменты помогут быть на голову выше дизайнеров, которые работают 2 года</p>
+        <h4>Работники других сфер без опыта работы в дизайне</h4>
+        <p> <span>Что будет полезно:</span> <br> За 2 месяца получишь необходимые навыки и знания для смены профессии и первой работы дизайнером</p>
       </div>
       <div class="types_box_right col-md-5 col-sm-5">
         <div class="types_foto2">
           <img src="images/321.png" alt="types_trg" class="types_trgl2">
         </div>
         <h4>Начинающий дизайнер без компетенций в больших проектах</h4>
-        <p> <span>Что будет полезно:</span> <br> Вы научитесь получать и воплощать более серьезные проекты. Вырастите от дизайнера банеров и листовок к сайтам и мобильным приложениям</p>
+        <p> <span>Что будет полезно:</span> <br> Ты научишься воплощать большие проекты. Начнешь осознанно реализовывать поставленные цели заказчика.</p>
       </div>
     </div>
   </section>
@@ -308,8 +315,8 @@
           </div>
           <div class="selection_text">
             <img src="images/selection_text3.png" alt="" class="selection_text3">
-            <span>Базовые знания дизайна и английский</span>
-            <p>Не смотря на то, что этот курс рассчитан на новичков в дизайне, тебе все равно необходимо обладать минимальным пониманием дизайна и английским </p>
+            <span>Базовые знания графических редакторов</span>
+            <p>Не смотря на то, что этот курс рассчитан на новичков в дизайне, тебе все равно необходимо обладать минимальным пониманием графических редакторов</p>
           </div>
 
           <a class="registration_btn" data-toggle="modal" data-target="#myModal">Забронировать место</a>
@@ -323,7 +330,7 @@
       <img src="images/how_bg.png" alt="how_bg">
     </div>
     <div class="container z-index">
-      <h2 class="how_title"><span>КАК МЫ БУДЕМ РАБОТАТЬ, </span> <br> КОГДА ВЫ ПОПАДЕТЕ НА КУРС</h2>
+      <h2 class="how_title"><span>ЧТО ТЫ БУДЕШЬ ДЕЛАТЬ, </span> <br> КОГДА ПОПАДЕШЬ НА КУРС</h2>
       <div class="row">
         <div class="col-md-4 col-sm-4 col-sm-offset-2 col-md-offset-2 how1">
           <h5>УЧИТЬ</h5>
@@ -595,7 +602,7 @@
       <div class="row">
         <div class="mentor_col">
           <h4>У ТЕБЯ БУДЕТ <br>ЛИЧНЫЙ МЕНТОР</h4>
-          <p>Менторами будут опытные дизайнеры, за спиной которых стоят сотни разработок мобильных приложений, сайтов и интерфейсов. Они помогут освоить весь материал и не сбиться с пути.</p>
+          <p>Ментор - это практикующий дизайнер, который поможет тебе освоить профессию. Им будет опытный специалист, за спиной которого стоят множество разработок..</p>
           <img src="images/mentor_img2.png" alt="mentor2">
           <!--</div><div  class="mentor2">-->
         </div>
@@ -623,6 +630,11 @@
         </div>
         <div class="col-md-5 col-sm-5 col-lg-5 countres_img_box">
           <img src="images/contries_img2.png" alt="contries_img2" class="contries_img2">
+          <img src="images/contries_img3.png" alt="contries1" class="contries1">
+          <img src="images/contries_img4.png" alt="contries2" class="contries2">
+          <img src="images/contries_img5.png" alt="contries3" class="contries3">
+          <img src="images/contries_img6.png" alt="contries4" class="contries4">
+          <img src="images/contries_img7.png" alt="contries5" class="contries5">
         </div>
       </div>
     </div>
@@ -838,9 +850,9 @@
     <img src="images/get_bg.png" alt="get_bg" class="get_bg">
     <div class="wrapper">
       <div class="get_box">
-        <h2 class="get_title">ХОЧЕШЬ ПОЛУЧАТЬ ОТ 300$ ЗА  <br> ПРОЕКТЫ В ГРАФИЧЕСКОМ ДИЗАЙНЕ?</h2>
-        <p>Оставь контакты, мы познакомимся и расскажем <br> как мы это сделаем за 2 месяца</p>
-        <a class="registration_btn" data-toggle="modal" data-target="#myModal">Записаться</a>
+        <h2 class="get_title">ХОЧЕШЬ ПОЛУЧАТЬ ОТ 300$ ЗА  <br> ПРОЕКТЫ В ВЕБ-ДИЗАЙНЕ?</h2>
+        <p>Оставь контакты и узнай,  <br> как это сделать за 2 месяца.</p>
+        <a class="registration_btn" data-toggle="modal" data-target="#myModal">Узнать больше</a>
         <img src="images/get_bg2.png" alt="get_bg2" class="get_bg2">
       </div>
     </div>
@@ -848,7 +860,7 @@
 
   <section class="questions">
     <div class="container">
-      <h2 class="questions_title"> Остались вопросы по курсу ? или у Вас <br> есть сомнения  “стоит ли начинать развиваться в этом направлении”...</h2>
+      <h2 class="questions_title"> Остались вопросы по курсу ? или у Тебя <br> есть сомнения  “стоит ли начинать развиваться в этом направлении”...</h2>
       <span class="questions_text">Оставь заявку и мы сегодня тебе поможем</span>
       <form action="" method="post">
         <input class="credit_input_text" name="name" type="text" placeholder="Твое имя" required>
@@ -862,6 +874,7 @@
   <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 

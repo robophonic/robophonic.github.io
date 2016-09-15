@@ -98,16 +98,21 @@
   position: relative;
   min-height: 900px;
   max-height: 900px;
+  overflow: hidden;
 }
 
 .godesignfinal_img {
-  min-height: 900px;
-  max-height: 900px;
-  width: 100%;
+  width: 200%;
   position: absolute;
   z-index: 1;
 }
-
+.head_main_img {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    min-height: 920px;
+  max-height: 920px;
+}
 .godesignfinal_title {
   text-shadow: 0 0 16px rgba(255, 255, 255, 0.35);
   color: black;
@@ -119,7 +124,7 @@
 }
 
 .data {
-  top: 100px;
+  top: 150px;
   left: 130px;
   position: absolute;
   width: 290px;
@@ -507,8 +512,44 @@
   font-weight: 400;
   line-height: 30px;
   max-height: 170px;
+  display: inline-block;
+}
+.meetings_indicators1 {
+    margin-left: 40px;
+}
+.meetings_indicators2 {
+    margin-left: 140px;
+}
+.meetings_indicators3 {
+    top: 20px;
+    margin-left: 70px;
+}
+.meetings .meetings_carousel .carousel-indicators {
+   position: relative;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+ 
+}
+.meetings .carousel-indicators  .meetings_indicators1.active { 
+    margin-left: 40px;
+}
+.meetings .carousel-indicators  .meetings_indicators2.active { 
+    margin-left: 140px;
+}
+.meetings .carousel-indicators  .meetings_indicators3.active { 
+    top: 20px;
+    margin-left: 70px;
 }
 
+.meetings .carousel-indicators .active {
+      width: 25%;
+    background-color: #f8f8f8;
+}
 .active.meetings_indicators1,
 .active.meetings_indicators2,
 .active.meetings_indicators3 {
@@ -534,53 +575,61 @@
   cursor: pointer;
 }
 
+
 .meetings_carousel .meetings_left1 {
-  position: relative;
+  position: absolute;
+    display: none;
   opacity: 0;
-  bottom: 160px;
-  left: 61px;
+  top: 0px;
+  left: 2px;
   z-index: 2;
 }
 
 .meetings_carousel .meetings_left2 {
-  position: relative;
+   position: absolute;
+    display: none;
   opacity: 0;
-  bottom: 150px;
-  left: 291px;
+  top: 10px;
+  left: 407px;
   z-index: 2;
 }
 
 .meetings_carousel .meetings_left3 {
-  position: relative;
-  opacity: 0;
-  bottom: 160px;
-  left: 576px;
+  position: absolute;
+    display: none;
+/*  opacity: 0;*/
+  top: 20px;
+  left: 797px;
   z-index: 2;
 }
 
 .meetings_carousel .meetings_right1 {
-  position: relative;
-  opacity: 0;
-  bottom: 230px;
-  left: 243px;
+   position: absolute;
+    display: none;
+/*  opacity: 0;*/
+  top: -60px;
+  left: 254px;
   z-index: 2;
 }
 
 .meetings_carousel .meetings_right2 {
-  position: relative;
-  opacity: 0;
-  bottom: 220px;
-  left: 473px;
+   position: absolute;
+    display: none;
+/*  opacity: 0;*/
+  top: -40px;
+  left: 1049px;
   z-index: 2;
 }
 
 .meetings_carousel .meetings_right3 {
-  position: relative;
-  opacity: 0;
-  bottom: 227px;
-  left: 759px;
+  position: absolute;
+    display: none;
+/*  opacity: 0;*/
+  top: -50px;
+  left: 659px;
   z-index: 2;
 }
+
 
 .meetings1 {
   top: -80px;
@@ -603,12 +652,13 @@
 .active .meetings1,
 .active .meetings2,
 .active .meetings3,
-.meetings_left1.active,
-.meetings_right1.active,
-.meetings_left2.active,
-.meetings_right2.active,
-.meetings_left3.active,
-.meetings_right3.active {
+.meetings_left1.active2,
+.meetings_right1.active2,
+.meetings_left2.active2,
+.meetings_right2.active2,
+.meetings_left3.active2,
+.meetings_right3.active2 {
+  display: inline-block;
   opacity: 1;
 }
 
@@ -1195,7 +1245,7 @@
 .mentor {
   position: relative;
   overflow: hidden;
-  min-height: 1100px;
+  min-height: 900px;
 }
 
 .mentor_img {
@@ -1442,12 +1492,46 @@
 .countres_img_box {
   width: 100%;
   margin-top: 250px;
+    position: relative;
+    
 }
 
-.countres_img_box img {
+.countres_img_box .contries_img2 {
+  position: absolute;
   width: 100%;
 }
-
+.contries1,
+.contries2,
+.contries3,
+.contries4,
+.contries5 {
+position: absolute;
+}
+.countres_img_box .contries1 {
+    position: absolute;
+    left: 75px;
+    top: -65px;
+    width: 5%;
+}
+.countres_img_box .contries2 {
+    left: 90px;
+    top: -120px;
+    width: 7%;
+}
+.countres_img_box .contries3 {
+    left: 129px;
+    top: -103px;
+    width: 9%;
+}
+.countres_img_box .contries4 {
+    left: 174px;
+    top: -42px;
+    width: 7%;
+}
+.countres_img_box .contries5 {
+    left: 182px;
+    top: -255px;
+}
 
 /*reviews2______________________________*/
 
@@ -1611,7 +1695,7 @@
 }
 
 .price .color td:first-child {
-  color: #2630ff;
+  color: black;
 }
 
 .price__footer {
@@ -1919,6 +2003,36 @@
 }
 
 @media screen and (max-width: 600px) {
+    
+    .meetings_carousel .meetings_right3,
+    .meetings_carousel .meetings_right2,
+    .meetings_carousel .meetings_right1,
+    .meetings_carousel .meetings_left3,
+    .meetings_carousel .meetings_left2,
+    .meetings_carousel .meetings_left1 {
+        top: 0;
+        left: 0;
+    }
+.meetings .carousel-indicators  .meetings_indicators1.active { 
+    margin-left: 0px;
+     display: block;
+}
+.meetings .carousel-indicators  .meetings_indicators2.active { 
+    margin-left: 0px;
+     display: block;
+}
+.meetings .carousel-indicators  .meetings_indicators3.active { 
+    top: 0px;
+    margin-left: 0px;
+     display: block;
+}
+    .meetings .carousel-indicators  .meetings_indicators3,
+    .meetings .carousel-indicators  .meetings_indicators2,
+    .meetings .carousel-indicators  .meetings_indicators1{
+        display: block;
+    }   
+    
+    
   .how .row img {
     display: none;
   }

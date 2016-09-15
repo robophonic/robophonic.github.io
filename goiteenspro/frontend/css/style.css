@@ -708,7 +708,7 @@ line-height: 32px;
   width: 100%;
   padding: 14px 17px;
   position: relative;
-  background: #f5f4f4 url("images/arr_down.png") no-repeat;
+  background: #f5f4f4 url("../images/arr_down.png") no-repeat;
   background-position-x: 97%;
   background-position-y: 50%;
   border: 0;
@@ -716,7 +716,9 @@ line-height: 32px;
   font: 300 17.39px / 16.368px 'SegoeUI';
   margin-top: 5px;
 }
-
+label {
+    display: block;
+}
 .input-text {
   border: 0;
   width: 100%;
