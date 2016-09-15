@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 /*head*/
 
 .head {
@@ -79,8 +78,6 @@
 }
 
 
-
-
 /*godesignfinal_______________________________________*/
 
 .godesignfinal {
@@ -146,6 +143,20 @@
   float: right;
   margin-top: 50px;
   margin-right: 50px;
+}
+.head .menu-item:hover, 
+.questions .registration_btn:hover,
+.get .registration_btn:hover,
+.price .registration_btn:hover,
+.countres .registration_btn:hover,
+.selection .registration_btn:hover,
+.help .registration_btn:hover,
+.practice .registration_btn:hover,
+.godesignfinal .godesignfinal_btn:hover {
+    color: orange;
+}
+.head .menu .registration-link:hover {
+    color: black;
 }
 .godesignfinal_span {
   color: #ff6c00;
