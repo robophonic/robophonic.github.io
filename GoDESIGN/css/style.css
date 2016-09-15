@@ -8,7 +8,7 @@
 
 .head {
   position: fixed;
-  padding: 10px 0;
+  padding: 10px 0 10px 100px;
   left: 0px;
   top: 0px;
   right: 0px;
@@ -26,12 +26,12 @@
   width: 114px;
   margin-right: 28px;
   vertical-align: top;
-  margin-top: 22px;
+  margin-top: 12px;
 }
 
 .head .menu {
   display: inline-block;
-  padding: 10px 0 0;
+  padding: 0;
   margin: 0;
   list-style: none;
   vertical-align: top;
@@ -52,7 +52,7 @@
 .phone {
   color: white;
   list-style: none;
-  padding: 10px 0 0;
+  padding: 0;
   margin: 0;
   margin-left: 12px;
   vertical-align: top;
@@ -74,21 +74,11 @@
 
 .head.header_fixed,
 .footer.header_fixed {
-  opacity: 0.95;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  padding: 0 0 12px;
+  padding: 0px 0 0px 100px;
 }
 
-.godesignfinal_span {
-  color: #ff6c00;
-  font-family: OpenSans;
-  font-size: 20px;
-  font-weight: 400;
-  float: right;
-  position: absolute;
-  bottom: 0;
-  right: 50px;
-}
+
 
 
 /*godesignfinal_______________________________________*/
@@ -96,13 +86,14 @@
 .godesignfinal {
   width: 100%;
   position: relative;
-  min-height: 900px;
-  max-height: 900px;
+  min-height: 600px;
+  max-height: 600px;
   overflow: hidden;
+    margin-top: 50px;
 }
 
 .godesignfinal_img {
-  width: 200%;
+  width: 250%;
   position: absolute;
   z-index: 1;
 }
@@ -110,8 +101,8 @@
     position: absolute;
     width: 100%;
     z-index: 2;
-    min-height: 920px;
-  max-height: 920px;
+    min-height: 620px;
+  max-height: 620px;
 }
 .godesignfinal_title {
   text-shadow: 0 0 16px rgba(255, 255, 255, 0.35);
@@ -119,13 +110,13 @@
   font-family: ProximaNova;
   font-size: 65px;
   line-height: 70px;
-  margin-top: 120px;
-  margin-left: 250px;
+  margin-top: 60px;
+  margin-left: 260px;
 }
 
 .data {
-  top: 150px;
-  left: 130px;
+  top: 60px;
+  left: 100px;
   position: absolute;
   width: 290px;
   height: 290px;
@@ -141,18 +132,27 @@
   font-size: 24px;
   font-weight: 600;
   display: inline-block;
-  width: 40%;
-  margin-left: 342px;
+  width: 39%;
+  margin-left: 372px;
   position: relative;
 }
 
 .godesignfinal .godesignfinal_btn {
   display: inline-block;
   float: right;
-  margin-top: 300px;
-  -margin-right: 50px;
+  margin-top: 50px;
+  margin-right: 50px;
 }
-
+.godesignfinal_span {
+  color: #ff6c00;
+  font-family: OpenSans;
+  font-size: 20px;
+  font-weight: 400;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 120px;
+}
 
 /*tel_box_____________________________________________*/
 

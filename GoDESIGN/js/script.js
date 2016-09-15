@@ -67,34 +67,28 @@ $(window).scroll(function() {
 
 //tell
   $('.part_tel_1, .phone_text1').mouseenter(function() {
-    $('.phone_text1').css({
-      color: 'blue'
-    });
+    $('.phone_text1').animate({fontSize:"1.5em"}, 300);
+    $('.part_tel_1').animate({width:"41%"}, 300);
   });
  $('.part_tel_1, .phone_text1').mouseleave(function() {
-    $('.phone_text1').css({
-      color: 'black'
-    });
+    $('.phone_text1').animate({fontSize:"1.3em"}, 300);
+     $('.part_tel_1').animate({width:"38%"}, 300);
   });
      $('.part_tel_2, .phone_text2').mouseenter(function() {
-    $('.phone_text2').css({
-      color: 'blue'
-    });
+      $('.phone_text2').animate({fontSize:"1.5em"}, 300);
+    $('.part_tel_2').animate({width:"31%"}, 300);
   });
  $('.part_tel_2, .phone_text2').mouseleave(function() {
-    $('.phone_text2').css({
-      color: 'black'
-    });
+    $('.phone_text2').animate({fontSize:"1.3em"}, 300);
+     $('.part_tel_2').animate({width:"28%"}, 300);
   });
      $('.part_tel_3, .phone_text3').mouseenter(function() {
-    $('.phone_text3').css({
-      color: 'blue'
-    });
+      $('.phone_text3').animate({fontSize:"1.5em"}, 300);
+    $('.part_tel_3').animate({width:"41%"}, 300);
   });
  $('.part_tel_3, .phone_text3').mouseleave(function() {
-    $('.phone_text3').css({
-      color: 'black'
-    });
+    $('.phone_text3').animate({fontSize:"1.3em"}, 300);
+     $('.part_tel_3').animate({width:"38%"}, 300);
   });
 
 //achievements
@@ -104,7 +98,7 @@ $('.achievements').waypoint(function() {
     $('.achievements_img3, .achievements_box3').delay(2100).animate({opacity: 1}, 1000); 
 }); 
 $('.value').waypoint(function() {     
-    $(".value_img").animate({left:'+=700px'}, 4600);
+    $(".value_img").animate({left:'720px'}, 4600);
     $('.value4').delay(100).animate({opacity: 1}, 1000);
     $('.value2').delay(1100).animate({opacity: 1}, 1000); 
     $('.value1').delay(2100).animate({opacity: 1}, 1000);
