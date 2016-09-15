@@ -68,27 +68,27 @@ $(window).scroll(function() {
 //tell
   $('.part_tel_1, .phone_text1').mouseenter(function() {
     $('.phone_text1').animate({fontSize:"1.5em"}, 300);
-    $('.part_tel_1').animate({width:"41%"}, 300);
+    $('.part_tel_1').animate({width:"12%"}, 300);
   });
  $('.part_tel_1, .phone_text1').mouseleave(function() {
-    $('.phone_text1').animate({fontSize:"1.3em"}, 300);
-     $('.part_tel_1').animate({width:"38%"}, 300);
+    $('.phone_text1').animate({fontSize:"1.4em"}, 300);
+     $('.part_tel_1').animate({width:"11%"}, 300);
   });
      $('.part_tel_2, .phone_text2').mouseenter(function() {
       $('.phone_text2').animate({fontSize:"1.5em"}, 300);
-    $('.part_tel_2').animate({width:"31%"}, 300);
+    $('.part_tel_2').animate({width:"12%"}, 300);
   });
  $('.part_tel_2, .phone_text2').mouseleave(function() {
-    $('.phone_text2').animate({fontSize:"1.3em"}, 300);
-     $('.part_tel_2').animate({width:"28%"}, 300);
+    $('.phone_text2').animate({fontSize:"1.4em"}, 300);
+     $('.part_tel_2').animate({width:"11%"}, 300);
   });
      $('.part_tel_3, .phone_text3').mouseenter(function() {
       $('.phone_text3').animate({fontSize:"1.5em"}, 300);
-    $('.part_tel_3').animate({width:"41%"}, 300);
+    $('.part_tel_3').animate({width:"12%"}, 300);
   });
  $('.part_tel_3, .phone_text3').mouseleave(function() {
-    $('.phone_text3').animate({fontSize:"1.3em"}, 300);
-     $('.part_tel_3').animate({width:"38%"}, 300);
+    $('.phone_text3').animate({fontSize:"1.4em"}, 300);
+     $('.part_tel_3').animate({width:"11%"}, 300);
   });
 
 //achievements
@@ -104,26 +104,25 @@ $('.value').waypoint(function() {
     $('.value1').delay(2100).animate({opacity: 1}, 1000);
     $('.value3').delay(3600).animate({opacity: 1}, 1000);
 });    
-$('.ways_box2').waypoint( function() {     
-    $(".help_img_2").animate({right:'+=20px'}, 500);
-    $(".help_img_2").animate({top:'+=35px'}, 500);
-    $(".help_img_2").animate({right:'+=35px'}, 1500);
-    $(".help_img_2").animate({top:'+=33px'}, 500);
-    $(".help_img_2").animate({right:'+=35px'}, 1500);
-    $(".help_img_2").animate({top:'+=33px'}, 500);
-    $('.li_4').delay(500).animate({opacity: 1}, 1000);
-    $('.li_1').delay(2500).animate({opacity: 1}, 1000); 
-    $('.li_2, .li_3').delay(4500).animate({opacity: 1}, 1000);
+var waypoint_selection = new Waypoint({ 
+element: $('.ways_box2'), 
+handler: function() {    
+    $(".help_img_2").animate({top:'75px'}, 500);
+    $(".help_img_2").animate({right:'22px'}, 1000);
+    $(".help_img_2").animate({top:'44px'}, 500);
+    $(".help_img_2").animate({left:'425px'}, 1000);
+    $('.li_4, .li_1').delay(2500).animate({opacity: 1}, 500);
+    $('.li_2, .li_3').delay(3500).animate({opacity: 1}, 500);
+    $('.help_img_2').delay(1500).animate({opacity: 0}, 500);
+}
 });
 $('.selection').waypoint( function() {     
     $('.selection1').delay(100).animate({opacity: 1}, 1000);
     $('.selection2').delay(1100).animate({opacity: 1}, 1000); 
     $('.selection3').delay(2100).animate({opacity: 1}, 1000);
-});
-      
-//$(".contries1").delay(100).animate({top:'+=100px'}, 300);
-      
- $('.countres').waypoint( function() {     
+}); 
+ $('.countres').waypoint( function() {
+     $(".contries1, .contries2, .contries3, .contries4, .contries5").animate({opacity: 1}, 300);
      $(".contries1").delay(100).animate({top:'35px'}, 300);
      $(".contries2").delay(200).animate({top:'-20px'}, 300);
      $(".contries3").delay(300).animate({top:'-3px'}, 300);

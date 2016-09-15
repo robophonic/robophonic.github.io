@@ -158,6 +158,8 @@
 
 .tel_box {
   margin-bottom: 150px;
+    width: 100%;
+    text-align: center;
 }
 
 .tel_title {
@@ -173,25 +175,25 @@
 .tel_title span {
   font-weight: bold;
 }
-
 .tel {
-  float: left;
-  width: 50%;
-  margin-top: 50px;
-  position: relative;
-  width: 338px;
-  height: 680px;
-  margin-right: 50px;
-  margin-left: 130px;
-}
 
+    position: relative;
+}
 .tel img {
   position: absolute;
+  z-index: 1;
+}
+.tel_img {
+  width: 100%;
+  position: absolute;
+        top: 0;
+    left: 0;
 }
 
+
 .tel img:nth-child(2) {
-  top: 130px;
-  left: 109px;
+  top: 90px;
+  left: 209px;
 }
 .tel img:nth-child(2):hover,
 .tel img:nth-child(3):hover,
@@ -201,33 +203,42 @@
 }
 
 .tel img:nth-child(3) {
-  top: 286px;
-  left: 124px;
+  top: 226px;
+  right: 200px;
 }
 
 .tel img:nth-child(4) {
-  top: 455px;
-  left: 105px;
+  top: 425px;
+  left: 209px;
 }
 
 .phone_text {
-  margin-top: 130px;
   display: inline-block;
-  width: 40%;
+  width: 50%;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .phone_text li {
-  text-align: left;
-  color: black;
-  font-family: OpenSans;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-  list-style-image: url(../images/shape-30-copy.png);
-  margin-top: 70px;
+text-align: left;
+color: white;
+font-family: OpenSans;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+margin-top: 50px;
+list-style: none;
+}
+.phone_text li:first-child,
+.phone_text li:nth-child(3){
+    margin-left: 100px;
 }
 
-
+.phone_text li:nth-child(2){
+    margin-right: 100px;
+}
 /*achievements________________________________________________*/
 
 .achievements {
@@ -290,7 +301,7 @@
 
 .achievements_img_box img:nth-child(1) {
   top: -80px;
-  left: 39px;
+  left: 41px;
     
 }
 .achievements_img1,
@@ -308,7 +319,7 @@
 }
 
 .achievements_img_box img:nth-child(3) {
-  top: -120px;
+  top: -122px;
   left: 230px;
 }
 
@@ -420,9 +431,11 @@
 /*practice_____________________________________________*/
 
 .practice {
-  widows: 100%;
-  min-height: 1000px;
-  max-height: 1000px;
+    background: url("../images/practice.jpg");
+    background-size: cover;
+    widows: 100%;
+    min-height: 1000px;
+    max-height: 1000px;
 }
 
 .container {
@@ -798,11 +811,13 @@
 
 .types_box_right h4,
 .types_box_right p {
-  width: 57%;
+  width: 63%;
 }
 
 .types_box_right p {
   text-align: left;
+    padding-left: 60px;
+  
 }
 
 
@@ -886,14 +901,14 @@
 
 .help_img_1 {
   position: absolute;
-  top: 0;
+  top: 0px;
   right: -90px;
 }
 
 .help_img_2 {
   position: absolute;
-  top: -20px;
-  right: -70px;
+  top: 105px;
+  right: 60px;
 }
 
 
@@ -1296,7 +1311,7 @@
 
 .mentor_col img {
   top: -100px;
-  left: 350px;
+  left: 320px;
   position: absolute;
   width: 60%;
 }
@@ -1450,10 +1465,12 @@
 /*countres_______________________________*/
 
 .countres {
+    background: url("../images/countres.png");
+    background-size: cover;
   position: relative;
   width: 100%;
-  max-height: 1100px;
-  min-height: 1100px;
+  max-height: 1250px;
+  min-height: 1250px;
 }
 
 .countres_img {
@@ -1472,6 +1489,7 @@
 }
 
 .countres .row {
+    margin-top: 200px;
   position: relative;
   z-index: 2;
 }
@@ -1506,31 +1524,32 @@
 .contries4,
 .contries5 {
 position: absolute;
+    opacity: 0;
 }
 .countres_img_box .contries1 {
     position: absolute;
     left: 75px;
-    top: -65px;
+    top: -435px;
     width: 5%;
 }
 .countres_img_box .contries2 {
     left: 90px;
-    top: -120px;
+    top: -620px;
     width: 7%;
 }
 .countres_img_box .contries3 {
     left: 129px;
-    top: -103px;
+    top: -603px;
     width: 9%;
 }
 .countres_img_box .contries4 {
     left: 174px;
-    top: -42px;
+    top: -642px;
     width: 7%;
 }
 .countres_img_box .contries5 {
     left: 182px;
-    top: -255px;
+    top: -755px;
 }
 
 /*reviews2______________________________*/
@@ -1876,6 +1895,8 @@ position: absolute;
 /*get_________________________________________________  */
 
 .get {
+    background: url("../images/get_bg.png");
+    background-size: cover;
   width: 100%;
   position: relative;
   min-height: 1000px;
@@ -2181,11 +2202,46 @@ position: absolute;
   }
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1550px) {
   .mentor_col img {
     top: -100px;
     left: 380px;
     position: absolute;
     width: 65%;
   }
+    .mentor {
+        min-height: 1200px;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .practice {
+    min-height: 2000px;
+    max-height: 2000px;
+        padding-top: 500px;
+        text-align: center;
+}
+
+.practice .practice_img_box {
+    text-align: center;
+  min-height: 1000px;
+  max-height: 1000px;
+/*    width: 40%;*/
+}
+    .mentor_col img {
+    top: -100px;
+    left: 550px;
+    position: absolute;
+    width: 65%;
+  }
+    .mentor {
+        min-height: 2000px;
+    }
+/*
+    .get {
+  min-height: 1500px;
+  max-height: 1500px;
+}
+*/
+
 }
