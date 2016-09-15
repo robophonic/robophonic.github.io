@@ -90,6 +90,10 @@
   max-height: 600px;
   overflow: hidden;
     margin-top: 50px;
+/*
+    background: url("../images/head_main.png");
+    z-index: 3;
+*/
 }
 
 .godesignfinal_img {
@@ -102,7 +106,7 @@
     width: 100%;
     z-index: 2;
     min-height: 620px;
-  max-height: 620px;
+    max-height: 620px;
 }
 .godesignfinal_title {
   text-shadow: 0 0 16px rgba(255, 255, 255, 0.35);
@@ -110,8 +114,8 @@
   font-family: ProximaNova;
   font-size: 65px;
   line-height: 70px;
-  margin-top: 60px;
-  margin-left: 260px;
+  margin-top: 50px;
+  margin-left: 250px;
 }
 
 .data {
@@ -129,11 +133,11 @@
 .godesignfinal_text {
   color: black;
   font-family: OpenSans;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   display: inline-block;
   width: 39%;
-  margin-left: 372px;
+  margin-left: 378px;
   position: relative;
 }
 
