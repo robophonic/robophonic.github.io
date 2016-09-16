@@ -2129,6 +2129,45 @@ position: absolute;
         top: 0;
         left: 0;
     }
+    .achievements_title {
+        font-size: 30px;
+    }
+    .price {
+        width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    }
+    .value,
+    .tel_title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .head .head-logo {
+        margin-top: 5px;
+        margin-bottom: 5px
+    }
+    .phone-item {
+        display: inline-block;
+    }
+    .head {
+        padding: 0;
+        text-align: center;
+    }
+    .phone {
+        margin-top: 5px;
+    }
+ 
+/*
+    .head .menu {
+        margin-top: 50px;
+    }
+*/
+    .credit_input_text {
+        width: 200px;
+    }
+    .countres_img_box .contries_img2 {
+        left: 0;
+    }
 .meetings .carousel-indicators  .meetings_indicators1.active { 
     margin-left: 0px;
      display: block;
@@ -2166,6 +2205,47 @@ position: absolute;
     margin-left: 50px;
     width: 100%;
   }
+        .teachers_foto2 img,
+    .teachers_foto1 img {
+        width: 100%;
+    }
+    .types_trgl2 {
+        width: 80%;
+        position: absolute;
+        bottom:0;
+        left: 0;
+        z-index: 3;  
+    }
+    .active .meetings1, .active .meetings2, .active .meetings3, .meetings_left1.active2, .meetings_right1.active2, .meetings_left2.active2, .meetings_right2.active2, .meetings_left3.active2, .meetings_right3.active2 {
+        display: none;
+    }
+    .meetings_indicators1,
+    .meetings_indicators2,
+    .meetings_indicators3 {
+        margin: 0;
+    }
+
+    .meetings .carousel-indicators .active {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .container {
+        min-width: 320px;
+    }
+    .achievements_img1,
+    .achievements_img2,
+    .achievements_img3,
+    .meetings_right1,
+     .meetings_right2,
+    .meetings_right3,
+     .meetings_left1,
+     .meetings_left2,
+    .meetings_left3,
+    .meetings1,
+    .meetings2,
+    .meetings3,
+    .help_img_2,
+  .help_img_1,
   .get_box img,
   .teachers_img,
   .types_bg_top,
@@ -2178,17 +2258,38 @@ position: absolute;
   .selection3,
   .bg_achievements_bottom,
   .bg_achievements_top,
-  .meetings .container .meetings_item img {
+  .meetings .container .meetings_item img,
+   .part_tel_1,
+    .part_tel_2,
+    .part_tel_3,
+    .tel_img{
     display: none;
   }
   .get_box {
     width: 200px;
   }
+
   .godesignfinal_title,
   .godesignfinal_text,
   .price_margin {
     margin: 0;
   }
+       .godesignfinal_title {
+        margin-top: 60px;
+    }
+    .godesignfinal_text {
+        width: 100%;
+    }
+    .godesignfinal {
+        min-height: 1000px;
+        max-height: 1000px;
+    }
+    .godesignfinal .godesignfinal_btn {
+        margin-top: 350px;
+        width: 300px;
+margin-right: 0;
+        float: none;
+    }
   .head .row .menu li {
     display: none;
   }
@@ -2208,8 +2309,20 @@ position: absolute;
     top: -320px;
   }
   .achievements_margin {
-    margin-bottom: 250px;
+    margin-bottom: 20px;
   }
+    .phone_text li {
+        color: black;
+        margin: 0;
+        padding: 0;
+        widows: 100%;
+        font-size: 20px;
+    }
+    .phone_text li:first-child, .phone_text li:nth-child(3), .phone_text li:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+    }
   .tel_title,
   .get_title {
     width: 100%;
@@ -2273,18 +2386,21 @@ position: absolute;
   }
   .reviews2_right,
   .reviews2_left {
-    top: 100px;
-    left: 100px;
-  }
-  .reviews2_right {
+    top: 50px;
     left: 150px;
   }
+  .reviews2_right {
+    left: 200px;
+  }
+    .value_title {
+        font-size: 30px;
+    }
   .reviews2_box h4:before {
-    top: 0px;
-    left: 250px;
+    top: 100px;
+    left: 50px;
   }
   .reviews2_margin {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .teachers_carousel_box2 {
     margin-left: 100px;
@@ -2293,7 +2409,8 @@ position: absolute;
     top: 480px;
   }
   .data {
-    top: 200px;
+    top: 150px;
+      left: 0;
   }
 }
 
@@ -2306,6 +2423,11 @@ position: absolute;
   }
     .mentor {
         min-height: 1200px;
+    }
+    .meetings_indicators1,
+    .meetings_indicators2,
+    .meetings_indicators3 {
+        margin-top: 50px;
     }
 }
 

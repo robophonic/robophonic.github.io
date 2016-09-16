@@ -462,6 +462,7 @@ line-height: 20px;
     max-height: 800px;
 }
 .soft_text {
+    width: 70%;
     margin-top: 50px;
     color: white;
 font-family: Arial;
