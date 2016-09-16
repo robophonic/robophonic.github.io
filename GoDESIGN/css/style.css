@@ -144,6 +144,7 @@
   margin-top: 50px;
   margin-right: 50px;
 }
+.value .registration_btn:hover,
 .head .menu-item:hover, 
 .questions .registration_btn:hover,
 .get .registration_btn:hover,
@@ -1559,7 +1560,7 @@ list-style: none;
 /*countres_______________________________*/
 
 .countres {
-    background: url("../images/countres.png");
+    background: url("../images/countres.jpg");
     background-size: cover;
   position: relative;
   width: 100%;
