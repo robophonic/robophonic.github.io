@@ -22,7 +22,9 @@ a:hover {
   text-decoration: none;
 }
 
-
+.callback-success-info {
+  color: #000;
+}
 /*header*/
 
 .head {
@@ -506,7 +508,8 @@ footer {
     margin-left: 30px;
   }
   .legend {
-    min-height: 350px;
+    min-height: 380px;
+    max-height: 380px;
   }
   .fire {
     height: 350px;
@@ -695,6 +698,8 @@ footer {
     font-size: 12px;
   }
 }
+
+
 @media screen and (max-width: 2200px) {
     .head {
   background: url(../images/bg-head.jpg) no-repeat 50%;
@@ -712,7 +717,8 @@ footer {
   background: url(../images/bg-format3.jpg) no-repeat 50%;
 }
 .legend {
-  background: url(../images/bg-leg.png) no-repeat 90%;
+  background: url(../images/bg-leg.png) no-repeat 100%;
+    background-size: cover;
 }
 .schedule {
   background: url(../images/bg-schedule.jpg) no-repeat 50%;

@@ -75,9 +75,9 @@ $('.program_link').click(function() {
   $('.ways_box2').mouseenter(function() {
     $('.ways_box2').addClass('active');
   });
-  $('.ways_box2').mouseleave(function() {
-    $('.ways_box2').removeClass('active');
-  });
+//  $('.ways_box2').mouseleave(function() {
+//    $('.ways_box2').removeClass('active');
+//  });
 
 //хедер
 $(window).scroll(function() {
@@ -99,11 +99,11 @@ $(window).scroll(function() {
   });
      $('.part_tel_2, .phone_text2').mouseenter(function() {
       $('.phone_text2').animate({fontSize:"1.5em"}, 300);
-    $('.part_tel_2').animate({width:"12%"}, 300);
+    $('.part_tel_2').animate({width:"9%"}, 300);
   });
  $('.part_tel_2, .phone_text2').mouseleave(function() {
     $('.phone_text2').animate({fontSize:"1.4em"}, 300);
-     $('.part_tel_2').animate({width:"11%"}, 300);
+     $('.part_tel_2').animate({width:"8%"}, 300);
   });
      $('.part_tel_3, .phone_text3').mouseenter(function() {
       $('.phone_text3').animate({fontSize:"1.5em"}, 300);

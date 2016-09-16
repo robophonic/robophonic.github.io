@@ -20,6 +20,27 @@ $("#registration-form").on('submit', function (e) {
       }
     })
   });
+
+  $("#city").click(function(){
+    if ($('#city').val() == 'kiev' && $('.child_age').val() < 15) {
+      $('.price_summ').val('2500');
+      $('#registrationType').val('steamKiev');
+    }
+    else if ($('#city').val() == 'kiev' && $('.child_age').val() >= 15) {
+      $('.price_summ').val('3000');
+      $('#registrationType').val('proKiev');
+    }
+  });
+  $("#city").click(function(){
+    if ($('#city').val() == 'lviv' && $('.child_age').val() < 15) {
+      $('.price_summ').val('2000');
+      $('#registrationType').val('steamLviv');
+    }
+    else if ($('#city').val() == 'lviv' && $('.child_age').val() >= 15) {
+      $('.price_summ').val('2500');
+      $('#registrationType').val('proLviv');
+    }
+  });
 //ScrollTo
 $('.link_programm').click(function() {
   var destination = $('.program').offset().top - 0;
