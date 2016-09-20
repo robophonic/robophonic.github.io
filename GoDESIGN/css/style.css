@@ -107,7 +107,14 @@
   min-height: 620px;
   max-height: 620px;
 }
-
+.head_main_img2 {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  min-height: 620px;
+  max-height: 620px;
+  display: none;
+}
 .godesignfinal_title {
   text-shadow: 0 0 16px rgba(255, 255, 255, 0.35);
   color: black;
@@ -238,6 +245,12 @@
 .tel img:nth-child(4) {
   top: 425px;
   left: 209px;
+}
+
+.part_tel_4, 
+.part_tel_5, 
+.part_tel_6 {
+    display: none;
 }
 
 .phone_text {
@@ -523,6 +536,38 @@
 
 /*meetings______________________________________*/
 
+#slider1 {
+  height: 62px;
+  position: relative;
+    margin-bottom: 100px;
+}
+.content {
+  height: 62px;
+  overflow:hidden;
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+    text-align: center;
+}
+
+.slide-img {
+  display: inline-block;
+  width: 33%;
+  height: 62px;
+    vertical-align: top;
+    padding-right: 15px;
+ 
+}
+.slide-img span {
+      color: black;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px; 
+     vertical-align: top;
+}
+
+
 .meetings {
   background-color: #f8f8f8;
   min-height: 1000px;
@@ -569,7 +614,7 @@
 
 .meetings_indicators3 {
   top: 20px;
-  margin-left: 70px;
+  margin-left: 100px;
 }
 
 .meetings .meetings_carousel .carousel-indicators {
@@ -593,14 +638,19 @@
 
 .meetings .carousel-indicators .meetings_indicators3.active {
   top: 20px;
-  margin-left: 70px;
+  margin-left: 100px;
 }
 
 .meetings .carousel-indicators .active {
   width: 25%;
   background-color: #f8f8f8;
 }
-
+.active.meetings_indicators2 {
+    width: 20%;
+}
+.meetings .carousel-indicators .meetings_indicators2 {
+    width: 20%;
+}
 .active.meetings_indicators1,
 .active.meetings_indicators2,
 .active.meetings_indicators3 {
@@ -609,108 +659,38 @@
   z-index: 1;
 }
 
+
+
 .meetings_carousel span {
   position: relative;
   z-index: 2;
 }
-
-.meetings1,
-.meetings2,
-.meetings3 {
-  position: relative;
-  opacity: 1;
-}
-
 .meetings_carousel span:hover,
 .meetings_carousel>img:hover {
   cursor: pointer;
 }
 
-.meetings_carousel .meetings_left1 {
-  position: absolute;
-  display: none;
-  opacity: 0;
-  top: 0px;
-  left: 2px;
-  z-index: 2;
-}
-
 .meetings_carousel .meetings_left2 {
   position: absolute;
-  display: none;
-  opacity: 0;
+  -display: none;
+  opacity: 1;
   top: 10px;
-  left: 407px;
-  z-index: 2;
-}
-
-.meetings_carousel .meetings_left3 {
-  position: absolute;
-  display: none;
-  /*  opacity: 0;*/
-  top: 20px;
-  left: 797px;
-  z-index: 2;
-}
-
-.meetings_carousel .meetings_right1 {
-  position: absolute;
-  display: none;
-  /*  opacity: 0;*/
-  top: -60px;
-  left: 254px;
-  z-index: 2;
-}
-
-.meetings_carousel .meetings_right2 {
-  position: absolute;
-  display: none;
-  /*  opacity: 0;*/
-  top: -40px;
-  left: 1049px;
+  left: 411px;
   z-index: 2;
 }
 
 .meetings_carousel .meetings_right3 {
   position: absolute;
-  display: none;
-  /*  opacity: 0;*/
   top: -50px;
-  left: 659px;
+  left: 663px;
   z-index: 2;
 }
 
 .meetings1 {
-  top: -80px;
-  left: -50px;
-  opacity: 0;
+    position: absolute;
+    top: -40px;
+    left: 414px;
 }
-
-.meetings2 {
-  top: -100px;
-  left: -70px;
-  opacity: 0;
-}
-
-.meetings3 {
-  top: -80px;
-  left: -35px;
-  opacity: 0;
-}
-
-.active .meetings1,
-.active .meetings2,
-.active .meetings3,
-.meetings_left1.active2,
-.meetings_right1.active2,
-.meetings_left2.active2,
-.meetings_right2.active2,
-.meetings_left3.active2,
-.meetings_right3.active2 {
-  display: inline-block;
-  opacity: 1;
-}
-
 .meetings_carousel_inner p {
   color: black;
   font-family: OpenSans;
@@ -1384,7 +1364,7 @@
 .mentor {
   position: relative;
   overflow: hidden;
-  min-height: 800px;
+  min-height: 700px;
 }
 
 .mentor_img {
@@ -2144,6 +2124,9 @@
     margin-top: 20px;
     margin-left: 50px;
 }
+ .value5 {
+        display: none;
+    }
 
 @media screen and (max-width: 1200px) {
   .phone_text {
@@ -2151,6 +2134,7 @@
   }
   .tel_box {
     text-align: left;
+      margin-bottom: 0;
   }
   .tel {
     margin-left: 0;
@@ -2163,6 +2147,8 @@
   }
   .value_sub_title {
     margin-left: 0;
+      display: block;
+      text-align: center;
   }
   .head .menu .menu-item,
   .footer .menu .menu-item {
@@ -2179,15 +2165,36 @@
 }
 
 @media screen and (max-width: 600px) {
-  .meetings_carousel .meetings_right3,
-  .meetings_carousel .meetings_right2,
-  .meetings_carousel .meetings_right1,
-  .meetings_carousel .meetings_left3,
-  .meetings_carousel .meetings_left2,
-  .meetings_carousel .meetings_left1 {
-    top: 0;
-    left: 0;
-  }
+
+    .head_main_img {
+        display: none;
+    }
+    
+    
+    .head_main_img2 {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  min-height: 620px;
+  max-height: 620px;
+  display: block;
+        top: 10px;
+}
+    .value5 {
+        display: block;
+    }
+    .value2 {
+        display: none;
+    }
+    .achievements_box1,
+    .achievements_box2,
+    .achievements_box3 {
+        display: block;
+        text-align: center;
+    }
+    br {
+        display: none;
+    }
   .achievements_title {
     font-size: 30px;
   }
@@ -2196,17 +2203,26 @@
     overflow-x: auto;
     overflow-y: hidden;
   }
+    .price_table,
+    .price__footer_box{
+        width: 600px;
+    }
   .value,
   .tel_title {
     font-size: 30px;
-    text-align: center;
   }
+    
+    
+    
   .head .head-logo {
     margin-top: 5px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+      margin-right: 5px;
+      width: 100px;
   }
   .phone-item {
     display: inline-block;
+      margin-right: 3px;
   }
   .head {
     padding: 0;
@@ -2214,6 +2230,7 @@
   }
   .phone {
     margin-top: 5px;
+      margin-left: 0;
   }
   /*
     .head .menu {
@@ -2247,9 +2264,6 @@
   .how .row img {
     display: none;
   }
-  .price__order_offset {
-    margin-left: 0;
-  }
   .programs {
     margin: 0;
     padding: 0;
@@ -2272,17 +2286,11 @@
     left: 0;
     z-index: 3;
   }
-  .active .meetings1,
-  .active .meetings2,
-  .active .meetings3,
-  .meetings_left1.active2,
-  .meetings_right1.active2,
-  .meetings_left2.active2,
-  .meetings_right2.active2,
-  .meetings_left3.active2,
-  .meetings_right3.active2 {
-    display: none;
-  }
+    .meetings_carousel .meetings1 {
+        position: absolute;
+        top: -40px;
+        left: -10px;  
+    }
   .meetings_indicators1,
   .meetings_indicators2,
   .meetings_indicators3 {
@@ -2295,16 +2303,25 @@
   .container {
     min-width: 320px;
   }
+    .slide-img {
+        width: 70%;
+        text-align: left;
+    }
+   .meetings_carousel .meetings_right3 {
+       top: -40px;
+        left: 242px;
+    }
+    .meetings_carousel .meetings_left2 {
+        top: 20px;
+        left: -9px;
+    }
   .achievements_img1,
   .achievements_img2,
   .achievements_img3,
   .meetings_right1,
   .meetings_right2,
-  .meetings_right3,
   .meetings_left1,
-  .meetings_left2,
   .meetings_left3,
-  .meetings1,
   .meetings2,
   .meetings3,
   .help_img_2,
@@ -2325,39 +2342,84 @@
   .part_tel_1,
   .part_tel_2,
   .part_tel_3,
-  .tel_img {
+  .tel_img,
+    .value_blue img,
+    .value_orng img,
+    .types_foto1,
+    .q{
     display: none;
   }
+    .questions_title {
+        font-size: 30px;
+        display: block;
+        text-align: center;
+    }
   .wrapper .get_box {
-    width: 200px;
+    width: 300px;
+    left:0;
+    text-align: center;
   }
   .godesignfinal_title,
   .godesignfinal_text,
   .price_margin {
     margin: 0;
   }
+    .types h4,
+    .types p {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-left: 0;
+    }
+    .types_box_right {
+        margin-top: 50px;
+    }
   .godesignfinal_title {
-    margin-top: 60px;
+      margin-top: 60px;
+      display: block;
+   padding-left: 100px;
+          line-height: 40px;
+      text-align: right;
+      font-size: 40px;
   }
-  .godesignfinal_text {
-    width: 100%;
+  .godesignfinal_text,
+    .practice_text,
+    .questions_text{
+      width: 100%;
+      display: block;
+      text-align: right;
+        font-size: 18px;
+        line-height: 20px;
+        
+        padding-left: 100px;
   }
   .godesignfinal {
-    min-height: 1000px;
-    max-height: 1000px;
+    min-height: 650px;
+    max-height: 650px;
+
   }
   .godesignfinal .godesignfinal_btn {
-    margin-top: 350px;
-    width: 300px;
+    margin-top: 300px;
     margin-right: 0;
     float: none;
+      display: block;
+      text-align: center;
   }
+    .godesignfinal_span {
+        display: block;
+      text-align: center;
+    }
   .head .row .menu li {
     display: none;
   }
   .head .row .menu li:last-child {
     display: inline-block;
+      padding: 0 30px 0 30px;
+      margin-top: 5px;
   }
+    .head .menu {
+        float: right;
+    }
   .achievements_img_box img:nth-child(3) {
     left: 100px;
     top: 100px;
@@ -2386,33 +2448,51 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: 20px;
+      text-align: center;
+      display: block;
   }
   .tel_title,
   .get_title {
     width: 100%;
-    margin: 10px;
+        text-align: center;
+      display: block;
   }
-  .get_box {
+  .get_box,
+    .li_4,
+    .li_3,
+    .li_2,
+    .li_1 {
     width: 100%;
+    display: block;
+        text-align: center;
+        padding: 0;
   }
+    .help li,
+    .selection p,
+    .selection_text span{
+        display: block;
+        text-align: center;
+    }
   .teachers_carousel p {
-    width: 60%;
+    width: 100%;
+      text-align: left;
   }
+    .selection p:first-child {
+        margin-top: 50px;
+    }
   .how,
   .ways,
   .qw {
-    text-align: center;
+    display: block;
+      text-align: center;
   }
   .achievements_title,
   .phone_text {
-    margin-left: 0;
     margin-top: 50px;
     width: 100%;
-  }
-  .meetings1,
-  .meetings2,
-  .meetings3 {
-    left: 10px;
+      display: block;
+      text-align: center;
+      margin-left: 0px;
   }
   .practice_box {
     width: 100%;
@@ -2421,7 +2501,7 @@
   .how_title,
   .meetings_title {
     font-size: 30px;
-    text-align: left;
+      margin-left: 0;
   }
   .help_img_1 {
     top: 30px;
@@ -2431,10 +2511,61 @@
     top: 40px;
     left: 400px;
   }
+    .programs-title,
+        .reviews2_title {
+        font-size: 30px;
+        display: block;
+        text-align: center;
+    }
   .meetings_title {
     margin-top: 50px;
-    margin-left: 20px;
+    display: block;
+      text-align: center;
   }
+    .reviews2 {
+        margin-bottom: 50px;
+    }
+
+   .meetings .carousel-indicators .active {
+        height: 50px;
+    }
+    .price__order {
+        margin-left:10px;
+        width: 200px;
+    }
+      .price__order_offset {
+    margin-left: 170px;
+  }
+
+    .price_table td:nth-child(2),
+    .price_table td:nth-child(3){
+        width:  350px;
+    }
+    
+    .mentor_col2 li:nth-child(2):after {
+        top: 102px;
+    }
+    .mentor_col2 li:nth-child(3):after {
+            top: 233px;
+    }
+    .mentor_col2 li:nth-child(4):after {
+        top: 328px;
+    }
+    .price_table td:first-child {
+        width:  200px;
+    }
+    .questions .registration_btn {
+        margin-left: 0;
+    }
+    .meetings_item,
+    .mentor_col h4,
+    .mentor_col p,
+    .mentor_col2 li,
+    .countres_title {
+       display: block;
+      text-align: center; 
+    }
+
   .teachers_title,
   .countres_title,
   .countres_img_box {
@@ -2442,23 +2573,33 @@
     margin-top: 50px;
   }
   .get_title {
-    color: black;
+      display: block;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 0;
   }
   .get p {
-    color: black;
+
     font-size: 25px;
   }
   .reviews2_right,
   .reviews2_left {
-    top: 50px;
-    left: 150px;
+    top: 30px;
+    left: 190px;
   }
   .reviews2_right {
     left: 200px;
   }
   .value_title {
     font-size: 30px;
+      margin-top: 50px;
+      display: block;
+      text-align: center;
   }
+    .value_box {
+        margin-left: 0;
+        width: 100%;
+    }
   .reviews2_box h4:before {
     top: 100px;
     left: 50px;
@@ -2466,16 +2607,75 @@
   .reviews2_margin {
     margin-bottom: 200px;
   }
-  .teachers_carousel_box2 {
-    margin-left: 100px;
-  }
+
   .carousel_arrow {
     top: 480px;
   }
   .data {
-    top: 150px;
-    left: 0;
+    top: 120px;
+    left: 50px;
+      width: 180px;
+      height: 180px;
   }
+    .head.header_fixed, .footer.header_fixed {
+        padding: 0;
+    }
+    .meetings .carousel-indicators .meetings_indicators2 {
+        width: 100%;
+    }
+    .meetings .carousel-indicators div {
+        margin-top: 20px;
+            height: 50px;
+        top: 0;
+    } 
+    .teachers_foto2 img {
+        width: 60%;
+        float: right;
+    }
+    .teachers_foto1 {
+        top: -240px;
+    }
+    .wrapper .get_box {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+    }
+    .margin_value {
+        margin-top: 0;
+    }
+    .part_tel_4, 
+.part_tel_5, 
+.part_tel_6 {
+    display: block;
+    margin: 0 auto;
+}
+.part_tel_5 {
+    position: relative;
+    right: 10px;
+}
+    .ways img {
+        margin: 0 auto;
+    }
+    .value4 li,
+    .value1 li{
+       list-style: disc;
+        margin-left: 20px;
+        color: orange;
+        font-weight: 300;
+    }
+    .value4 li span,
+    .value1 li span{
+        color: black;
+    }
+    .value5 li,
+     .value3 li{
+        font-weight: bold;
+    }
+    .value .bold {
+        font-weight: 300;
+    }
+    .registration_btn {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 1550px) {
@@ -2493,6 +2693,7 @@
   .meetings_indicators3 {
     margin-top: 50px;
   }
+    
 }
 
 @media screen and (min-width: 2500px) {

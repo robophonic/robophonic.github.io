@@ -925,7 +925,7 @@ a:hover {
 /*__________________schedule*/
 
 .schedule {
-  background: url("../images/327950945.png");
+  background: url("../images/327950945.jpg");
   background-size: cover;
   position: relative;
   width: 100%;
@@ -1033,7 +1033,92 @@ a:hover {
   background: white;
   color: black;
 }
+.call1,
+.call2,
+.call3 {
+    display: inline-block;
+    position: relative;
+}
 
+.qwe {
+    position: relative;
+    z-index: 2;
+}
+.soft1,
+.soft2,
+.soft3,
+.soft4,
+.soft5,
+.hard1,
+.hard2,
+.hard3,
+.hard4,
+.hard5,
+.hard6,
+.hard7,
+.hard8,
+.hard9,
+.hard10{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 31px;
+}
+.hard1 {
+   top: 261px;
+   right: 232px;
+}
+.hard2 {
+   top: 309px;
+   right: 190px; 
+}
+.hard3 {
+  right: 230px; 
+    top: 166px; 
+}
+.hard4 {
+    right: 230px;
+    top: 213px;
+}
+.hard5 {
+    right: 230px; 
+    top: 260px;
+}
+.hard6 {
+     top: 309px;
+   right: 230px; 
+}
+.hard7 {
+   top: 122px; 
+    right: 230px; 
+}
+.hard8 {
+    top: 166px; 
+    right: 230px; 
+}
+.hard9 {
+    top: 213px; 
+    right: 230px; 
+}
+.hard10 {
+    top: 260px; 
+    right: 73px; 
+}
+.soft1 {
+    top: 309px;
+}
+.soft2 {
+  top: 260px;  
+}
+.soft3 {
+    top: 213px; 
+}
+.soft4 {
+    top: 166px; 
+}
+.soft5 {
+    top: 122px; 
+}
 @media screen and (max-width: 1200px) {
   .schedule {
     min-height: 2000px;

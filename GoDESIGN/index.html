@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="images/head_logo.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/jquery.parallax.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -41,7 +42,7 @@
   <section class="godesignfinal">
 
     <img src="images/head_main.png" alt="" class="head_main_img">
-
+    <img src="images/head_main2.png" alt="" class="head_main_img2">
     <img src="images/513300980-2.jpg" alt="godesignfinal" class="godesignfinal_img">
     <img src="images/513300980-2.jpg" alt="godesignfinal" class="godesignfinal_img parallax-layer">
     <div class="container">
@@ -66,9 +67,15 @@
         <img src="images/part_te_l3.png" alt="part_tel_3" class="part_tel_3">
       </div>
       <ul class="phone_text">
-        <li class="phone_text1">Дизайнеры необходимы каждому бизнесу, который развивает свой продукт, нуждается <br>в растет и меняется.</li>
-        <li class="phone_text2"> Всё больше покупок делается в интернете. Пользователи взаимодействуют с красивыми продуманными интерфейсами. Поэтому все больше бизнесов делают качественный <br>дизайн</li>
-        <li class="phone_text3" id="phone_text3">Сегодня даже начинающий дизайнер может работать из любой точки земного шара и <br>иметь от 600$ и выше.</li>
+        <li class="phone_text1">
+        <img src="images/part_tel_1.png" alt="part_tel_1" class="part_tel_4">
+        Дизайнеры необходимы каждому бизнесу, который развивает свой продукт, нуждается <br>в растет и меняется.</li>
+        <li class="phone_text2"> 
+        <img src="images/part_tel_2.png" alt="part_tel_1" class="part_tel_5">
+        Всё больше покупок делается в интернете. Пользователи взаимодействуют с красивыми продуманными интерфейсами. Поэтому все больше бизнесов делают качественный <br>дизайн</li>
+        <li class="phone_text3" id="phone_text3">
+        <img src="images/part_te_l3.png" alt="part_tel_3" class="part_tel_6">
+        Сегодня даже начинающий дизайнер может работать из любой точки земного шара и <br>иметь от 600$ и выше.</li>
       </ul>
     </div>
   </section>
@@ -112,20 +119,26 @@
       <div class="row padding_value">
         <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 value4">
           <ul>
-            <li>Работа с правками</li>
-            <li>Создание прототипа (уровень1)</li>
-            <li>Знание графических редакторов</li>
+            <li><span>Работа с правками</span></li>
+            <li><span>Создание прототипа (уровень1)</span></li>
+            <li><span>Знание графических редакторов</span></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2 value_orng value5">
+          <img src="images/line_orng.png" alt="line_blue">
+          <ul>
+            <li>Этими навыками владеют <br> 82% - 91% дизайнеров.</li>
           </ul>
         </div>
         <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 value1">
           <ul>
-            <li class="bold">Командная работа</li>
-            <li class="bold">Базовые знания верстки + UI + UX</li>
-            <li class="bold">user story</li>
-            <li class="bold">Создание прототипа (уровень2)</li>
-            <li class="bold">Формирование собственной ценовой политики</li>
-            <li class="bold">Презентация идеи дизайна</li>
-            <li class="bold">Помочь заказчику выявить цели проекта</li>
+            <li class="bold"><span>Командная работа</span></li>
+            <li class="bold"><span>Базовые знания верстки + UI + UX</span></li>
+            <li class="bold"><span>user story</span></li>
+            <li class="bold"><span>Создание прототипа (уровень2)</span></li>
+            <li class="bold"><span>Формирование собственной ценовой политики</span></li>
+            <li class="bold"><span>Презентация идеи дизайна</span></li>
+            <li class="bold"><span>Помочь заказчику выявить цели проекта</span></li>
           </ul>
         </div>
       </div>
@@ -165,29 +178,60 @@
   <section class="meetings">
     <div class="container">
       <h2 class="meetings_title">104 ЧАСА ЖИВЫХ ВСТРЕЧ <br><span>ЗА 2 МЕСЯЦЕВ ОБУЧЕНИЯ</span></h2>
+
       <div id="carousel-example-generic" class="carousel slide meetings_carousel" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
+<!--
         <div class="carousel-indicators">
-          <div class="meetings_indicators1 col-md-3 col-sm-3 active" data-target="#carousel-example-generic" data-slide-to="0">
+          <div class="meetings_indicators1 col-md-3 col-sm-3 indicators" data-target="#carousel-example-generic" data-slide-to="0">
             <span>Тренинги по Soft Skills</span>
             <img src="images/meetings1.png" alt="meetings1" class="meetings1">
           </div>
-          <div class="meetings_indicators2 col-md-3 col-sm-3" data-target="#carousel-example-generic" data-slide-to="1">
-            <span>Регулярные занятия <br> по Tech Skills </span>
-            <img src="images/meetings1.png" alt="meetings1" class="meetings2">
-          </div>
-          <div class="meetings_indicators3 col-md-3 col-sm-3" data-target="#carousel-example-generic" data-slide-to="2">
+          <div class="meetings_indicators2 col-md-3 col-sm-3 active indicators" data-target="#carousel-example-generic" data-slide-to="1">
+            
+            <img src="images/meetings1.png" alt="meetings1 " class="meetings2">
+          </div> 
+          <div class="meetings_indicators3 col-md-3 col-sm-3 indicators" data-target="#carousel-example-generic" data-slide-to="2">
             <span>Тренинги по английскому</span>
             <img src="images/meetings1.png" alt="meetings1" class="meetings3">
           </div>
+           <div class="meetings_indicators4 col-md-3 col-sm-3 indicators" data-target="#carousel-example-generic" data-slide-to="3">
+            <span>Тренинги по английскому123</span>
+          </div>
         </div>
+-->
+<div class="row">
+          <div class="col-md-12">
+            <div id="slider1">
+              <div class="content">
+                <div class="slide-img" >
+                  <span>Тренинги по Soft Skills</span>
+                </div>
+                <div class="slide-img" >
+                  <span>Регулярные занятия <br> по Tech Skills </span>
+                </div>
+                <div class="slide-img" >
+                  <span>Тренинги по английскому</span>
+                </div>
+                <div class="slide-img" >
+                 <span>Career Skills</span>
+                </div>
+              </div>
+            </div>
+          </div>
+ </div>
 
-
-        <img src="images/meetings_left.png" alt="meetings_left" class="meetings_left1 active2" href="#carousel-example-generic" data-slide="prev" data-target="#carousel-example-generic">
-        <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right1 active2" href="#carousel-example-generic" data-slide="next" data-target="#carousel-example-generic">
+<!--
+        <img src="images/meetings_left.png" alt="meetings_left" class="meetings_left1 " href="#carousel-example-generic" data-slide="prev" data-target="#carousel-example-generic">
+        <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right1 " href="#carousel-example-generic" data-slide="next" data-target="#carousel-example-generic">
+-->
         <img src="images/meetings_left.png" alt="meetings_left" class="meetings_left2" href="#carousel-example-generic" data-slide="prev" data-target="#carousel-example-generic">
-        <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right2" href="#carousel-example-generic" data-slide="next" data-target="#carousel-example-generic">
+        
+        <img src="images/meetings1.png" alt="meetings1" class="meetings1">
+<!--
+        <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right2 " href="#carousel-example-generic" data-slide="next" data-target="#carousel-example-generic">
         <img src="images/meetings_left.png" alt="meetings_left" class="meetings_left3" href="#carousel-example-generic" data-slide="prev" data-target="#carousel-example-generic">
+-->
         <img src="images/meetings_right.png" alt="meetings_right" class="meetings_right3" href="#carousel-example-generic" data-slide="next" data-target="#carousel-example-generic">
         <!-- Controls -->
         <!--
@@ -205,7 +249,7 @@
             </div>
             <img src="images/3-layers.png" alt="">
           </div>
-          <div class="item meetings_item">
+          <div class="item meetings_item ">
             <h3><span>10</span>  онлайн модулей  + <span>10</span> оффлайн встреч</h3>
             <div class="col-md-7 col-sm-7 col-sm-offset-4 col-md-offset-4">
               <p>Каждую неделю в рамках курса в офисе GoIT в Киеве мы организовываем живые практикумы с преподавателями и менторами.</p>
@@ -213,7 +257,17 @@
                 моменты.
               </p>
             </div>
-            <img src="images/3-layers.png" alt="">
+            <img src="images/4-layers.png" alt="">
+          </div>
+          <div class="item meetings_item ">
+            <h3><span>10</span>  онлайн модулей  + <span>10</span> оффлайн встреч</h3>
+            <div class="col-md-7 col-sm-7 col-sm-offset-4 col-md-offset-4">
+              <p>Каждую неделю в рамках курса в офисе GoIT в Киеве мы организовываем живые практикумы с преподавателями и менторами.</p>
+              <p>Задача практикума - групповое решение практических заданий в рамках курса в режиме реального времени. Вместе с менторами и группой вы ищите решение, совместно выполняете поставленную задачу, сразу же задаете вопросы и разбираете сложные
+                моменты.
+              </p>
+            </div>
+            <img src="images/5-layers.png" alt="">
           </div>
           <div class="item meetings_item">
             <h3><span>10</span>  онлайн модулей  + <span>10</span> оффлайн встреч</h3>
@@ -223,7 +277,7 @@
                 моменты.
               </p>
             </div>
-            <img src="images/3-layers.png" alt="">
+            <img src="images/6-layers.png" alt="">
           </div>
         </div>
       </div>
@@ -884,6 +938,7 @@
   <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.parallax.js"></script>
+  <script src="js/owl.carousel.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 
