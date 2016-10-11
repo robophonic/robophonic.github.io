@@ -1,46 +1,54 @@
+$(function() {
+  if ($(window).height() > 980) {
+    if ($(window).width() > 1200) {
+      //        $('.details').attr('id', 'format');
+      $('#fullpage').fullpage();
+      menu: '#navigation'
+    };
+  };
+});
+
 //Modal
-$("#registration-form").on('submit', function (e) {
-    $('#registration-btn').addClass('inactive');
-    $('#registration-btn').prop('disabled', true);
-    e.preventDefault();
-    var $form = $(this);
-    $.ajax({
-      type: 'POST',
-      url: '/registration/index.php',
-      dataType: 'json',
-      data: $form.serialize(),
-      success: function (response) {
-        console.info(response);
-        if (response.status == 'success') {
+$("#registration-form").on('submit', function(e) {
+  $('#registration-btn').addClass('inactive');
+  $('#registration-btn').prop('disabled', true);
+  e.preventDefault();
+  var $form = $(this);
+  $.ajax({
+    type: 'POST',
+    url: '/registration/index.php',
+    dataType: 'json',
+    data: $form.serialize(),
+    success: function(response) {
+      console.info(response);
+      if (response.status == 'success') {
         $form.hide();
         $('.modal-title').hide();
         $('.modal-info').hide();
         $form.html('<p class="callback-success-info"><b>Спасибо!</b>Ваша заявка принята, ожидайте звонка нашего менеджера! </p>').show();
-        }
       }
-    })
-  });
+    }
+  })
+});
 
-  $("#city").click(function(){
-    if ($('#city').val() == 'kiev' && $('.child_age').val() < 15) {
-      $('.price_summ').val('2500');
-      $('#registrationType').val('steamKiev');
-    }
-    else if ($('#city').val() == 'kiev' && $('.child_age').val() >= 15) {
-      $('.price_summ').val('3000');
-      $('#registrationType').val('proKiev');
-    }
-  });
-  $("#city").click(function(){
-    if ($('#city').val() == 'lviv' && $('.child_age').val() < 15) {
-      $('.price_summ').val('2000');
-      $('#registrationType').val('steamLviv');
-    }
-    else if ($('#city').val() == 'lviv' && $('.child_age').val() >= 15) {
-      $('.price_summ').val('2500');
-      $('#registrationType').val('proLviv');
-    }
-  });
+$("#city").click(function() {
+  if ($('#city').val() == 'kiev' && $('.child_age').val() < 15) {
+    $('.price_summ').val('2500');
+    $('#registrationType').val('steamKiev');
+  } else if ($('#city').val() == 'kiev' && $('.child_age').val() >= 15) {
+    $('.price_summ').val('3000');
+    $('#registrationType').val('proKiev');
+  }
+});
+$("#city").click(function() {
+  if ($('#city').val() == 'lviv' && $('.child_age').val() < 15) {
+    $('.price_summ').val('2000');
+    $('#registrationType').val('steamLviv');
+  } else if ($('#city').val() == 'lviv' && $('.child_age').val() >= 15) {
+    $('.price_summ').val('2500');
+    $('#registrationType').val('proLviv');
+  }
+});
 //ScrollTo
 $('.link_programm').click(function() {
   var destination = $('.program').offset().top - 0;

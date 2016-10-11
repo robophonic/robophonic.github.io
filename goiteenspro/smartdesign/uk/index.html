@@ -14,6 +14,35 @@
 </head>
 
 <body>
+ <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter39916150 = new Ya.Metrika({
+                    id:39916150,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/39916150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
   <section class="head">
     <div class="container1">
       <div class="header down">
@@ -166,6 +195,7 @@
       </ul>
     </div>
   </section>
+  
   <section class="format_3">
     <div class="container1">
       <div class="header in">
@@ -204,17 +234,19 @@
       </ul>
     </div>
   </section>
+  
   <section class="legend">
-    <div class="container1">
-      <div class="fire">
-
-        <!--      <img src="../images/fire-1.png" alt="fire">-->
-      </div>
+    <div class="container">
+      <div class="legend_box">
       <h3 class="legend_title left">Цікава подорож чекає на тебе за цим рішучим кроком!</h3>
       <p class="legend_text left">Підлітка очікує захоплююча подорож: години в лабораторіях розуму, створюючи свої унікальні світи та простори. Підтримка менторів GoITeens протягом усього освітнього шляху, які допоможуть розкрити таланти та відчути прекрасне. За 9 місяців сформується
         портфоліо проектів для перших роботодавців.
       </p>
       <a data-toggle="modal" data-target="#myModal" class="registration reg_legend left">Подай заявку!</a>
+        </div>
+      <div class="fire">
+        <img src="../images/fire-1.png" alt="fire" class="fire_img">
+      </div>
     </div>
   </section>
   <section class="schedule">
@@ -308,8 +340,8 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title">РЕЄСТРАЦІЯ</h3>
-        <p class="modal-info">Заповніть форму нижче, і отримаєте доступ до нашого курсу</p>
+        <h3 class="modal-title">КОНСУЛЬТАЦІЯ</h3>
+        <p class="modal-info">Заповніть форму нижче і з вами зв'яжеться наш менеджер</p>
       </div>
       <div class="form-box">
         <form id="registration-form"  action='/registration/' method='post'>

@@ -1,4 +1,13 @@
-    //ScrollTo
+$(function() {
+    if ($(window).height() > 760) {
+        if ($(window).width() > 1200) {
+        $('.details').attr('id', 'format');
+       $('#fullpage').fullpage();
+        menu: '#navigation'
+        }; 
+}; 
+ });
+
 $('.link_programm').click(function() {
   var destination = $('.program').offset().top - 0;
   $('body,html').animate({

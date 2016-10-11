@@ -1,383 +1,401 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>GoITeens FrontEnd</title>
   <link rel="shortcut icon" href="../images/Fire-head.png" type="image/x-icon">
-   <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/hover.css"  media="all">
+  <link rel="stylesheet" href="../css/hover.css" media="all">
   <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/jquery.fullPage.css">
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/style.css">
+  <!--   <base target="_blank" />-->
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter39915690 = new Ya.Metrika({
+            id: 39915690,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+          });
+        } catch (e) {}
+      });
 
-   <base target="_blank" />
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function() {
+          n.parentNode.insertBefore(s, n);
+        };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else {
+        f();
+      }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/39915690" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
 </head>
+
 <body>
-    <section class="head">
-    <div class="container">
-    <div class="header">
-       <a href="http://goiteens.goit.ua/language/uk/" target="_self">
-        <img src="../images/header_logo.png" class="goiteens_logo"
-             alt="goiteens"> </a>
-        <div class="nav">
-          <a class="link_programm">Програма</a>
-          <a class="link_format">Формат </a>
-          <a class="link_schedule">Розклад </a>
-        </div>
+  <div id="fullpage">
+    <section class="head section" data-anchor="a">
+      <div class="container">
+        <div class="header">
+          <a href="http://goiteens.goit.ua/language/uk/" target="_self">
+            <img src="../images/header_logo.png" class="goiteens_logo" alt="goiteens"> </a>
+          <div class="nav" id="navigation">
+            <a class="link_programm" href="#b" data-menuanchor="b">Програма</a>
+            <a class="link_format" href="#c" data-menuanchor="c">Формат</a>
+            <a class="link_schedule" href="#g" data-menuanchor="g">Розклад</a>
+          </div>
           <a data-toggle="modal" data-target="#myModal" class="registration hvr-shutter-in-vertical head_btn_clr">Подати заявку</a>
+        </div>
+        <div class="box">
+          <h1 class="head_title">Стань майстром Web-розробки</h1>
+          <h2 class="head_sub_title">Курс для підлітків 15-17 років</h2>
+          <div class="row head_clm_box">
+            <div class="col-md-4 head_clm">
+              <img src="../images/rounded-rectangle-10-copy-2.png" alt="rr"> <br> Практика за підтримки наставника
+            </div>
+            <div class="col-md-4 head_clm">
+              <img src="../images/rounded-rectangle-10-copy-2.png" alt="rr"> <br> Членство в IТ-спільноті підлітків
+            </div>
+            <div class="col-md-4 head_clm">
+              <img src="../images/rounded-rectangle-10-copy-2.png" alt="rr"> <br> Портфоліо власних проектів підлітка
+            </div>
+          </div>
+          <a data-toggle="modal" data-target="#myModal" class="head_registration hvr-shutter-out-vertical">Xочу стати легендою Web-розробки</a>
+          <div class="head_img"></div>
+          <img src="../images/cool.png" class="cool" alt="cool">
+        </div>
       </div>
-    <div class="box right">
-        <h1 class="head_title">Стань майстром Web-розробки</h1>
-        <h2 class="head_sub_title">Курс для підлітків 15-17 років</h2>
-        <div class="row head_clm_box">
-        <div class="col-md-4 head_clm">
-        <img src="../images/rounded-rectangle-10-copy-2.png" alt="rr"> <br>
-        Практика за підтримки наставника
-        </div>
-        <div class="col-md-4 head_clm">
-        <img src="../images/rounded-rectangle-10-copy-2.png" alt="rr"> <br>
-        Членство в IТ-спільноті підлітків
-        </div>
-        <div class="col-md-4 head_clm">
-        <img src="../images/rounded-rectangle-10-copy-2.png" alt="rr"> <br>
-        Портфоліо власних проектів підлітка
-        </div>
-        </div>
-        <a data-toggle="modal" data-target="#myModal" class="head_registration hvr-shutter-out-vertical">Xочу стати легендою Web-розробки</a>
-        <div class="head_img"></div>
-        <img src="../images/cool.png" class="cool" alt="cool">
-    </div>                                                     
-    </div>
-    <img src="../images/d.png" class="look_more" alt="смотри ниже">
+      <img src="../images/d.png" class="look_more" alt="смотри ниже">
     </section>
-    
-<section class="program">
-    <div class="container">
-    <div class="header">
-       <a href="http://goiteens.goit.ua/language/uk/" target="_self">
-        <img src="../images/header_logo.png" class="goiteens_logo"
-             alt="goiteens"> </a>
-        <div class="nav">
-          <a class="link_programm">Програма</a>
-          <a class="link_format">Формат</a>
-          <a class="link_schedule">Розклад</a>
-        </div>
+
+    <section class="program section" data-anchor="b">
+      <div class="container">
+        <div class="header">
+          <a href="http://goiteens.goit.ua/language/uk/" target="_self">
+            <img src="../images/header_logo.png" class="goiteens_logo" alt="goiteens"> </a>
+          <div class="nav" id="navigation">
+            <a class="link_programm" href="#b" data-menuanchor="b">Програма</a>
+            <a class="link_format" href="#c" data-menuanchor="c">Формат</a>
+            <a class="link_schedule" href="#g" data-menuanchor="g">Розклад</a>
+          </div>
           <a data-toggle="modal" data-target="#myModal" class="registration hvr-shutter-in-vertical head_btn_clr">Подати заявку</a>
-      </div>
-    <div class="box left">
-    <h1 class="program_title">Програма</h1>
-    <div class="row">
-        <div class="col-md-3 col-md-offset-1 col-xs-12">
-            <h3>9 місяців</h3>
-           <img src="../images/prog1.png" alt="prog1"><br>
-           <p>I етап </p>
-            <ul>
+        </div>
+        <div class="box left">
+          <h1 class="program_title">Програма</h1>
+          <div class="row">
+            <div class="col-md-3 col-md-offset-1 col-xs-12">
+              <h3>9 місяців</h3>
+              <img src="../images/prog1.png" alt="prog1"><br>
+              <p>I етап </p>
+              <ul>
                 <li> <span>Створення портфоліо</span></li>
                 <li> <span>Базові знання CSS</span></li>
                 <li> <span>Знайомство з JS </span></li>
-           </ul>
-        </div>
-        <div class="col-md-3 col-md-offset-1 col-xs-12">
-            <h3>6 год/тиждень  </h3>
-           <img src="../images/prog2.png" alt="prog2"><br>
-           <p>II етап </p>
-           <ul>
-               <li> <span>Створення проекту в команді</span></li>
-               <li> <span>Робота з формами і таблицями</span></li>
-               <li> <span>Просунутий CSS та JS</span></li>
-           </ul>
-        </div>
-        <div class="col-md-3 col-md-offset-1 col-xs-12">
-            <h3>три триместри</h3>
-           <img src="../images/prog3.png" alt="prog3"><br>
-           <p>III етап </p>
-           <ul>
-               <li> <span>JS фреймворки</span></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-xs-12">
+              <h3>6 год/тиждень  </h3>
+              <img src="../images/prog2.png" alt="prog2"><br>
+              <p>II етап </p>
+              <ul>
+                <li> <span>Створення проекту в команді</span></li>
+                <li> <span>Робота з формами і таблицями</span></li>
+                <li> <span>Просунутий CSS та JS</span></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-xs-12">
+              <h3>три триместри</h3>
+              <img src="../images/prog3.png" alt="prog3"><br>
+              <p>III етап </p>
+              <ul>
+                <li> <span>JS фреймворки</span></li>
                 <li> <span>CMS-like projects</span></li>
                 <li> <span>Website optimization</span></li>
-           </ul>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-    </div>
-</div>
-</section>
-
-
-    
-<section class="trimester1">
-    <div class="container">
-    <div class="header">
-       <a href="http://goiteens.goit.ua/language/uk/" target="_self">
-        <img src="../images/header_logo.png" class="goiteens_logo"
-             alt="goiteens"> </a>
-        <div class="nav">
-          <a class="link_programm">Програма</a>
-          <a class="link_format">Формат</a>
-          <a class="link_schedule">Розклад</a>
-        </div>
-          <a data-toggle="modal" data-target="#myModal" class="registration hvr-shutter-in-vertical head_btn_clr">Подати заявку</a>
       </div>
-      <div class="box right">
-       <div class="box1">Перший триместр</div> <br>
-        <h3 class="trimester1_title">Знайомство з WEB</h3>
-       <p class="trimester1_text">На першому етапі відбувається тестування підлітків та формування команд з 12 осіб та 2 тренерів у кожній.</p>
-       <div class="row">
-           <div class="col-md-2 col-xs-12">
-           <img src="../images/web1.png" alt="web1">
-           <p>Отримаємо базові знання HTML/CSS/JS</p>  
-           </div>
-           <div class="col-md-2 col-xs-12">
-               <img src="../images/web2.png" alt="web2">
-               <p>Створимо портфоліо перших проектів</p>
-           </div>
-           <div class="col-md-2 col-xs-12">
-               <img src="../images/web3.png" alt="web13">
-               <p>Познайомимось з CSS </p>
-           </div>
-           <div class="col-md-2 col-xs-12">
-               <img src="../images/web4.png" alt="web4">
-               <p>Почнемо використовувати JS</p>
-           </div>
-       </div>
-        </div>
-    </div>
     </section>
 
-
-<section class="trimester2">
-    <div class="container">
-    <div class="header">
-       <a href="http://goiteens.goit.ua/language/uk/" target="_self">
-        <img src="../images/header_logo.png" class="goiteens_logo"
-             alt="goiteens"> </a>
-        <div class="nav">
-          <a class="link_programm">Програма</a>
-          <a class="link_format">Формат</a>
-          <a class="link_schedule">Розклад</a>
-        </div>
+    <section class="trimester1 section" data-anchor="c">
+      <div class="container">
+        <div class="header">
+          <a href="http://goiteens.goit.ua/language/uk/" target="_self">
+            <img src="../images/header_logo.png" class="goiteens_logo" alt="goiteens"> </a>
+          <div class="nav" id="navigation">
+            <a class="link_programm" href="#b" data-menuanchor="b">Програма</a>
+            <a class="link_format" href="#c" data-menuanchor="c">Формат</a>
+            <a class="link_schedule" href="#g" data-menuanchor="g">Розклад</a>
+          </div>
           <a data-toggle="modal" data-target="#myModal" class="registration hvr-shutter-in-vertical head_btn_clr">Подати заявку</a>
-      </div>
-      <div class="box left">
-       <div class="box2">Другий триместр</div> <br>
-        <h3 class="trimester2_title">Нарощуємо мускулатуру</h3>
-       <p class="trimester2_text">На другому етапі відбувається активна робота в команді, вчимося керувати і делегувати. Початок роботи над проектами середньої ланки, завдання в яких ускладнюються.</p>
-       <div class="row">
-           <div class="col-md-3 col-xs-12">
-           <img src="../images/trimester2-1.png" alt="trimester2">
-           <p>Створимо макет в СSS</p>  
-           </div>
-           <div class="col-md-3 col-xs-12">
-               <img src="../images/trimester2-2.png" alt="trimester2">
-               <p>Вивчимо деталі "адаптивного" дизайну</p>
-           </div>
-           <div class="col-md-3 col-xs-12">
-               <img src="../images/trimester2-3.png" alt="trimester2">
-               <p>Попрацюємо з технологією flexbox</p>
-           </div>
-       </div>
-       <div class="row">
-           <div class="col-md-3  col-xs-12">
-           <img src="../images/trimester2-4.png" alt="trimester2">
-           <p>Вибудуємо складні форми і таблиці</p>  
-           </div>
-           
-           <div class="col-md-3 col-xs-12">
-               <img src="../images/trimester2-5.png" alt="trimester2">
-               <p>Поекспериме- нтуємо з даними у JS</p>
-           </div>
-           <div class="col-md-3 col-xs-12">
-               <img src="../images/trimester2-6.png" alt="trimester2">
-               <p>Познайомимось з активними Frameworks</p>
-           </div>
-       </div>
         </div>
-    </div>
+        <div class="box right">
+          <div class="box1">Перший триместр</div> <br>
+          <h3 class="trimester1_title">Знайомство з WEB</h3>
+          <p class="trimester1_text">На першому етапі відбувається тестування підлітків та формування команд з 12 осіб та 2 тренерів у кожній.</p>
+          <div class="row">
+            <div class="col-md-2 col-xs-12">
+              <img src="../images/web1.png" alt="web1">
+              <p>Отримаємо базові знання HTML/CSS/JS</p>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <img src="../images/web2.png" alt="web2">
+              <p>Створимо портфоліо перших проектів</p>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <img src="../images/web3.png" alt="web13">
+              <p>Познайомимось з CSS </p>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <img src="../images/web4.png" alt="web4">
+              <p>Почнемо використовувати JS</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-<section class="trimester3">
-    <div class="container">
-    <div class="header">
-       <a href="http://goiteens.goit.ua/language/uk/" target="_self">
-        <img src="../images/header_logo.png" class="goiteens_logo"
-             alt="goiteens"> </a>
-        <div class="nav">
-          <a class="link_programm">Програма</a>
-          <a class="link_format">Формат</a>
-          <a class="link_schedule">Розклад</a>
-        </div>
+    <section class="trimester2 section" data-anchor="d">
+      <div class="container">
+        <div class="header">
+          <a href="http://goiteens.goit.ua/language/uk/" target="_self">
+            <img src="../images/header_logo.png" class="goiteens_logo" alt="goiteens"> </a>
+          <div class="nav" id="navigation">
+            <a class="link_programm" href="#b" data-menuanchor="b">Програма</a>
+            <a class="link_format" href="#c" data-menuanchor="c">Формат</a>
+            <a class="link_schedule" href="#g" data-menuanchor="g">Розклад</a>
+          </div>
           <a data-toggle="modal" data-target="#myModal" class="registration hvr-shutter-in-vertical head_btn_clr">Подати заявку</a>
-      </div>
-      <div class="box right">
-       <div class="box3">Третій триместр</div> <br>
-        <h3 class="trimester3_title">Фінал</h3>
-       <p class="trimester3_text">На третьому етапі команди починають посилено працювати. Зростає темп роботи.</p>
-       <div class="row">
-           <div class="col-md-2 col-xs-12">
-           <img src="../images/trimester3-1.png" alt="trimester3">
-           <p>Познайомимось с Angular та React. Дізнаємось різницю між ними</p>  
-           </div>
-           <div class="col-md-3 col-xs-12">
-               <img src="../images/trimester3-2.png" alt="trimester3" class="trimester3_1">
-               <p>Вибудуємо "величезні системи" з необхідними деталями</p>
-           </div>
-           <div class="col-md-3 col-xs-12">
-               <img src="../images/trimester3-3.png" alt="trimester3">
-               <p>Займемося оптимізацією та фіналізацією проекту</p>
-           </div>
-           <div class="col-md-3 col-xs-12">
-               <img src="../images/trimester3-4.png" alt="trimester3" class="trimester3_1">
-               <p>Презентуємо проект перед експертами</p>
-           </div>
-       </div>
         </div>
-    </div>
+        <div class="box left">
+          <div class="box2">Другий триместр</div> <br>
+          <h3 class="trimester2_title">Нарощуємо мускулатуру</h3>
+          <p class="trimester2_text">На другому етапі відбувається активна робота в команді, вчимося керувати і делегувати. Початок роботи над проектами середньої ланки, завдання в яких ускладнюються.</p>
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <img src="../images/trimester2-1.png" alt="trimester2">
+              <p>Створимо макет в СSS</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <img src="../images/trimester2-2.png" alt="trimester2">
+              <p>Вивчимо деталі "адаптивного" дизайну</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <img src="../images/trimester2-3.png" alt="trimester2">
+              <p>Попрацюємо з технологією flexbox</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3  col-xs-12">
+              <img src="../images/trimester2-4.png" alt="trimester2">
+              <p>Вибудуємо складні форми і таблиці</p>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <img src="../images/trimester2-5.png" alt="trimester2">
+              <p>Поекспериме- нтуємо з даними у JS</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <img src="../images/trimester2-6.png" alt="trimester2">
+              <p>Познайомимось з активними Frameworks</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-<section class="beside">
-    <div class="container">
-    <div class="header">
-       <a href="http://goiteens.goit.ua/language/uk/" target="_self">
-        <img src="../images/header_logo.png" class="goiteens_logo"
-             alt="goiteens"> </a>
-        <div class="nav">
-          <a class="link_programm">Програма</a>
-          <a class="link_format">Формат</a>
-          <a class="link_schedule">Розклад</a>
-        </div>
+    <section class="trimester3 section" data-anchor="e">
+      <div class="container">
+        <div class="header">
+          <a href="http://goiteens.goit.ua/language/uk/" target="_self">
+            <img src="../images/header_logo.png" class="goiteens_logo" alt="goiteens"> </a>
+          <div class="nav" id="navigation">
+            <a class="link_programm" href="#b" data-menuanchor="b">Програма</a>
+            <a class="link_format" href="#c" data-menuanchor="c">Формат</a>
+            <a class="link_schedule" href="#g" data-menuanchor="g">Розклад</a>
+          </div>
           <a data-toggle="modal" data-target="#myModal" class="registration hvr-shutter-in-vertical head_btn_clr">Подати заявку</a>
+        </div>
+        <div class="box right">
+          <div class="box3">Третій триместр</div> <br>
+          <h3 class="trimester3_title">Фінал</h3>
+          <p class="trimester3_text">На третьому етапі команди починають посилено працювати. Зростає темп роботи.</p>
+          <div class="row">
+            <div class="col-md-2 col-xs-12">
+              <img src="../images/trimester3-1.png" alt="trimester3">
+              <p>Познайомимось с Angular та React. Дізнаємось різницю між ними</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <img src="../images/trimester3-2.png" alt="trimester3" class="trimester3_1">
+              <p>Вибудуємо "величезні системи" з необхідними деталями</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <img src="../images/trimester3-3.png" alt="trimester3">
+              <p>Займемося оптимізацією та фіналізацією проекту</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <img src="../images/trimester3-4.png" alt="trimester3" class="trimester3_1">
+              <p>Презентуємо проект перед експертами</p>
+            </div>
+          </div>
+        </div>
       </div>
-    <div class="box left">
-        <h1 class="head_title">Мы всегда будем рядом </h1>
-        <h2 class="head_sub_title">Підтримка тренерів GoITeens протягом усього освітнього шляху, які допоможуть розкрити таланти підлітка і спрямувати в питаннях професійного розвитку. За 9 місяців сформується портфоліо проектів для перших роботодавців.</h2>
-<h2 class="head_sub_title">Залишився лише останній крок на шляху до мети - зареєструватись на курс!</h2>
-
-        <a data-toggle="modal" data-target="#myModal" class="head_registration hvr-shutter-out-vertical">Записатися на курс</a>
-        <div class="head_img"></div>
-    </div>
-    </div>
     </section>
 
-<section class="result">
-    <div class="container">
-    <div class="header">
-       <a href="http://goiteens.goit.ua/language/uk/" target="_self">
-        <img src="../images/header_logo.png" class="goiteens_logo"
-             alt="goiteens"> </a>
-        <div class="nav">
-          <a class="link_programm">Програма</a>
-          <a class="link_format">Формат</a>
-          <a class="link_schedule">Розклад</a>
-        </div>
+    <section class="beside section" data-anchor="f">
+      <div class="container">
+        <div class="header">
+          <a href="http://goiteens.goit.ua/language/uk/" target="_self">
+            <img src="../images/header_logo.png" class="goiteens_logo" alt="goiteens"> </a>
+          <div class="nav" id="navigation">
+            <a class="link_programm" href="#b" data-menuanchor="b">Програма</a>
+            <a class="link_format" href="#c" data-menuanchor="c">Формат</a>
+            <a class="link_schedule" href="#g" data-menuanchor="g">Розклад</a>
+          </div>
           <a data-toggle="modal" data-target="#myModal" class="registration hvr-shutter-in-vertical head_btn_clr">Подати заявку</a>
+        </div>
+        <div class="box left">
+          <h1 class="head_title">Мы всегда будем рядом </h1>
+          <h2 class="head_sub_title">Підтримка тренерів GoITeens протягом усього освітнього шляху, які допоможуть розкрити таланти підлітка і спрямувати в питаннях професійного розвитку. За 9 місяців сформується портфоліо проектів для перших роботодавців.</h2>
+          <h2 class="head_sub_title">Залишився лише останній крок на шляху до мети - зареєструватись на курс!</h2>
+          <a data-toggle="modal" data-target="#myModal" class="head_registration hvr-shutter-out-vertical">Записатися на курс</a>
+          <div class="head_img"></div>
+        </div>
       </div>
-      <div class="box right">
-         <h1 class="head_title">Результати навчання в GoITeens для підлітка</h1>
-       <div class="row">
-           <div class="col-md-3">
-           <img src="../images/result1.png" alt="result">
-           <p>отримає спеціалізацію, а не лише базові знання та навики</p>  
-           </div>
-           <div class="col-md-3">
-               <img src="../images/result2.png" alt="result">
-               <p>вивчить основи мови розмітки HTML та способи застосування CSS</p>
-           </div>
-           <div class="col-md-3">
-               <img src="../images/result3.png" alt="result">
-               <p>зможе створювати web-сторінки (текстове та графічне наповнення, гіперпосилання)</p>
-           </div>
-       </div>
-         <div class="row">
-           <div class="col-md-3">
-           <img src="../images/result4.png" alt="result">
-           <p>навчиться створювати інтерфейси для CMS</p>  
-           </div>
-           <div class="col-md-3">
-               <img src="../images/result5.png" alt="result">
-               <p>навчиться ефективно працювати з даними та інфографікою</p>
-           </div>
-           <div class="col-md-3">
-               <img src="../images/result6.png" alt="result">
-               <p>опанує JavaScript, одну з найбільш популярних мов програмування на сьогодні</p>
-           </div>
-       </div>
-       
-        </div>
-    </div>
-    </section>
-    
-    
-    
-<section class="footer">
-    <div class="container">
-    <div class="header">
-       <a href="http://goiteens.goit.ua/language/uk/" target="_self">
-        <img src="../images/header_logo.png" class="goiteens_logo"
-             alt="goiteens"> </a>
-        <div class="nav">
-          <a class="link_programm">Програма</a>
-          <a class="link_format">Формат</a>
-          <a class="link_schedule">Розклад</a>
-        </div>
-          <a data-toggle="modal" data-target="#myModal" class="registration hvr-shutter-in-vertical head_btn_clr">Подати заявку</a>
-      </div>
-      <div class="box left">
-      <div class="head_img"></div>
-       <div class="row">
-        <div class="col-md-4 col-xs-12">
-            <h3>Вівторок </h3>
-            <h3>offline/soft skills</h3>
-           <p>18:00 - 20:00</p>
-        </div>
-     <div class="col-md-4 col-xs-12">
-            <h3>Четвер </h3>
-            <h3>online/hard skills</h3>
-           <p>18:00 - 20:00 </p>
-  
-        </div>
-         <div class="col-md-4 col-xs-12">
-            <h3>Субота </h3>
-            <h3>offline/hard skills</h3>
-                     <p>11:00 - 13:00/</p>
-                     <p>17:00 - 19:00</p>
-        </div>
-    </div>
-       
-        </div>
-    </div>
     </section>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title">РЕЄСТРАЦІЯ</h3>
-        <p class="modal-info">Заповніть форму нижче, і отримаєте доступ до нашого курсу</p>
+    <section class="result section" data-anchor="g">
+      <div class="container">
+        <div class="header">
+          <a href="http://goiteens.goit.ua/language/uk/" target="_self">
+            <img src="../images/header_logo.png" class="goiteens_logo" alt="goiteens"> </a>
+          <div class="nav" id="navigation">
+            <a class="link_programm" href="#b" data-menuanchor="b">Програма</a>
+            <a class="link_format" href="#c" data-menuanchor="c">Формат</a>
+            <a class="link_schedule" href="#g" data-menuanchor="g">Розклад</a>
+          </div>
+          <a data-toggle="modal" data-target="#myModal" class="registration hvr-shutter-in-vertical head_btn_clr">Подати заявку</a>
+        </div>
+        <div class="box right">
+          <h1 class="head_title">Результати навчання в GoITeens для підлітка</h1>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="../images/result1.png" alt="result">
+              <p>отримає спеціалізацію, а не лише базові знання та навики</p>
+            </div>
+            <div class="col-md-3">
+              <img src="../images/result2.png" alt="result">
+              <p>вивчить основи мови розмітки HTML та способи застосування CSS</p>
+            </div>
+            <div class="col-md-3">
+              <img src="../images/result3.png" alt="result">
+              <p>зможе створювати web-сторінки (текстове та графічне наповнення, гіперпосилання)</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="../images/result4.png" alt="result">
+              <p>навчиться створювати інтерфейси для CMS</p>
+            </div>
+            <div class="col-md-3">
+              <img src="../images/result5.png" alt="result">
+              <p>навчиться ефективно працювати з даними та інфографікою</p>
+            </div>
+            <div class="col-md-3">
+              <img src="../images/result6.png" alt="result">
+              <p>опанує JavaScript, одну з найбільш популярних мов програмування на сьогодні</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="form-box">
-        <form id="registration-form"  action='/registration/' method='post'>
-          <label>Ім’я
+    </section>
+
+    <section class="footer section" data-anchor="h">
+      <div class="container">
+        <div class="header">
+          <a href="http://goiteens.goit.ua/language/uk/" target="_self">
+            <img src="../images/header_logo.png" class="goiteens_logo" alt="goiteens"> </a>
+          <div class="nav" id="navigation">
+            <a class="link_programm" href="#b" data-menuanchor="b">Програма</a>
+            <a class="link_format" href="#c" data-menuanchor="c">Формат</a>
+            <a class="link_schedule" href="#g" data-menuanchor="g">Розклад</a>
+          </div>
+          <a data-toggle="modal" data-target="#myModal" class="registration hvr-shutter-in-vertical head_btn_clr">Подати заявку</a>
+        </div>
+        <div class="box left">
+          <div class="head_img"></div>
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <h3>Вівторок </h3>
+              <h3>offline/soft skills</h3>
+              <p>18:00 - 20:00</p>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <h3>Четвер </h3>
+              <h3>online/hard skills</h3>
+              <p>18:00 - 20:00 </p>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <h3>Субота </h3>
+              <h3>offline/hard skills</h3>
+              <p>11:00 - 13:00/</p>
+              <p>17:00 - 19:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title">КОНСУЛЬТАЦІЯ</h3>
+          <p class="modal-info">Заповніть форму нижче і з вами зв'яжеться наш менеджер</p>
+        </div>
+        <div class="form-box">
+          <form id="registration-form" action='/registration/' method='post'>
+            <label>Ім’я
             <input class="input-text" type="text" name="firstname"  required>
           </label>
-          <label>Прізвище
+            <label>Прізвище
             <input class="input-text" type="text" name="lastname"  required>
           </label>
-          <label>
+            <label>
             Вік дитини
             <input class="input-text child_age" type="text" name="Child Age"   required>
           </label>
-          <label>
+            <label>
             Телефон 380...
             <input class="input-text" type="tel" name="Phone" id="phone"  required>
           </label>
-          <label>
+            <label>
             E-mail
             <input class="input-text" type="email" name="email"  required>
           </label>
-          
-          <label>
+
+            <label>
             Місто
             <select class="select" name="Location" id="city" required>
               <option value="" selected disabled>Виберіть Місто</option>
@@ -385,30 +403,31 @@
               <option value="lviv" >Львів</option>
             </select>
           </label>
-          <label>
+            <label>
             Вартість
             <input class="input-text price_summ" type="text" name="price_summ" disabled value="">
           </label>
-          <input type="hidden" name="task" value="registration">
-          <input type="hidden" id="registrationType" name="registrationType" value="default_registration">
-          <input type="hidden" id="utm_source" name="utm_source" value="">
-          <input type="hidden" id="utm_content" name="utm_content" value="">
-          <input type="hidden" id="utm_medium" name="utm_medium" value="">
-          <input type="hidden" id="utm_term" name="utm_term" value="">
-          <input type="hidden" id="utm_campaign" name="utm_campaign" value="">
-          <input type="hidden" id="google_id" name="google_id" value="">
-          <input type="hidden" name="task" value="registration">
-          <input id="registration-btn" class="input-submit" type="submit" value="Зареєструватися на курс">
-        </form>
+            <input type="hidden" name="task" value="registration">
+            <input type="hidden" id="registrationType" name="registrationType" value="default_registration">
+            <input type="hidden" id="utm_source" name="utm_source" value="">
+            <input type="hidden" id="utm_content" name="utm_content" value="">
+            <input type="hidden" id="utm_medium" name="utm_medium" value="">
+            <input type="hidden" id="utm_term" name="utm_term" value="">
+            <input type="hidden" id="utm_campaign" name="utm_campaign" value="">
+            <input type="hidden" id="google_id" name="google_id" value="">
+            <input type="hidden" name="task" value="registration">
+            <input id="registration-btn" class="input-submit" type="submit" value="Зареєструватися на курс">
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
- <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="../js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../js/script.js"></script>
-  
+
 </body>
+
 </html>

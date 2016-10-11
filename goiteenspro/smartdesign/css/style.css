@@ -28,15 +28,25 @@ a:hover {
 /*header*/
 
 .head {
-  background: url(../images/bg-head.jpg) no-repeat 50%;
+  background: url("../images/bg-copy-2.jpg") no-repeat 50%;
     background-size: cover;
   text-align: center;
-   min-height: 1400px;
-    max-height: 1400px;
+}
+.head .container {
+    position: relative;
+}
+.fire_head {
+    position: absolute;
+    width: 50%;
+    top: 0px;
+    left: 0;
+    margin-left: 26%;
+    z-index: 1;
 }
 .mouse_scroll {
     position: relative;
-    bottom: 100px;
+    bottom: 50px;
+    right: 37px;
 }
 .header {
     padding-top: 50px;
@@ -53,14 +63,6 @@ a:hover {
   float: left;
 }
 
-
-/*
-.f_logo {
-  width: 18px;
-  height: 34px;
-}
-*/
-
 .nav {
   display: inline-block;
   padding-top: 7px;
@@ -70,8 +72,9 @@ a:hover {
 .nav a {
   color: white;
   font-family: HelveticaNeueCyrLight;
-  font-size: 2vw;
-  margin-right: 20%;
+  font-size: 25px;
+  width: 30%;
+  margin-right: 50px;
 }
 
 .nav a:last-child {
@@ -87,7 +90,7 @@ a:hover {
   border-radius: 10px;
   color: white;
   font-family: HelveticaNeueCyrLight;
-  font-size: 2vw;
+  font-size: 30px;
   padding: 5px 15px;
   margin-right: 25px;
 }
@@ -97,25 +100,27 @@ a:hover {
 }
 
 .about_text {
-  margin-top: 820px;
+  margin-top: 200px;
   text-align: center;
+    position: relative;
+    z-index: 5;
 }
 
 .about_right {
   display: inline-block;
   text-align: right;
-  margin-left: 10%;
+    width: 48%;
 }
 
 .about_left {
   display: inline-block;
   text-align: left;
-  margin-right: 10%;
+    width: 48%;
 }
 
 .about_text p {
   padding-bottom: 80px;
-  font-size: 2vw;
+  font-size: 30px;
   text-shadow: 0px 0px 5px #000000;
 }
 
@@ -189,7 +194,6 @@ a:hover {
   font-size: 4vw;
   text-align: center;
   margin-top: 150px;
-  /*  margin-bottom: 50px;*/
   font-family: HelveticaNeueCyrUltraLight;
 }
 
@@ -290,58 +294,52 @@ a:hover {
 /*legend*/
 
 .legend {
-  background: url(../images/bg-leg.png) no-repeat 90%;
-    background-size: cover;
-  min-height: 400px;
+  background: url(../images/bg-leg.png);
+  background-size: cover;
   position: relative;
-    min-height: 450px;
-    max-height: 450px;
-    padding: 50px 0 0 50px;
-    
 }
 
 .legend_title {
-  position: relative;
   font-size: 2.3vw;
-  width: 69%;
-  position: relative;
   z-index: 2;
+  padding-top: 50px;
 }
 
 .legend_text {
   font-family: HelveticaNeueCyrUltraLight;
   margin-top: 15px;
   font-size: 1.3vw;
-  width: 55%;
-  position: relative;
   z-index: 2;
 }
 
 .reg_legend {
-  position: relative;
+  display: block;
   z-index: 2;
   text-align: center;
   display: inline-block;
-  width: 55%;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .fire {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: url(../images/fire-1.png);
-  /*        no-repeat 100%;*/
-  background-size: cover;
-  /*
-    width: 300px;
-    height: 300px;
-*/
-  display: inline-block;
-  float: right;
-  height: 400px;
-  width: 700px;
-  ;
+    width: 48%;
+    height: 100%;
+/*  background: url(../images/fire-1.png);*/
+/*    background-size: cover;*/
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.fire_img {
+width: 100%;
+height: 100%;
+}
+
+.legend_box {
+    display: inline-block;
+    width: 57%;
+    box-sizing: border-box;
 }
 
 
@@ -488,15 +486,19 @@ footer {
 /*Адаптив----------------------------------------------*/
 
 @media screen and (max-width: 1370px) {
+/*
   .about_text {
     margin-top: 890px;
   }
+*/
+/*
   .about_right {
     margin-left: 11%;
   }
   .about_left {
     margin-right: 11%;
   }
+*/
   .nav a {
     margin-right: 50px;
   }
@@ -507,22 +509,26 @@ footer {
   .nav_footer a {
     margin-left: 30px;
   }
-  .legend {
-    min-height: 380px;
-    max-height: 380px;
-  }
-  .fire {
-    height: 350px;
-    width: 630px;
-  }
+    .mouse_scroll {
+        right: 25px;
+    }
 }
 
-.fire_head {
-  display: none;
-}
+
 
 
 @media screen and (max-width: 480px) {
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+     .head .fire_head {
+bottom: 0;
+         top: auto;
+}
+    .mouse_scroll {
+        right: 0px;
+    }
   .head {
     background: url(../images/bg-copy-2.jpg) no-repeat 50%;
   }
@@ -539,13 +545,6 @@ footer {
   .about_right {
     margin: 0;
     text-align: center;
-  }
-  .fire_head {
-    margin-left: 30px;
-    display: inline-block;
-    width: 350px;
-    height: 350px;
-    margin-bottom: 50px;
   }
   .goiteens_logo {
     float: none;
@@ -650,8 +649,6 @@ footer {
   .details_cnt {
     margin-top: 100px;
     margin-bottom: 0;
-      padding-left: 150px;
-      padding-right: 150px;
   }
   .nav_footer a {
     margin-left: 5px;
@@ -660,21 +657,20 @@ footer {
     min-height: 320px;
   }
   .fire {
-    top: 80px;
     height: 120px;
-    width: 250px;
   }
   .program_title {
     font-size: 20px;
   }
+    .legend_box {
+        width: 100%;
+    }
+    .legend_title {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 380px) {
-  .fire_head {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 50px;
-  }
   .legend_title {
     width: 100%;
   }
@@ -682,14 +678,14 @@ footer {
     width: 100%;
   }
   .fire {
-    top: 220px;
+    bottom: 0px;
+      top: inherit;
     width: 190px;
     height: 100px;
   }
   .reg_legend {
     padding-left: 5px;
     padding-right: 5px;
-    width: 40%;
   }
   .program_clm .border {
     padding: 5px 10px 5px 10px;
@@ -701,9 +697,11 @@ footer {
 
 
 @media screen and (max-width: 2200px) {
+/*
     .head {
   background: url(../images/bg-head.jpg) no-repeat 50%;
 }
+*/
 .program {
   background: url(../images/bg-copy-3.jpg) no-repeat 50%;
 }
@@ -731,7 +729,7 @@ footer {
   font: 600 62px / 1 SegoeUI;
   text-transform: uppercase;
   margin-top: 52px;
-  letter-spacing: 10px;
+  letter-spacing: 9px;
 }
 
 .modal-content {

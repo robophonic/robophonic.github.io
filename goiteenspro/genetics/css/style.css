@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
   position: relative;
   z-index: 2;
 }
@@ -17,16 +17,20 @@ body {
   margin: 0;
 }
 
-
 /*------------------------------*/
 
 .head {
   width: 100%;
   position: relative;
-  max-height: 1100px;
-  min-height: 1100px;
-}
 
+/*  max-height: 1100px;*/
+    
+/*    min-height: 1100px;*/
+    background: url("../images/header_img.jpg");
+    background-size: cover;
+    overflow-y: auto;
+}
+/*
 .header_img {
   width: 100%;
   position: absolute;
@@ -35,6 +39,7 @@ body {
   max-height: 1100px;
   min-height: 1100px;
 }
+*/
 
 .goiteens_logo {
   float: left;
@@ -109,7 +114,7 @@ a:hover {
 .box {
   position: relative;
   margin-top: 50px;
-  margin-bottom: 100px;
+/*  margin-bottom: 100px;*/
 }
 
 .head_title {
@@ -118,7 +123,7 @@ a:hover {
   font-size: 44px;
   font-weight: 400;
   line-height: 44px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .head_sub_title {
@@ -137,7 +142,7 @@ a:hover {
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .head_clm1 {
@@ -180,6 +185,7 @@ a:hover {
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid white;
   border-radius: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -222,21 +228,21 @@ a:hover {
 .program .program_col1 {
   display: inline-block;
   width: 30%;
-  margin-top: 70px;
+  margin-top: 30px;
   padding-left: 50px;
 }
 
 .program .program_col2 {
   display: inline-block;
   width: 27%;
-  margin-top: 70px;
+  margin-top: 30px;
   padding-left: 20px;
 }
 
 .program .program_col3 {
   display: inline-block;
   width: 38%;
-  margin-top: 70px;
+  margin-top: 30px;
   padding-left: 30px;
 }
 
@@ -351,6 +357,7 @@ a:hover {
   font-weight: 100;
   line-height: 32px;
   margin: 0;
+    vertical-align: top;
 }
 
 .program .box p {
@@ -365,9 +372,12 @@ a:hover {
 }
 
 .program .row {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
-
+.program .box img,
+.program2 .box img {
+    margin-bottom: 30px;
+}
 
 /*program2___________________________________________*/
 
@@ -381,21 +391,21 @@ a:hover {
 .program2 .program_col1 {
   display: inline-block;
   width: 30%;
-  margin-top: 70px;
+  margin-top: 30px;
   padding-left: 50px;
 }
 
 .program2 .program_col2 {
   display: inline-block;
   width: 27%;
-  margin-top: 70px;
+  margin-top: 30px;
   padding-left: 20px;
 }
 
 .program2 .program_col3 {
   display: inline-block;
   width: 38%;
-  margin-top: 70px;
+  margin-top: 30px;
   padding-left: 30px;
 }
 
@@ -503,7 +513,7 @@ a:hover {
   font-weight: 400;
   line-height: 66px;
   margin-left: 50px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .program2 .box h3 {
@@ -528,7 +538,7 @@ a:hover {
 }
 
 .program2 .row {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 
@@ -537,14 +547,25 @@ a:hover {
 .soft {
   position: relative;
   width: 100%;
-  min-height: 800px;
-  max-height: 800px;
+  background: url("../images/soft_bg.jpg");
+  background-size: cover;
 }
-
+.soft .fp-tableCell {
+    vertical-align: top;
+}
 .soft .box {
   text-align: left;
 }
-
+.soft_title {
+  color: #efefef;
+font-family: GloberBold;
+font-size: 66px;
+font-weight: 400;
+line-height: 66px;
+  line-height: 44px;
+  margin-top: 100px;
+    margin-bottom: 50px;
+}
 .soft_bg {
   position: absolute;
   left: 0;
@@ -633,7 +654,7 @@ a:hover {
 
 .mentors .row {
   margin-top: 80px;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 
 .mentors .row img {
@@ -685,10 +706,9 @@ a:hover {
   font-weight: 400;
   line-height: 22px;
   position: absolute;
-  top: 50px;
-  left: 50px;
   width: 60%;
   z-index: 1;
+    vertical-align: top;
 }
 
 
@@ -709,7 +729,7 @@ a:hover {
 }
 
 .mentors_clm2 p {
-  text-align: justify;
+  text-align: left;
   width: 100%;
   top: -10px;
   left: 00px;
@@ -718,23 +738,30 @@ a:hover {
 }
 
 .mentors_clm3 p {
-  text-align: justify;
+  text-align: left;
   width: 80%;
-  top: 30px;
+  top: -10px;
   left: 30px;
   opacity: 0;
+    background-color: white;
 }
 
 .mentors_clm4 p {
-  text-align: justify;
+  text-align: left;
   width: 90%;
   top: -20px;
   left: 30px;
   opacity: 0;
+    background-color: white;
 }
 
-.mentors_clm4 p {
+.mentors_clm1 p {
   opacity: 0;
+  top: -10px;
+    text-align: left;
+    width: 90%;
+    right: 0px;
+    background-color: white;
 }
 
 
@@ -743,8 +770,12 @@ a:hover {
 .learn {
   width: 100%;
   position: relative;
+    background: url("../images/leadrn.jpg");
+    background-size: cover;
+/*
   max-height: 1100px;
   min-height: 1100px;
+*/
 }
 
 .learn .registration {
@@ -780,6 +811,7 @@ a:hover {
   font-weight: 100;
   line-height: 32px;
   margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 .learn_clm1 {
@@ -806,8 +838,9 @@ a:hover {
   padding: 0 0px 0 10px;
 }
 
-.learn_clm img {
+.head_clm_box img {
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 
@@ -825,11 +858,13 @@ a:hover {
   right: 0;
   top: 0;
 }
-
+.details .font {
+  font-family: Arial;  
+}
 .details span {
   margin-top: 30px;
   color: #30b772;
-  font-family: SFUIDisplayLight;
+  font-family: Arial;
   font-size: 32px;
   font-weight: 100;
   line-height: 44px;
@@ -900,7 +935,7 @@ a:hover {
 
 .details .box h4 {
   color: #282828;
-  font-family: GloberBold;
+  font-family: Arial;
   font-size: 32px;
   font-weight: 400;
   line-height: 66px;
@@ -929,8 +964,7 @@ a:hover {
   background-size: cover;
   position: relative;
   width: 100%;
-  min-height: 900px;
-  max-height: 900px;
+  padding-bottom: 20px;
 }
 
 .schedule .box {
@@ -983,7 +1017,7 @@ a:hover {
   position: relative;
 }
 
-.schedule .soft:before {
+.schedule .soft_1:before {
   content: url("../images/soft.png");
   position: absolute;
   top: -5px;
@@ -1058,11 +1092,13 @@ a:hover {
 .hard7,
 .hard8,
 .hard9,
-.hard10{
+.hard10,
+.soft6,
+.soft7 {
     position: absolute;
     z-index: 1;
     top: 0;
-    right: 31px;
+    right: 72px;
 }
 .hard1 {
    top: 261px;
@@ -1094,8 +1130,13 @@ a:hover {
 }
 .hard8 {
     top: 166px; 
-    right: 230px; 
+    right: 71px; 
 }
+.soft6 {
+   top: 166px; 
+    right: 229px;  
+}
+
 .hard9 {
     top: 213px; 
     right: 230px; 
@@ -1103,6 +1144,10 @@ a:hover {
 .hard10 {
     top: 260px; 
     right: 73px; 
+}
+.soft7 {
+    top: 260px; 
+    right: 231px; 
 }
 .soft1 {
     top: 309px;
@@ -1121,12 +1166,12 @@ a:hover {
 }
 @media screen and (max-width: 1200px) {
   .schedule {
-    min-height: 2000px;
+    min-height: 2200px;
     text-align: center;
   }
   .schedule .box img {
     display: block;
-    margin: 30px auto;
+    margin: 50px auto;
   }
   .schedule .head_title {
     text-align: center;
@@ -1134,6 +1179,50 @@ a:hover {
   .nav a {
     margin-right: 20px;
   }
+    .program_col1,
+    .program_col2,
+    .program_col3,
+    .head_clm_box div{
+        vertical-align: top;
+    }
+    .program .program_col3,
+    .program2 .program_col3 {
+        width: 44%;
+    }
+    .program .program_col1,
+    .program2 .program_col1 {
+        width: 28%;
+    }
+    .soft .box {
+        padding-left: 50px;
+    }
+    .mentors .row img{
+    width: 90%;
+}
+    .schedule .soft_1:before {
+        position: relative;
+        top: 5px;
+        margin-right: 20px;
+        left: 0;
+    }
+    .schedule .hard:before {
+         position: relative;
+        top: 5px;
+        left: 3px;
+        margin-right: 20px;
+    }
+
+    .schedule .box {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .schedule span{
+        display: block;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -1145,9 +1234,17 @@ a:hover {
   .head .registration {
     float: none;
   }
+    .schedule .box {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .schedule {
+        overflow-x: scroll;
+    }
   .head_title,
   .learn_sub_title,
-  .program_title {
+  .program_title,
+  .soft_title {
     font-size: 30px;
   }
   .program .box,
@@ -1207,11 +1304,26 @@ a:hover {
   .learn {
     min-height: 1800px;
   }
-  .call1,
-  .call2,
-  .call3 {
-    width: 90%;
-  }
+    .soft .box {
+        padding-left: 0px;
+    }
+    .soft_text {
+        padding-left: 50px;
+    }
+    .program_title {
+        margin-left: 0;
+    }
+    .mentors h1,
+    .program_title{
+        text-align: center;
+    }
+    .schedule span {
+        display: block;
+        text-align: center;
+    }
+    .schedule .box {
+        margin-bottom: 0;
+    }
 }
 
 
@@ -1339,4 +1451,42 @@ label {
 
 .item img {
   width: 100%;
+}
+
+
+.learn .fp-tableCell {
+    vertical-align: top;
+    
+}
+/*
+.head .fp-tableCell {
+     vertical-align: top;
+}*/
+@media screen and (max-height: 759px) {
+    .header {
+        display: none;
+    }
+    .head .header {
+        display: block;
+    }
+    .head {
+        padding-bottom: 50px;
+    }
+    
+    .program_title,
+    .program .row,
+    .program2 .row{
+        margin-bottom: 50px;
+    }
+    .program,
+    .program2 {
+        padding: 50px 0;
+    }
+    .soft {
+        padding-bottom: 300px;
+    }
+    .mentors,
+    .schedule{
+        padding-bottom: 100px;
+    }
 }
