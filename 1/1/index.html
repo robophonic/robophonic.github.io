@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>WOweb.ru - Scripts - JavaScript - E-Mail Form</title>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+ <Style>
+   A:Link{ Color: #000000; Text-decoration: underline}
+   A:Visited{ Color: #000000; Text-decoration: underline}
+   A:Hover{ Color: #000000; Text-decoration: none}
+ td, body {font-family: verdana, arial, helvetica; font-size:11px;}  
+ </Style>
+
+<!-- HEAD START HERE -->
+
+
+
+<!-- HEAD END HERE -->
+
+
+
+
+</head>
+<body bgcolor="#EDEDED" text="#000000" link="#000000" topmargin="0" leftmargin="0">
+<center>
+
+<!-- BODY START HERE -->
+
+ <!-- Start of E-Mail Form JavaScript-->
+ <!--   DESCRIPTION:  This will send you an e-mail with whatever your visitor enters in the fields. 
+ 	INSTRUCTIONS:  Place this entire script where you want the form to show up on the page.  You can change the values (Name, E-mail, Phone, etc.)  Just be sure to change that fields value in the script.  See where is says, "document.ccform.name.value", that is for the input field "name".  BE SURE TO CHANGE THE E-MAIL ADDRESS BELOW.  Currently it's at 'you@yourprovider.com'.
+ 	FUNCTIONALITY: Works in both Netscape and IE.  ONLY WORKS IF THE VISITOR HAS THEIR E-MAIL SET UP ON THEIR BROWSER.  
+ -->
+ <SCRIPT LANGUAGE=JavaScript>
+ <!--  
+   if (navigator.appVersion.lastIndexOf('Win') != -1) {
+       dropline = "\r\n"  } else { dropline = "\n" }
+ function coffeemsg(form) {
+ document.ccform.Message.value = (
+    '  ' + dropline + dropline
+   + '-----CoffeeCup AutoMated E-Mail Form---START----- ' + dropline
+   + dropline + dropline 
+   + 'Name     : ' + document.ccform.name.value + dropline
+   + 'Phone    : ' + document.ccform.phone.value + dropline
+   + 'Subject  : ' + document.ccform.subject.value + dropline
+   + 'E-mail    : ' + document.ccform.email.value + dropline
+   + 'Message: ' + document.ccform.message.value
+   + dropline  + dropline
+   + '-----CoffeeCup AutoMated E-Mail Form----END------ ' + dropline
+   + dropline + 'E-Mail Form JavaScript by:' + dropline
+   + 'http://www.coffeecup.com' + dropline
+   + dropline + dropline 
+   + ' FIELD VALUES: ' + dropline
+   + '  ' + dropline
+ );
+ }
+ // -->
+ </SCRIPT>
+ 
+ <FORM name="ccform" method="post" action="mailto:you@yourprovider.com?subject=Message"
+  enctype="text/plain">
+ <INPUT type=hidden name="Message">
+ 
+ <FONT FACE="VERDANA, ARIAL"><B>Name:</B></FONT><P>
+ <INPUT type="text" size=25 name="name" onChange="coffeemsg()">
+ 
+ <P>
+ <FONT FACE="VERDANA, ARIAL"><B>Phone:</B><P>
+ <INPUT type="text" size=25 name="phone" onChange="coffeemsg()">
+ 
+ <P>
+ <FONT FACE="VERDANA, ARIAL"><B>Email:</B></FONT><P>
+ <INPUT type="text" size=25 name="email" onChange="coffeemsg()">
+ 
+ <P>
+ <FONT FACE="VERDANA, ARIAL"><B>Subject:</B></FONT><P>
+ <INPUT type="text" size=25 name="subject" onChange="coffeemsg()">
+ 
+ <P>
+ <FONT FACE="VERDANA, ARIAL"><B>Message:</B></FONT><P>
+ <TEXTAREA rows=5 cols=45 wrap="auto" name=message onChange="coffeemsg()"></TEXTAREA>
+ 
+ <P>
+ <CENTER>
+ <INPUT type=submit value="Send Message" onClick="coffeemsg()">
+ </CENTER>
+ </FORM>
+ <P>
+ <!-- End of E-Mail Form JavaScript-->
+
+<!-- BODY END HERE -->
+
+
+
+</body>
+</html>
+
