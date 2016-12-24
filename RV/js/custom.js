@@ -153,20 +153,12 @@ $('#contact-form').on('submit', function(e) {
 
         var data = {
             name: $form.find('input[name="name"]').val(),
-//            surname: $form.find('input[name="surname"]').val(),
             email: $form.find('input[name="email"]').val(),
-//            phone: $form.find('input[name="phone"]').val(),
-//            expect: $form.find('textarea[name="expect"]').val(),
-//            location: $form.find('input[name="location"]').val(),
-//            type: $form.find('select[name="type"]').val(),
-//            date: $form.find('input[name="date"]').val(),
             message: $form.find('textarea[name="message"]').val(),
         };
 
         var script = document.createElement('script');
-        script.src = 'https://script.google.com/macros/s/AKfycbweTZ-43dPbSXI4x7M6G6XzmoWC8X9TF64SzK57XLIcSzmUOSs/exec' +
-            data.name + '&surname=' + data.surname + '&email=' + data.email + '&phone=' + data.phone + '&expect=' + data.expect +
-            '&location=' + data.location + '&type=' + data.type + '&date=' + data.date + '&background=' + data.background;
+        script.src = 'https://script.google.com/macros/s/AKfycbzAWm1vayYDP9iKniaBBc_7WDrsqIl4CozmhkFKuJYECoz3a_D0/exec?name=' + data.name + '&email=' + data.email + '&message=' + data.message;
         script.type = 'text/javascript';
         $("body").append(script);
 
