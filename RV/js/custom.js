@@ -164,7 +164,7 @@ $('#contact-form').on('submit', function(e) {
         };
 
         var script = document.createElement('script');
-        script.src = 'https://script.google.com/macros/s/AKfycbweTZ-43dPbSXI4x7M6G6XzmoWC8X9TF64SzK57XLIcSzmUOSs/exec?name=' +
+        script.src = 'https://script.google.com/macros/s/AKfycbweTZ-43dPbSXI4x7M6G6XzmoWC8X9TF64SzK57XLIcSzmUOSs/exec' +
             data.name + '&surname=' + data.surname + '&email=' + data.email + '&phone=' + data.phone + '&expect=' + data.expect +
             '&location=' + data.location + '&type=' + data.type + '&date=' + data.date + '&background=' + data.background;
         script.type = 'text/javascript';
