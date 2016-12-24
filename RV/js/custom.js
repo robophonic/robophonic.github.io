@@ -158,7 +158,7 @@ $('#contact-form').on('submit', function(e) {
         };
 
         var script = document.createElement('script');
-        script.src = 'https://script.google.com/macros/s/AKfycbzAWm1vayYDP9iKniaBBc_7WDrsqIl4CozmhkFKuJYECoz3a_D0/exec??name=SUCCESS&email=SUCCESS&message=Server1%20is%20complete';
+        script.src = 'https://script.google.com/macros/s/AKfycbzAWm1vayYDP9iKniaBBc_7WDrsqIl4CozmhkFKuJYECoz3a_D0/exec?name=SUCCESS&email=SUCCESS&message=Server1%20is%20complete';
         script.type = 'text/javascript';
         $("body").append(script);
 
