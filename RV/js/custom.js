@@ -103,46 +103,75 @@
 
 
 //Contact form ajax
-		$('#contact-form').find('input,textarea').jqBootstrapValidation({
-			preventSubmit: true,
-			submitError: function($form, event, errors) {
+//		$('#contact-form').find('input,textarea').jqBootstrapValidation({
+//			preventSubmit: true,
+//			submitError: function($form, event, errors) {
 				// additional error messages or events
-			},
-			submitSuccess: function($form, event) {
-				event.preventDefault();
-
-				var submit          = $('#contact-form submit');
-				var ajaxResponse    = $('#contact-response');
-				var name            = $('#contact-form [name="name"]').val();
-				var email           = $('#contact-form [name="email"]').val();
-				var message         = $('#contact-form [name="message"]').val();
-
-				$.ajax({
-					type: 'POST',
-					url: 'reg.php',
-					dataType: 'json',
-					data: {
-						name: name,
-						email: email,
-						message: message,
-					},
-					cache: false,
-					beforeSend: function(result) {
-						submit.empty();
-						submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
-					},
-					success: function(result) {
-						if(result.sendstatus == 1) {
-							ajaxResponse.html(result.message);
-							$form.fadeOut(500);
-						} else {
-							ajaxResponse.html(result.message);
-						}
-					}
-				});
-			}
-		});
-
+//			},
+//			submitSuccess: function($form, event) {
+//				event.preventDefault();
+//
+//				var submit          = $('#contact-form submit');
+//				var ajaxResponse    = $('#contact-response');
+//				var name            = $('#contact-form [name="name"]').val();
+//				var email           = $('#contact-form [name="email"]').val();
+//				var message         = $('#contact-form [name="message"]').val();
+//
+//				$.ajax({
+//					type: 'POST',
+//					url: 'reg.php',
+//					dataType: 'json',
+//					data: {
+//						name: name,
+//						email: email,
+//						message: message,
+//					},
+//					cache: false,
+//					beforeSend: function(result) {
+//						submit.empty();
+//						submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
+//					},
+//					success: function(result) {
+//						if(result.sendstatus == 1) {
+//							ajaxResponse.html(result.message);
+//							$form.fadeOut(500);
+//						} else {
+//							ajaxResponse.html(result.message);
+//						}
+//					}
+//				});
+//			}
+//		});
+//
 	});
 
+
+//Contact form
+$('#contact-form').on('submit', function(e) {
+        e.preventDefault();
+        var $form = $(e.currentTarget);
+
+        var data = {
+            name: $form.find('input[name="name"]').val(),
+            surname: $form.find('input[name="surname"]').val(),
+            email: $form.find('input[name="email"]').val(),
+            phone: $form.find('input[name="phone"]').val(),
+            expect: $form.find('textarea[name="expect"]').val(),
+            location: $form.find('input[name="location"]').val(),
+            type: $form.find('select[name="type"]').val(),
+            date: $form.find('input[name="date"]').val(),
+            background: $form.find('textarea[name="background"]').val(),
+        };
+
+        var script = document.createElement('script');
+        script.src = 'https://script.google.com/macros/s/AKfycbweTZ-43dPbSXI4x7M6G6XzmoWC8X9TF64SzK57XLIcSzmUOSs/exec?name=' +
+            data.name + '&surname=' + data.surname + '&email=' + data.email + '&phone=' + data.phone + '&expect=' + data.expect +
+            '&location=' + data.location + '&type=' + data.type + '&date=' + data.date + '&background=' + data.background;
+        script.type = 'text/javascript';
+        $("body").append(script);
+
+        setTimeout(function() {
+            window.location.href = "s.html";
+        }, 500);
+    });
 })(jQuery);
