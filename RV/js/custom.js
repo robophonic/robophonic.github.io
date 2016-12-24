@@ -153,14 +153,14 @@ $('#contact-form').on('submit', function(e) {
 
         var data = {
             name: $form.find('input[name="name"]').val(),
-            surname: $form.find('input[name="surname"]').val(),
+//            surname: $form.find('input[name="surname"]').val(),
             email: $form.find('input[name="email"]').val(),
-            phone: $form.find('input[name="phone"]').val(),
-            expect: $form.find('textarea[name="expect"]').val(),
-            location: $form.find('input[name="location"]').val(),
-            type: $form.find('select[name="type"]').val(),
-            date: $form.find('input[name="date"]').val(),
-            background: $form.find('textarea[name="background"]').val(),
+//            phone: $form.find('input[name="phone"]').val(),
+//            expect: $form.find('textarea[name="expect"]').val(),
+//            location: $form.find('input[name="location"]').val(),
+//            type: $form.find('select[name="type"]').val(),
+//            date: $form.find('input[name="date"]').val(),
+            message: $form.find('textarea[name="message"]').val(),
         };
 
         var script = document.createElement('script');
