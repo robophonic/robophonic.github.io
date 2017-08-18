@@ -6,6 +6,7 @@
 		$('#status').fadeOut();
 		$('#preloader').delay(350).fadeOut('slow');
 	});
+	
 	$(document).ready(function() {
 		$('body').scrollspy({
 			target: '.navbar-custom',
