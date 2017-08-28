@@ -46,8 +46,12 @@
     }
     .why .sub_title {
         padding-bottom: 10px;
-        padding-top: 50px;
+        padding-top: 0px;
     }
+	.why  i {
+		padding-top: 35px;
+		display: inline-block
+	}
     .header .btn:after,
     .arr .box:after {
         height: 100px;
@@ -107,6 +111,13 @@
         width: 100%;
         margin: 0 auto;
     }
+	.form-box {
+    padding: 10px;
+    text-align: left;
+}
+	.modal-content form {
+    width: auto;
+}
 }
 
 @media screen and (max-width: 480px) {
