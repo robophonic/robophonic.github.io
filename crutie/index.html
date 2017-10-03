@@ -23,7 +23,7 @@
     <meta itemprop="description" content="описание" />
     <meta itemprop="image" content="адрес" />
     <!--  <link rel="shortcut icon" href="адрес" type="image/x-icon">-->
-    
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/simple-line-icons.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -113,7 +113,7 @@
             <h2 class="title"> Почему это важно для вас?</h2>
             <div class="row">
                 <div class="col-sm-6">
-                   <i class="icon-clock"></i>
+                    <i class="icon-clock"></i>
                     <h3 class="sub_title">Время - деньги</h3>
                     <p>В среднем <span>Crutie</span> будет тратить до x10 меньше
                         <br> времени на «охоту» нужного кандидата.</p>
@@ -185,28 +185,28 @@
             <h2>Как это работает?</h2>
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4 box">
-                   <i class="icon-magnifier"></i>
+                    <i class="icon-magnifier"></i>
                     <h3>Пул данных</h3>
                     <p><span>Crutie</span> просматривает наш пул данных, который состоит из сотен миллионов резюме/CV’s и читает их задумчиво, чтобы найти то, о чем вы просили.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4 box">
-                   <i class="icon-phone"></i>
+                    <i class="icon-phone"></i>
                     <h3>Контакт</h3>
                     <p><span>Crutie</span> свяжется с потенциальными кандидатами и спросит их, готовы ли они стать частью вашей команды.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4 box">
-                   <i class="icon-user-female"></i>
+                    <i class="icon-user-female"></i>
                     <h3>Интервью</h3>
                     <p>Интервью - В соответствии со сферой специалиста, Crutie проведет собеседование и создаст психологический портрет. Который будет создан на основе 11 тестов, охватывающих все аспекты деловой ориентации.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4 box">
-                   <i class="icon-diamond"></i>
+                    <i class="icon-diamond"></i>
                     <h3>Результат</h3>
                     <p>Теперь, после тщательной разведки, <span>Crutie</span> вернется к вам с результатами его работы. Результат - резюме, контактная информация, социальная деятельность, психологический портрет, а также процентная доля релевантности для запрашиваемой вакансии.</p>
                 </div>
@@ -262,10 +262,10 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h3 class="modal-title">Давайте знакомиться</h3>
-<!--                    <p class="modal-info">описание</p>-->
+                    <!--                    <p class="modal-info">описание</p>-->
                 </div>
                 <div class="form-box">
-                    <form id="registration-form" action='http://goiteens.ua/registration/index.php' method='post'>
+                    <form id="registration-form" action='' method="post">
                         <label>ФИО
                             <input class="input-text" type="text" name="name" required>
                         </label>
@@ -274,17 +274,17 @@
                         </label>
                         <label>
                             Количество работников в компании
-                            <select class="select" name="course" id="course" required>
+                            <select class="select" name="employers" id="employers" required>
                                 <option value="" selected disabled>Виберите количество</option>
                                 <option value="10"> &#60; 10 </option>
                                 <option value="11-25">11 - 25</option>
-                                 <option value="26-50">26-50</option>
-                                  <option value="50"> &#62; 50</option>
+                                <option value="26-50">26-50</option>
+                                <option value="50"> &#62; 50</option>
                             </select>
                         </label>
                         <label>
                             Телефон 380...
-                            <input class="input-text phone" type="tel" name="Phone" id="phone" required>
+                            <input class="input-text phone" type="tel" name="phone" id="phone" required pattern="^[ 0-9, +]+$">
                         </label>
                         <label>
                             E-mail
@@ -297,7 +297,7 @@
             </div>
         </div>
     </div>
-    
+
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

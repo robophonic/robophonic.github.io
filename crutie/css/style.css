@@ -63,9 +63,11 @@ a {
     line-height: 18px;
     color: #fff;
 }
+
 a:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
+
 section {
     text-align: center;
 }
@@ -258,10 +260,12 @@ span {
 .why .title {
     padding-bottom: 50px;
 }
+
 i {
-	font-size: 65px;
-	color: #1dd18f;
+    font-size: 65px;
+    color: #1dd18f;
 }
+
 .why .sub_title {
     padding-bottom: 50px;
 }
@@ -477,10 +481,12 @@ i {
     -o-transition: all 230ms ease-in-out;
     transition: all 230ms ease-in-out
 }
-.footer  .icon-arrow-up {
-	font-size: 20px;
-	color: #33363b;
+
+.footer .icon-arrow-up {
+    font-size: 20px;
+    color: #33363b;
 }
+
 
 /*modal*/
 

@@ -1,0 +1,124 @@
+@media screen and (max-width: 1200px) {
+    .reviews .owl-carousel.owl-drag .owl-item {
+        margin-right: 55px!important;
+    }
+    .owl-carousel .owl-stage-outer {
+        right: 24%;
+    }
+    .partners img {
+        max-width: 100%;
+    }
+    .step_box {
+        height: auto;
+        min-height: 575px;
+    }
+    .btn_1 {
+        padding: 20px 40px;
+    }
+    .step_box:hover {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .header_main .text_box {
+        background: #fff;
+        padding: 50px 35px 40px 40px;
+    }
+    .btn_1 {
+        padding: 20px 10px;
+    }
+    .btn_1 i {
+        display: none;
+    }
+    .step_box {
+        height: auto;
+        min-height: inherit;
+        margin-bottom: 25px;
+    }
+    .owl-carousel .owl-stage-outer {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header_top, .header_main, .next_step, .partners, .reviews, .quote, .footer {
+        text-align: center;
+    }
+    .next_step,
+    .partners,
+    .quote,
+    .footer {
+        padding: 50px 0;
+    }
+    .reviews {
+        padding: 50px 0 100px 0;
+    }
+    .header_main .title {
+        padding-top: 10px;
+    }
+    h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .header_main .text_white {
+        width: 100%;
+    }
+    .header_main .btn_2 {
+        margin-bottom: 15px;
+        display: inline-block;
+        padding: 0 30px 0 0;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .reviews .item {
+        padding: 30px 10px 30px 10px;
+    }
+    .reviews .item .img_box {
+        left: 0px;
+        margin: 0 auto;
+    }
+    .no-js .owl-carousel,
+    .owl-carousel.owl-loaded {
+        display: block;
+        padding: 0 10px;
+    }
+    .quote .img_box {
+        margin: 0 auto;
+    }
+    .footer .logo_box {
+        display: inline-block;
+    }
+    .footer ul {
+        margin: 30px 0;
+    }
+    .tel div,
+    .email div,
+    .location div {
+        display: inline-block;
+        min-width: 190px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .header_main .text_box {
+        padding: 50px 25px 40px 25px;
+    }
+    .quote_title {
+        font-size: 30px;
+        line-height: 43px;
+    }
+}

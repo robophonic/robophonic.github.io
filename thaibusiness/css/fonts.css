@@ -1,0 +1,107 @@
+/* font-family: "muller"; */
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/font-muller/muller-black/muller-black.eot");
+    src: url("../fonts/font-muller/muller-black/muller-black.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/font-muller/muller-black/muller-black.woff") format("woff"),
+    url("../fonts/font-muller/muller-black/muller-black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/font-muller/muller-bold/muller-bold.eot");
+    src: url("../fonts/font-muller/muller-bold/muller-bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/font-muller/muller-bold/muller-bold.woff") format("woff"),
+    url("../fonts/font-muller/muller-bold/muller-bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/font-muller/muller-medium/muller-medium.eot");
+    src: url("../fonts/font-muller/muller-medium/muller-medium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/font-muller/muller-medium/muller-medium.woff") format("woff"),
+    url("../fonts/font-muller/muller-medium/muller-medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/font-muller/muller-regular/muller-regular.eot");
+    src: url("../fonts/font-muller/muller-regular/muller-regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/font-muller/muller-regular/muller-regular.woff") format("woff"),
+    url("../fonts/font-muller/muller-regular/muller-regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/font-muller/muller-light/muller-light.eot");
+    src: url("../fonts/font-muller/muller-light/muller-light.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/font-muller/muller-light/muller-light.woff") format("woff"),
+    url("../fonts/font-muller/muller-light/muller-light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/font-muller/muller-thin/muller-thin.eot");
+    src: url("../fonts/font-muller/muller-thin/muller-thin.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/font-muller/muller-thin/muller-thin.woff") format("woff"),
+    url("../fonts/font-muller/muller-thin/muller-thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+}
+/*fontello*/
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?31919061');
+  src: url('../fonts/fontello.eot?31919061#iefix') format('embedded-opentype'),
+  url('../fonts/fontello.woff?31919061') format('woff'),
+  url('../fonts/fontello.ttf?31919061') format('truetype'),
+  url('../fonts/fontello.svg?31919061#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*OpenSans*/
+@font-face {
+			font-family: "OpenSans";
+			src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+			src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+			url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	@font-face {
+			font-family: "OpenSans";
+			src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+			src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+			url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+			font-style: normal;
+			font-weight: 300;
+	}
+
+	@font-face {
+			font-family: "OpenSans";
+			src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+			src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+			url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: 700;
+	}
+/* georgia*/
+@font-face {
+    font-family: "georgia";
+    src: url("../fonts/georgia/georgia/georgia.eot");
+    src: url("../fonts/georgia/georgia/georgia.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/georgia/georgia/georgia.woff") format("woff"),
+    url("../fonts/georgia/georgia/georgia.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
