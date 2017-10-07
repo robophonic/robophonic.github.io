@@ -3,24 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Заголовок</title>
+    <title>Thaibusiness</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="описание">
+    <meta name="description" content="Организуем системный сбыт товаров в Тайланде">
 
-    <meta name="Title" content="Заголовок" />
-    <meta name="description" content="описание" />
+    <meta name="Title" content="Thaibusiness" />
+    <meta name="description" content="Организуем системный сбыт товаров в Тайланде" />
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="описание" />
+    <meta property="og:description" content="Организуем системный сбыт товаров в Тайланде" />
     <meta property="og:url" content="" />
     <meta property="og:sitename" content="" />
-    <meta property="og:title" content="Заголовок">
+    <meta property="og:title" content="Thaibusiness">
     <meta property="og:image" content="адрес" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="" />
     <meta name="twitter:creator" content="" />
     <meta name="twitter:image:src" content="адрес" />
-    <meta itemprop="name" content="Заголовок" />
-    <meta itemprop="description" content="описание" />
+    <meta itemprop="name" content="Thaibusiness" />
+    <meta itemprop="description" content="Организуем системный сбыт товаров в Тайланде" />
     <meta itemprop="image" content="адрес" />
     <!--  <link rel="shortcut icon" href="адрес" type="image/x-icon">-->
 
@@ -38,11 +38,11 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="main">
         <div class="container">
             <div class="header_top row">
                 <div class="col-md-8  col-sm-6 logo_box">
-                    <img src="images/logo.png" alt="logo" class="logo">
+                    <a href="./"><img src="images/logo.png" alt="logo" class="logo"></a>
                 </div>
                 <div class="col-md-2 col-sm-3 margin">
                     <p>Телефон:</p>
@@ -59,51 +59,50 @@
                 <h1 class="title">Организуем <b>системный <br>сбыт товаров в Тайланде</b></h1>
                 <div class="col-sm-7">
                     <p class="text_white">Ответьте на 5 вопросов о Вашем бизнесе и мы найдем потенциального закупщика в Тайланде и пришлем его комментарии о вашем продукте за 48 часов</p>
-                    <a href="#" class="btn_2"><i class="icon-phone"></i>Заказать звонок</a>
+                    <a class="btn_2" data-toggle="modal" data-target="#registration"><i class="icon-phone"></i>Заказать звонок</a>
                 </div>
                 <div class="col-sm-5">
                     <div class="text_box">
-                        <p>85% бизнесов обращаются к нам с проблемами при экспорте. Узнайте как предотвратить проблемы в Вашем случае.</p>
-                        <a href="#" class="btn_1">Получить консультацию<i class="icon-right-small"></i></a>
+                        <p><span>85% бизнесов</span> обращаются к нам с проблемами при экспорте. Узнайте как предотвратить <span>проблемы в Вашем случае.</span> </p>
+                        <a class="btn_1" data-toggle="modal" data-target="#registration">Получить консультацию<i class="icon-right-small"></i></a>
                     </div>
                 </div>
             </div>
             <div class="row next">
-                <a href="#next_step"><span>Выберите свой следующий шаг</span><i class="icon-down-open"></i></a>
+                <a href="#services"><span>Выберите свой следующий шаг</span><i class="icon-down-open"></i></a>
             </div>
         </div>
     </header>
 
-    <section class="next_step" id="next_step">
+    <section class="next_step" id="services">
         <div class="container">
             <h2 class="title">Выберите свой следующий шаг</h2>
             <p class="sub_title">В зависимости от международного опыта</p>
             <div class="row">
                 <div class="col-md-4 ">
-                    <div class="step_box">
+                    <div class="step_box step1">
                         <i class="icon-bicycle"></i>
                         <h3>Новобранец</h3>
                         <p>Попытки стереть первые барьеры в международном опыте. <b>Получите от нас детальное руководство о том, как начать продавать в Тайланде.</b></p>
-                        <a href="">Получить руководство</a>
+                        <a data-toggle="modal" data-target="#registration">Получить руководство</a>
                     </div>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="step_box">
+                    <div class="step_box step2">
                         <i class="icon-truck"></i>
                         <h3>Случайный <br> Экспортер</h3>
                         <p>Вы экспортировали и раньше, но не сделали это автоматизированной частью вашего бизнес-плана. <b>Опишите ваш план поставок и мы поможем поставить его на поток.</b></p>
-                        <a href="">Получить руководство</a>
+                        <a data-toggle="modal" data-target="#registration">Получить руководство</a>
                     </div>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="step_box">
+                    <div class="step_box step3">
                         <i class="icon-plane-outline"></i>
                         <h3>Регулярный <br> Экспортер</h3>
                         <p>Можем помочь расширить ваш зарубежный бизнес с помощью рекомендаций. <b>Закажите звонок и мы займемся поиском новых рынков сбыта и финансирования для вашего бизнеса.</b></p>
-                        <a href="">Получить руководство</a>
+                        <a data-toggle="modal" data-target="#registration">Получить руководство</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -137,13 +136,13 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="cases">
         <div class="container">
             <h2 class="title">Кому уже помогли импортировать</h2>
             <p class="sub_title">И сбыть в Тайланде</p>
             <p class="text">Здесь должно быть больше сотни восторженных отзывов от людей, которые заработали по несколько миллионов благодаря "магии нашей команды", но нам лень их все сюда помещать. Поэтому мы выбрали всего несколько для иллюстрации того, чем мы занимаемся. Если этого недостаточно, то доказывать нашу компетентность или убеждать в чём-то не будем.</p>
             <div class="owl-carousel owl-theme">
-<!-- 1-й слайд-->
+                <!-- 1-й слайд-->
                 <div class="item">
                     <div class="row">
                         <div class="col-sm-2">
@@ -157,7 +156,7 @@
                             <div class="text_box">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                             </div>
-                            <a data-toggle="modal" data-target="#myModal" class="btn_1">Читать кейс</a>
+                            <a data-toggle="modal" data-target="#myModal1" class="btn_1">Читать кейс</a>
                         </div>
                     </div>
                 </div>
@@ -175,7 +174,7 @@
                             <div class="text_box">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                             </div>
-                            <a data-toggle="modal" data-target="#myModal" class="btn_1">Читать кейс</a>
+                            <a data-toggle="modal" data-target="#myModal2" class="btn_1">Читать кейс</a>
                         </div>
                     </div>
                 </div>
@@ -193,52 +192,18 @@
                             <div class="text_box">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                             </div>
-                            <a data-toggle="modal" data-target="#myModal" class="btn_1">Читать кейс</a>
+                            <a data-toggle="modal" data-target="#myModal3" class="btn_1">Читать кейс</a>
                         </div>
                     </div>
                 </div>
-                <!-- 4-й слайд-->
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <div class="img_box">
-                                <img src="images/72m-jpg.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-10">
-                            <h6>Владимир Кузнецов</h6>
-                            <p class="sub_title">Burger King / CEO</p>
-                            <div class="text_box">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                            </div>
-                            <a data-toggle="modal" data-target="#myModal" class="btn_1">Читать кейс</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 5-й слайд-->
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <div class="img_box">
-                                <img src="images/72m-jpg.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-10">
-                            <h6>Владимир Кузнецов</h6>
-                            <p class="sub_title">Burger King / CEO</p>
-                            <div class="text_box">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                            </div>
-                            <a data-toggle="modal" data-target="#myModal">Читать кейс</a>
-                        </div>
-                    </div>
-                </div>
+ 
 
 
             </div>
         </div>
-        <!-- Modal к 1-му слайду-->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <!-- Кейс к 1-му слайду-->
+        <div class="modal fade myModal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -246,48 +211,180 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
+                        <p class="keys_num">Кейс 1</p>
                         <h3 class="title">Свежемороженая красная рыба </h3>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h3 class="sub_title">Как все начиналось. Краткая история.</h3>
-                                <p>Звонок 29 декабря. </p>
-                                <p>-Здравствуйте! У меня есть контейнер красной рыбы (горбуша) его нужно растаможить, помогите.</p>
-                                <p>-Добрый вечер. Поможем конечно. Присылайте инвойс и упаковочный, мы посмотрим и посчитаем. Когда планируете поставку?</p>
-                                <p>-Он послезавтра прибывает в порт Таиланда.</p>
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-8">
-                                <h3 class="sub_title">Задачи с которыми мы справились</h3>
-                                <p>Документов не хватает, а те что есть нужно переделывать; грузополучатель, тайская компания, отказалась; Лицензии и разрешения в департаментах FDA и Fishery не получали, а это рыба и Новый год!</p>
-
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="img_box">
-                                    <img src="images/layer-1.jpg" alt="">
+                        <div class="wrap">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="sub_title">О ЧЕМ КЕЙС</h3>
+                                    <p>К нам часто обращаются за помощью организовать поставки и сбыт российской продукции в Таиланде. Вот кейс из реализованных:</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="sub_title">Как все начиналось. Краткая история.</h3>
+                                    <p>Звонок 29 декабря. </p>
+                                    <p>-Здравствуйте! У меня есть контейнер красной рыбы (горбуша) его нужно растаможить, помогите.</p>
+                                    <p>-Добрый вечер. Поможем конечно. Присылайте инвойс и упаковочный, мы посмотрим и посчитаем. Когда планируете поставку?</p>
+                                    <p>-Он послезавтра прибывает в порт Таиланда.</p>
+                                    <p>-??? 31 декабря? Понятно, присылайте все документы</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h3 class="sub_title">Задачи с которыми мы справились</h3>
+                                    <p>Документов не хватает, а те что есть нужно переделывать; грузополучатель, тайская компания, отказалась; Лицензии и разрешения в департаментах FDA и Fishery не получали, а это рыба и Новый год!</p>
+
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="img_box">
+                                        <img src="images/layer-1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <h3 class="sub_title">Отзыв клиента</h3>
-                            <div class="col-sm-3">
-                                <div class="img_box">
-                                    <img src="images/layer-2.jpg" alt="">
+                                <div class="col-md-3 col-sm-4">
+                                    <div class="img_box2">
+                                        <img src="images/layer-2.jpg" alt="">
+                                    </div>
+
                                 </div>
-
+                                <div class="col-md-9 col-sm-8 height">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-sm-9">
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                                </p>
-                            </div>
+                            <a class="btn_1 registration_form_btn" data-toggle="modal" data-target="#registration">Получить экспертизу и консультацию<i class="icon-right-small"></i></a>
                         </div>
-                        <a href="#" class="btn_1">Получить консультацию<i class="icon-right-small"></i></a>
                     </div>
-
                 </div>
             </div>
         </div>
+
+        <!-- Кейс к 2-му слайду-->
+        <div class="modal fade myModal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="images/jakub-gorajek-133566.jpg" alt="">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="keys_num">Кейс 2</p>
+                        <h3 class="title">Экспорт и продажа русской косметики на плотном Тайском рынке</h3>
+                        <div class="wrap">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="sub_title">О ЧЕМ КЕЙС</h3>
+                                    <p>Поставка и продажа товаров в условиях жесткой конкуренции, когда рынок Таиланда итак богат, а ещё больше знаменит своей косметической продукцией и традиционной народной медициной, - это настоящий челлендж.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="sub_title">Как все начиналось. Краткая история.</h3>
+                                    <p>Все началось с обращения клиента: растаможить контейнер с мебелью, которую они заказали в Китае, для организации Колл Центра в Таиланде. Мебель мы растаможили и доставили. Позже появились и другие заказы по таможне и логистике различных товаров из России.</p>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h3 class="sub_title">Задачи с которыми мы справились</h3>
+                                    <p>Подготовка такого проекта и его реализация требуют тщательности в планировании, просчета, опыта и возможностей. Регистрация и сертификация продукции в департаментах всегда начинается с подготовки документов и исследования образцов, а документ нужно подготовить не только на товар, но и на компанию и склады... Формулы продуктов, составы (с разрешенными ингредиентами), контрэтикетки на Тайском языке, такие которое точно пройдут нужно делать заранее, ведь в противном случае, ждать придется не один месяц и подавать заново. Таможенный контроль и оформление таких товаров как косметика, фармацевтические препараты и бады всегда связаны с множеством различных операций и точным соблюдением регламента, предписаний и рекомендаций гос. органов и департаментов.
+                                    </p>
+
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="img_box">
+                                        <img src="images/layer-1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h3 class="sub_title">Отзыв клиента</h3>
+                                <div class="col-md-3 col-sm-4">
+                                    <div class="img_box2">
+                                        <img src="images/layer-2.jpg" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-9 col-sm-8 height">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="btn_1 registration_form_btn" data-toggle="modal" data-target="#registration">Получить экспертизу и консультацию<i class="icon-right-small"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кейс к 3-му слайду-->
+        <div class="modal fade myModal" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="images/jakub-gorajek-133566.jpg" alt="">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="keys_num">Кейс 3</p>
+                        <h3 class="title">Экспортировали и помогли разместить продукты питания в сетевых супермаркетах Таиланда</h3>
+                        <div class="wrap">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="sub_title">О ЧЕМ КЕЙС</h3>
+                                    <p>Дистрибуция продуктов питания из России в Таиланде в сетевых супермаркетах и гипермаркетах. Продукты питания: замороженные полуфабрикаты, блины, пельмени, манты, вареники…</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class="sub_title">Как все начиналось. Краткая история.</h3>
+                                    <p>К нам поступило новое обращение с вопросом: можете ли вы поставить наш Российский продукт на полки в супермаркетах Таиланда? Интересуют: Friendship и Foodland для начала. Мы ответили “Да” и сделали предложение разработать, для начала, проект поставки, чтоб просчитать экономику. Поговорили, подписали договор, получили оплату и разработали. Получилось выгодно! А дальше завели в сети.</p>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h3 class="sub_title">Задачи с которыми мы справились</h3>
+                                    <p>Разработать проект поставки из России (с Фабрики), в Таиланд (на склад) замороженной скоропортящейся продукции. Организовать контроль и приемку товара, хранение.
+                                        <br> Привезти образцы, растаможить, провести лабораторные исследования. Получить разрешения в департаменте “Управления по санитарному надзору за качеством пищевых продуктов и медикаментов”.
+                                        <br> Подготовиться и провести презентации продуктов руководству сетей супермаркетов. Подготовить необходимые документы - бумажная (тайская) работа. Договориться!!!
+                                        <br> Задачи, которые поставил перед нами клиент, были выполнены в полном объеме, а сейчас поставки уже револьверные. Продолжаем работать - всем выгодно!
+                                        <br> Супермаркеты: Friendship, Foodland. (Таиланд)
+                                        <br> Гипермаркеты: Сейчас прорабатываем Makro, Tesco (Таиланд)
+                                        <br> Хорека: рестораны (Таиланд)
+
+                                    </p>
+
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="img_box">
+                                        <img src="images/layer-1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h3 class="sub_title">Отзыв клиента</h3>
+                                <div class="col-md-3 col-sm-4">
+                                    <div class="img_box2">
+                                        <img src="images/layer-2.jpg" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-9 col-sm-8 height">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="btn_1 registration_form_btn" data-toggle="modal" data-target="#registration">Получить экспертизу и консультацию<i class="icon-right-small"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="quote">
@@ -305,7 +402,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-6">
@@ -315,10 +412,10 @@
                 </div>
                 <div class="col-md-3 col-sm-3">
                     <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Кейсы</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#main">Главная</a></li>
+                        <li><a href="#cases">Кейсы</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 col-sm-3">
@@ -345,6 +442,31 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade registration" id="registration" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal_title"></h3>
+                <i class="icon-check"></i>
+                <i class="icon-warning-empty"></i>
+                <p class="modal_info">Заполните форму ниже и с вами свяжется наш менеджер</p>
+                <p class="email_text"></p>
+
+                <div class="form-box">
+                    <form id="registration_form" action='' method='post'>
+                        <input class="input-text" type="email" name="email" id="email" placeholder="Введите вашу почту" required>
+                        <span id="valid"></span>
+                        <input type="hidden" name="hidden_info" class="hidden_info" value="registration">
+                        <button type="submit" id="registration_btn" class="btn_1 input-submit">Отправить<i class="icon-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
