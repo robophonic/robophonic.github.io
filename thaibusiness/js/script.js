@@ -48,11 +48,11 @@ $(function() {
     //	registration
     $('.step3 a, .step2 a, .step1 a').click(function() {
         var text = $(this).parents('.step_box').find('h3').text();
-        $('.modal_title').text(text);
+//        $('.modal_title').text(text);
         $('.hidden_info').val(text);
     });
     $('header a, .reviews a').click(function() {
-        $('.modal_title').text('Заявка');
+//        $('.modal_title').text('Заявка');
         $('.hidden_info').val('Заявка');
     });
     $('.registration_form_btn').click(function() {

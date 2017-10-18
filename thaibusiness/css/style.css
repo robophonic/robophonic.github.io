@@ -80,11 +80,26 @@ a:hover {
 }
 
 .header {
+    background: rgba(0, 0, 0, 0.67);
+    /*
     background: url('../images/header_bg.jpg');
     background-position: center;
     background-size: cover;
+*/
     color: #fff;
     padding: 10px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    /*	height: auto;*/
+    height: 100%;
+    z-index: -1;
 }
 
 .header_top p {
@@ -221,6 +236,7 @@ a:hover {
 .next_step {
     background-color: #f5f7fc;
     padding: 95px 0 120px 0;
+    overflow: hidden;
 }
 
 .next_step .title,
@@ -735,6 +751,7 @@ body.active {
     font-weight: 400;
     line-height: 30px;
     display: inline-block;
+    width: 90%;
 }
 
 .registration .input-text {
@@ -758,7 +775,7 @@ body.active {
     color: #ec4a57;
     font-size: 30px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .icon-check.active {
@@ -781,9 +798,9 @@ body.active {
     transition: all 230ms ease-in-out;
 }
 
-.partners img{
-	position: relative;
-	display: block;
+.partners img {
+    position: relative;
+    display: block;
 }
 
 .partners img:after {

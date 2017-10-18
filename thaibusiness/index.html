@@ -72,6 +72,9 @@
                 <a href="#services"><span>Выберите свой следующий шаг</span><i class="icon-down-open"></i></a>
             </div>
         </div>
+        <video id="video" autoplay="" loop="" muted="" height="auto" width="100%">
+<source src="images/thaibusiness_2.mp4">
+</video>
     </header>
 
     <section class="next_step" id="services">
@@ -449,16 +452,18 @@
             <div class="modal-content">
 
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal_title"></h3>
+                <h3 class="modal_title">Отправить заявку</h3>
                 <i class="icon-check"></i>
                 <i class="icon-warning-empty"></i>
-                <p class="modal_info">Заполните форму ниже и с вами свяжется наш менеджер</p>
+                <p class="modal_info">Наша команда оценит вашу бизнес задачу и подготовит руководство к действию и персональное коммерческое предложение в течении 24 часов</p>
                 <p class="email_text"></p>
 
                 <div class="form-box">
                     <form id="registration_form" action='' method='post'>
-                        <input class="input-text" type="email" name="email" id="email" placeholder="Введите вашу почту" required>
+                        <input class="input-text" type="text" name="name" id="name" placeholder="Ваше имя" required>
+                        <input class="input-text" type="email" name="email" id="email" placeholder="Ваш email" required>
                         <span id="valid"></span>
+                        <input class="input-text" type="text" name="phone" placeholder="Ваш телефон "required>
                         <input type="hidden" name="hidden_info" class="hidden_info" value="registration">
                         <button type="submit" id="registration_btn" class="btn_1 input-submit">Отправить<i class="icon-paper-plane"></i></button>
                     </form>

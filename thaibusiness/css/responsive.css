@@ -85,6 +85,14 @@
     .reviews .item .img_box {
         left: -70px;
     }
+    #video {
+        display: none;
+    }
+    .header {
+        background: url('../images/header_bg.jpg');
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -101,12 +109,15 @@
         margin: 0 auto;
     }
     .reviews .modal-content .title {
-        font-size: 32px;
+        font-size: 24px;
     }
     .reviews .modal-content .height p {
         position: relative;
         top: 0;
         transform: translateY(0%);
+    }
+    .partners img {
+        margin: 30px auto;
     }
     .header_top,
     .header_main,
@@ -198,5 +209,16 @@
     }
     .registration .modal-content {
         padding: 20px 20px 0px 20px;
+    }
+    .registration .btn_1 {
+        top: 35px;
+        padding: 20px 50px;
+        width: 100%;
+    }
+    .reviews .modal-body {
+        padding: 15px 25px;
+    }
+    .reviews .btn_1 {
+        display: block;
     }
 }
