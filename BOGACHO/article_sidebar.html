@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BOGACHO</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="описание">
+
+    <meta name="Title" content="BOGACHO" />
+    <meta name="description" content="описание" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="описание" />
+    <meta property="og:url" content="" />
+    <meta property="og:sitename" content="" />
+    <meta property="og:title" content="BOGACHO">
+    <meta property="og:image" content="адрес" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:image:src" content="адрес" />
+    <meta itemprop="name" content="BOGACHO" />
+    <meta itemprop="description" content="описание" />
+    <meta itemprop="image" content="адрес" />
+    <!--  <link rel="shortcut icon" href="адрес" type="image/x-icon">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jslider.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<header class="header">
+    <nav class="navbar navbar-default">
+
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="logo_box">
+                            <a href="/">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                        </div>
+
+                        <div class="header_info">
+                            <div class="tel_box">
+                                <a href="tel:88005502525">8 (800) 550-25-25</a>
+                                <a class="brown bell" data-toggle="modal" data-target="#bell" href="bell">Заказать звонок</a>
+                            </div>
+                            <div class="address_box">
+                                <p><b>ШОУ-РУМ:</b> ул. Мебельная д. 12 лит. Д</p>
+                                <p><b>ШОУ-РУМ:</b> ул. Пушкина д. 31</p>
+                                <p class="time"><span class="brown">Пн-Пт:</span> 10.00 - 20.00 <span class="brown"> | Сб-Вс:</span> 11.00 - 20.00</p>
+                            </div>
+                        </div>
+
+                        <div class="login">
+                            <a data-toggle="modal" data-target="#log_reg" href="registration">
+                                <p>Вход</p>
+                                <div class="img_box">
+                                    <img src="images/avatar.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="basket">
+                            <div class="basket_header">
+                                <p>Корзина</p>
+                                <div class="img_box">
+                                    <img src="images/shopping-cart.png" alt="">
+                                    <sup>6</sup>
+                                </div>
+                            </div>
+                            <div class="basket_main">
+                                <div class="item_box">
+                                    <div class="item">
+                                        <div class="img_box">
+                                            <img src="images/item1.png" alt="">
+                                        </div>
+                                        <div class="text_box">
+                                            <p>Светильник с бюро Ученый Филин СБ-15</p>
+                                            <p class="price">13 980 р.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img_box">
+                                            <img src="images/item2.png" alt="">
+                                        </div>
+                                        <div class="text_box">
+                                            <p>Светильник с бюро Ученый Филин СБ-15</p>
+                                            <p class="price">13 980 р.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img_box">
+                                            <img src="images/item3.png" alt="">
+                                        </div>
+                                        <div class="text_box">
+                                            <p>Светильник с бюро Ученый Филин СБ-15</p>
+                                            <p class="price">13 980 р.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn_box">
+                                    <a href="#" class="btn1">Перейти в корзину</a>
+                                    <a href="#" class="btn2">Оформить товары</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-search">
+                            <form class="form-search msearch2" action="" method="get">
+                                <input class="form-control ui-autocomplete-input" type="search" aria-label="Search" name="" id="" value="" placeholder="Поиск по сайту" autocomplete="off">
+                                <input type="hidden" name="id" value="">
+                                <button type="submit" class="btn_search"><img src="images/magnifying-glass.png" alt=""></button>
+                            </form>
+                        </div>
+
+                        <a class="navbar-toggle">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-collapse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active"><a href="#" class="nav-link">Мебель</a></li>
+                            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle">предметы интерьера</a>
+                                <ul class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <li class="dropdown-item"><a href="#">Статуэтки и скульптуры</a></li>
+                                            <li class="dropdown-item"><a href="#">Вазы</a></li>
+                                            <li class="dropdown-item"><a href="#">Фоторамки</a></li>
+                                            <li class="dropdown-item"><a href="#">Подставки для очков</a></li>
+                                            <li class="dropdown-item"><a href="#">Подставки для телефона</a></li>
+                                            <li class="dropdown-item"><a href="#">Шкатулки</a></li>
+                                            <li class="dropdown-item"><a href="#">Подставки для украшений</a></li>
+                                            <li class="dropdown-item"><a href="#">Письменные наборы</a></li>
+                                            <li class="dropdown-item"><a href="#">Подсвечники</a></li>
+                                            <li class="dropdown-item"><a href="#">Знаки зодиака</a></li>
+                                            <li class="dropdown-item"><a href="#">Пепельницы</a></li>
+                                            <li class="dropdown-item"><a href="#">Изделия из текстиля</a></li>
+                                            <li class="dropdown-item"><a href="#">Репродукции картин</a></li>
+                                            <li class="dropdown-item"><a href="#">Аксессуары для ванной</a></li>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <a href="">
+                                                <img src="images/img.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">кухня</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">свет</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">часы</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">авторские куклы</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">для сада</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link new">коллекции</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">акции</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link stock">распродажи</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<main class="article">
+
+    <div class="breadcrumb_box">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="grey"><a href="/">Главная</a></li>
+                <li class="grey"><a href="#">Новости</a></li>
+                <li class="active brown">Страница статьи</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8 padding_right">
+                <div class="row justify-content-md-center article_main">
+                    <div class="col-lg-12 article_date">
+                        <div class="date grey">
+                            <span>08.10.2018</span>
+                        </div>
+                        <div class="views grey">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>153</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="img_box bg" style="background: url('images/article_img_bg.jpg');"></div>
+                        <h1>Кто пришел на смену Синди Кроуфорд:
+                            как худели тогда и сейчас</h1>
+                    </div>
+
+
+
+                    <div class="col-lg-12">
+
+                        <h2>Синди Кроуфорд, Клаудия Шиффер и Джейн Фонда когда-то
+                            пробудили нашу любовь к занятиям спортом (спасибо!) и помогли
+                            похудеть миллионам женщин. Кто пришел им на смену спустя
+                            столько лет?</h2>
+
+                        <p><span class="article_first_letter">K</span> Кто из нас не мечтал о теле как у топ-модели? И пожалуйста, в 1992 Синди Кроуфорд открыла нам «Секрет идеальной фигуры», выпустив видеокассеты со своими тренировками. Все, что нужно, чтобы заниматься с Синди – мат (коврик, а не лексика), устойчивый стул, пара гантелей и черный купальник. Уже тогда Кроуфорд разбила комплекс на три тренировки: первые два 40-45 минутных видео рекомендовалось выполнять в разные дни – они направлены на разные группы мышц. Третья тренировка шла бонусом к двум предыдущим и длилась всего 10 минут: уже тогда Синди знала, что этот вариант будет востребован у тех, кому вечно не хватает времени на полноценное занятие.</p>
+
+                        <p><b>ПЛЮСЫ:</b></p>
+
+                        <ul>
+                            <li>весь инвентарь есть у тебя дома, вместо гантелей можно использовать бутылки с водой;</li>
+                            <li>проработка всего тела;</li>
+                            <li>супер-мотивирующий компаньон в лице Синди Кроуфорд.</li>
+                        </ul>
+
+
+                        <div class="article_img_slider_box">
+                            <div class="slider-for">
+                                <div class="item">
+                                    <a href="images/img1.jpg" data-fancybox="review">
+                                        <img src="images/img1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="images/img2.jpg" data-fancybox="review">
+                                        <img src="images/img2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="images/img3.jpg" data-fancybox="review">
+                                        <img src="images/img3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="images/img4.jpg" data-fancybox="review">
+                                        <img src="images/img4.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="slider-nav">
+                                <div class="item">
+                                    <img src="images/img1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/img2.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/img3.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/img4.jpg" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <a href="#">
+                                        <div class="top_info">
+                                            <span class="brown">TOP</span>
+                                            <span class="red">-15%</span>
+                                        </div>
+                                        <div class="img_box">
+                                            <img src="images/item4.png" alt="">
+                                        </div>
+                                        <p class="art grey">Арт. 54042 Айвори(АС)</p>
+                                        <p class="product_title">Мини-бар
+                                            Капитан Флинт</p>
+                                        <div class="price_box">
+                                            <p class="old_price grey">32 990 р.</p>
+                                            <p class="price">29 990 р.</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="btn3">В корзину</a>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p>С тех пор и фитнес, и мы здорово изменились: в индустрии появилось куча направлений тренинга, а мы поняли, что равняться на моделей не обязательно. И зачем, если есть тренеры, которые и лучше понимают потребности обычных людей и выполняют упражнения с идеальной техникой? Нам нужен фитнес, который всегда под рукой, прямо здесь и сейчас – тут на помощь приходит австралийка Кайла Итсинес и ее «Гид по пляжному телу» (Bikini Body Guide). Шатенка с баскетбольным прошлым строит свою программу на супер интенсивных тренировках, на которых тебе предстоит выжать из себя все за 28 минут. </p>
+                                <ul>
+                                    <li>весь инвентарь есть у тебя дома, вместо гантелей</li>
+                                    <li>проработка всего тела;</li>
+                                    <li>супер-мотивирующий компаньон в лице Синди Кроуфорд.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="author_social_box">
+                            <div class="author_box">
+                                <p class="grey">Автор статьи:</p>
+                                <p>Никита Кожевников</p>
+                            </div>
+                            <div class="social_box">
+                                <p class="grey">Расскажи друзьям:</p>
+                                <ul>
+                                    <li><a href="https://vk.com/dmmedru"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.facebook.com/dmmedpodolsk"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/dmmed.ru/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="comments">
+                            <h3>Комментарии</h3>
+                            <div class="row comment">
+                                <div class="col-md-12">
+                                    <div class="img_box">
+                                        <img src="images/reviews_img1.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="date grey">23 октября 2018</p>
+                                            </div>
+                                            <div class="col-6"><a href="#">Ответить</a></div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="brown">Екатерина Андреевна</h4>
+                                            </div>
+                                        </div>
+                                        <p>Собиралась купить торшер в гостиную и поехала в магазин именно за ним. Но когда увидела этот чудесный водопад с воздушными шариками, про торшер сразу же забыла.</p>
+                                        <div class="row comment">
+                                            <div class="col-md-12">
+                                                <div class="img_box">
+                                                    <img src="images/reviews_img1.png" alt="">
+                                                </div>
+                                                <div class="text">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="date grey">23 октября 2018</p>
+                                                        </div>
+                                                        <div class="col-6"><a href="#">Ответить</a></div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h4 class="brown">Екатерина Андреевна</h4>
+                                                        </div>
+                                                    </div>
+                                                    <p>Собиралась купить торшер в гостиную и поехала в магазин именно за ним. Но когда увидела этот чудесный водопад с воздушными шариками, про торшер сразу же забыла.</p>
+                                                    <h4>Ответить на комментарий</h4><a href="#" class="brown">Отменить</a>
+                                                    <form action="#" class="form-reg registration-form" method="post">
+                                                        <textarea class="input-text" placeholder="Комментарий" rows="4"></textarea>
+                                                        <input class="input-text name" type="text" name="name" placeholder="Имя" required="">
+                                                        <input class="input-text" type="email" name="email" placeholder="example@gmail.com" required="">
+                                                        <button class="input-submit registr-btn btn2" type="submit">Ответить на комментарий</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row comment">
+                                <div class="col-md-12">
+                                    <div class="img_box">
+                                        <img src="images/reviews_img1.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="date grey">23 октября 2018</p>
+                                            </div>
+                                            <div class="col-6"><a href="#">Ответить</a></div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="brown">Екатерина Андреевна</h4>
+                                            </div>
+                                        </div>
+                                        <p>Собиралась купить торшер в гостиную и поехала в магазин именно за ним. Но когда увидела этот чудесный водопад с воздушными шариками, про торшер сразу же забыла.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Добавить комментарий</h3>
+                                    <form action="#" class="form-reg registration-form" method="post">
+                                        <textarea class="input-text" placeholder="Комментарий" rows="4"></textarea>
+                                        <input class="input-text name" type="text" name="name" placeholder="Имя" required="">
+                                        <input class="input-text" type="email" name="email" placeholder="example@gmail.com" required="">
+                                        <button class="input-submit registr-btn btn1" type="submit">Добавить комментарий</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 sidebar">
+                <form class="sidebar-search" action="" method="get">
+                    <h3>ПОИСК</h3>
+                    <input class="form_search_input" type="search" aria-label="Search" name="" id="" value="" placeholder="Поиск" autocomplete="off">
+                    <button type="submit" class="btn_search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+
+                <div class="tags_list_box">
+                    <h3>КАТЕГОРИИ НОВОСТЕЙ</h3>
+                    <ul>
+                        <li><a href="#">Прихожие </a></li>
+                        <li><a href="#">Банкетки</a></li>
+                        <li><a href="#">Комоды и тумбы</a></li>
+                        <li><a href="#">Статуэтки</a></li>
+                        <li><a href="#">Светильники</a></li>
+                        <li><a href="#">Часы</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar_news_section">
+                    <h3>ПОСЛЕДНИИ НОВОСТИ</h3>
+
+                    <div class="news_box">
+                        <div class="img_box bg" style="background: url(images/news_img2.jpg);"></div>
+                        <div class="text_box">
+                            <a href="#">
+                                <div class="info_box row grey">
+                                    <div class="col-md-12">
+                                        <div class="date">
+                                            <span>08.10.2018</span>
+                                        </div>
+                                        <div class="views">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>153</span>
+                                        </div>
+                                        <p class="top_info"></p>
+                                    </div>
+                                </div>
+                                <p class="title">Тут будет текст события в две - три строки или немного больше</p>
+                            </a>
+                        </div>
+                        <a class="grey" href="#">Читать полностью</a>
+                    </div>
+                    <div class="news_box">
+                        <div class="img_box bg" style="background: url(images/news_img2.jpg);"></div>
+                        <div class="text_box">
+                            <a href="#">
+                                <div class="info_box row grey">
+                                    <div class="col-md-12">
+                                        <div class="date">
+                                            <span>08.10.2018</span>
+                                        </div>
+                                        <div class="views">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>153</span>
+                                        </div>
+                                        <p class="top_info"></p>
+                                    </div>
+                                </div>
+                                <p class="title">Тут будет текст события в две - три строки или немного больше</p>
+                            </a>
+                        </div>
+                        <a class="grey" href="#">Читать полностью</a>
+                    </div>
+                    <div class="news_box">
+                        <div class="img_box bg" style="background: url(images/news_img2.jpg);"></div>
+                        <div class="text_box">
+                            <a href="#">
+                                <div class="info_box row grey">
+                                    <div class="col-md-12">
+                                        <div class="date">
+                                            <span>08.10.2018</span>
+                                        </div>
+                                        <div class="views">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>153</span>
+                                        </div>
+                                        <p class="top_info"></p>
+                                    </div>
+                                </div>
+                                <p class="title">Тут будет текст события в две - три строки или немного больше</p>
+                            </a>
+                        </div>
+                        <a class="grey" href="#">Читать полностью</a>
+                    </div>
+                </div>
+
+
+                <h3>ТЕГИ</h3>
+                <ul class="tag_box">
+                    <li><a href="#">Прихожие</a></li>
+                    <li><a href="#">Банкетки</a></li>
+                    <li><a href="#">Статуэтки</a></li>
+                    <li><a href="#">Комоды и тумбы</a></li>
+                    <li><a href="#">Статуэтки</a></li>
+                    <li><a href="#">Светильники</a></li>
+                    <li><a href="#">Часы</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="news_section">
+        <div class="container">
+            <div class="title">
+                <h2>Так же читайте</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="news_box">
+                        <div class="img_box bg" style="background: url(images/news_img1.jpg);"></div>
+                        <div class="text_box">
+                            <a href="#">
+                                <div class="info_box row grey">
+                                    <div class="col-md-12">
+                                        <div class="date">
+                                            <span>08.10.2018</span>
+                                        </div>
+                                        <div class="views">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>153</span>
+                                        </div>
+                                        <p class="top_info"><span class="black">NEW</span></p>
+                                    </div>
+                                </div>
+                                <p class="title">Тут будет текст события в две - три строки или немного больше</p>
+                            </a>
+                        </div>
+                        <a class="grey" href="#">Читать полностью</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news_box">
+                        <div class="img_box bg" style="background: url(images/news_img2.jpg);"></div>
+                        <div class="text_box">
+                            <a href="#">
+                                <div class="info_box row grey">
+                                    <div class="col-md-12">
+                                        <div class="date">
+                                            <span>08.10.2018</span>
+                                        </div>
+                                        <div class="views">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>153</span>
+                                        </div>
+                                        <p class="top_info"></p>
+                                    </div>
+                                </div>
+                                <p class="title">Тут будет текст события в две - три строки или немного больше</p>
+                            </a>
+                        </div>
+                        <a class="grey" href="#">Читать полностью</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news_box stock">
+                        <div class="img_box bg" style="background: url(images/news_img3.jpg);"></div>
+                        <div class="text_box">
+                            <a href="#">
+                                <div class="info_box row">
+                                    <div class="col-md-12">
+                                        <div class="date">
+                                            <span>08.10.2018</span>
+                                        </div>
+                                        <div class="views">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>153</span>
+                                        </div>
+                                        <p class="top_info"><span class="red">АКЦИЯ</span></p>
+                                    </div>
+                                </div>
+                                <p class="title">Тут будет текст события в две - три строки или немного больше</p>
+                            </a>
+                        </div>
+                        <a class="brown" href="#">Читать полностью</a>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <a href="#" class="btn4">Все новости</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mailing_section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <h3>Подпишись на рассылку</h3>
+                    <p class="grey">Будьте в курсе лучших предложений и участвуйте
+                        в закрытых распродажах и розыгрыше !</p>
+                </div>
+                <div class="col-lg-8">
+                    <form id="mailing_form" action='' method='post' class="mailing_form">
+                        <input class="input-text" type="email" name="email" id="email" placeholder="Введите Ваш эл. адрес" required>
+                        <button type="submit" id="mailing_btn" class="btn1 input-submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="grey">Нажимая на кнопку "Подписаться", Вы даете согласие на <a class="brown" href="#" target="_blank">обработку своих персональных данных</a> и <a class="brown" href="#" target="_blank">соглашаетесь с договором оферты</a></p>
+    </section>
+
+
+</main>
+
+
+<footer>
+    <div class="header_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="logo_box">
+                        <a href="/">
+                            <img src="images/logo2.png" alt="logo">
+                        </a>
+                    </div>
+
+
+                    <div class="header_info">
+                        <div class="tel_box">
+                            <a href="tel:88005502525">8 (800) 550-25-25</a>
+                            <a class="brown bell" data-toggle="modal" data-target="#bell" href="bell">Заказать звонок</a>
+                        </div>
+                        <div class="address_box">
+                            <p><b>ШОУ-РУМ:</b> ул. Мебельная д. 12 лит. Д</p>
+                            <p><b>ШОУ-РУМ:</b> ул. Пушкина д. 31</p>
+                        </div>
+                        <p class="time"><span class="brown">Пн-Пт:</span> 10.00 - 20.00 <span class="brown"> | Сб-Вс:</span> 11.00 - 20.00</p>
+                    </div>
+
+                    <div class="social_box">
+                        <p class="grey">Расскажи друзьям:</p>
+                        <ul>
+                            <li><a href="https://vk.com/dmmedru"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.facebook.com/dmmedpodolsk"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/dmmed.ru/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_menu">
+        <div class="container">
+            <div class="row footer_center">
+                <div class="col-md-3 col-6">
+                    <h4 class="brown">Покупателям</h4>
+                    <ul>
+                        <li><a href="#">Покупателям</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Возврат/Обмен</a></li>
+                        <li><a href="#">Заказать звонок</a></li>
+                        <li><a href="#">Каталог материалов</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="brown">О нас</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Наши награды</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Журнал BOGACHO</a></li>
+                        <li><a href="#">Договор оферты</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">персональной информации</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="brown">Контакты</h4>
+                    <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Магазины</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="brown">Партнерство</h4>
+                    <ul>
+                        <li><a href="#">Франчайзинг</a></li>
+                        <li><a href="#">Оптовикам</a></li>
+                        <li><a href="#">ВЭД</a></li>
+                        <li><a href="#">Дизайнерам</a></li>
+                        <li><a href="#">Фотографам</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<div class="copyright">
+    <div class="container">
+        <p class="grey"><a href="tel:88005502525" class="grey">8 (800) 550-25-25</a> <br>
+            Copyright © BOGACHO, 2002 - 2018</p>
+        <div>
+            <p class="grey">Надежная доставка</p>
+            <div class="img_box">
+                <img src="images/copyright6.png" alt="">
+                <img src="images/copyright7.png" alt="">
+                <img src="images/copyright8.png" alt="">
+                <img src="images/copyright9.png" alt="">
+            </div>
+        </div>
+        <div>
+            <p class="grey">Безопасная оплата</p>
+            <div class="img_box">
+                <img src="images/copyright1.png" alt="">
+                <img src="images/copyright2.png" alt="">
+                <img src="images/copyright3.png" alt="">
+                <img src="images/copyright4.png" alt="">
+                <img src="images/copyright5.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--form1-->
+<div class="modal fade form-box" id="bell" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal_title">Заказать звонок</h3>
+            <div class="form-box">
+                <form id="registration_form" action='' method='post'>
+                    <input class="input-text" type="text" name="name" id="name" placeholder="Имя" required>
+                    <input class="input-text" type="text" name="phone" placeholder="Ваш телефон" required>
+                    <p class="grey">Нажимая на кнопку "Подписаться", Вы даете согласие на <a href="#" class="brown" target="_blank">обработку своих персональных данных</a> и <a href="#" class="brown" target="_blank">соглашаетесь с договором оферты</a></p>
+                    <button type="submit" id="form_box_btn" class="btn1 input-submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--form2-->
+<div class="modal fade thanks_box" id="thanks" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal_title">Спасибо!</h3>
+            <p>Ваша заявка успешно отправлена.
+                В ближайшее время мы с Вами свяжемся</p>
+            <a href="./" class="btn1">Вернуться на сайт</a>
+        </div>
+    </div>
+</div>
+<!--form3-->
+<div class="modal fade log_reg" id="log_reg" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="log_in_box">
+                <h3 class="modal_title">Войти</h3>
+                <div class="form-box">
+                    <form id="registration_form" action='' method='post'>
+                        <input class="input-text" type="email" name="email" id="email" placeholder="Ваш эл. адрес" required>
+                        <input class="input-text" type="text" name="password" placeholder="Пароль" required>
+                        <p class="grey"><a href="#" class="brown" target="_blank">Забыли пароль ?</a></p>
+                        <button type="submit" id="thanks_box_btn" class="btn1 input-submit">ВОЙТИ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="reg_box">
+                <h3 class="modal_title">Зарегистрироваться</h3>
+                <div class="form-box">
+                    <form id="registration_form" action='' method='post'>
+                        <input class="input-text" type="email" name="email" id="email" placeholder="Ваш эл. адрес" required>
+                        <p class="grey">Даю согласие на <a href="#" class="brown" target="_blank">обработку моих персональных данных и соглашаюсь с условиями договора</a></p>
+                        <button type="submit" id="reg_box_btn" class="btn1 input-submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<body>
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- bin/jquery.slider.min.js -->
+    <script type="text/javascript" src="js/jshashtable-2.1_src.js"></script>
+    <script type="text/javascript" src="js/jquery.numberformatter-1.2.3.js"></script>
+    <script type="text/javascript" src="js/tmpl.js"></script>
+    <script type="text/javascript" src="js/jquery.dependClass-0.1.js"></script>
+    <script type="text/javascript" src="js/draggable-0.1.js"></script>
+    <script type="text/javascript" src="js/jquery.slider.js"></script>
+    <!-- end -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

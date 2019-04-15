@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("../fonts/PlayfairDisplay/PlayfairDisplayRegular/PlayfairDisplayRegular.eot");
+    src: url("../fonts/PlayfairDisplay/PlayfairDisplayRegular/PlayfairDisplayRegular.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/PlayfairDisplay/PlayfairDisplayRegular/PlayfairDisplayRegular.woff") format("woff"),
+        url("../fonts/PlayfairDisplay/PlayfairDisplayRegular/PlayfairDisplayRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("../fonts/PlayfairDisplay/PlayfairDisplayBold/PlayfairDisplayBold.eot");
+    src: url("../fonts/PlayfairDisplay/PlayfairDisplayBold/PlayfairDisplayBold.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/PlayfairDisplay/PlayfairDisplayBold/PlayfairDisplayBold.woff") format("woff"),
+        url("../fonts/PlayfairDisplay/PlayfairDisplayBold/PlayfairDisplayBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
