@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CIET</title>
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="Title" content="CIET" />
+    <meta name="description" content="описание" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="описание" />
+    <meta property="og:url" content="" />
+    <meta property="og:sitename" content="" />
+    <meta property="og:title" content="CIET">
+    <meta property="og:image" content="адрес" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:image:src" content="адрес" />
+    <meta itemprop="name" content="CIET" />
+    <meta itemprop="description" content="описание" />
+    <meta itemprop="image" content="адрес" />
+    <!--  <link rel="shortcut icon" href="адрес" type="image/x-icon">-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="./">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="city">
+                <a href="#">Днепр</a>
+            </div>
+            <div class="mob_menu_icon_container container"><div class="mob_menu_icon"></div></div>
+            <div class="mob_box_menu">
+                <a href="#" class="btn" data-toggle="modal" data-target="#modal_entry">Войти</a>
+                <div class="user_box">
+                    <a href="#">
+                        <img src="img/iconfinder_00-ELASTOFONT-STORE-READY_user-circle_2703062.svg" alt="user">
+                        <p>Александр Береговой</p>
+                    </a>
+                </div>
+                <div class="tel">
+                    <a href="tel">066 121-03-03,</a>
+                    <a href="tel">093 121-03-03,</a>
+                    <a href="tel">097 121-03-03</a>
+                </div>
+                <ul class="footer_nav">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Соглашение</a></li>
+                    <li><a href="#">Врачи</a></li>
+                    <li><a href="#">Клиники</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Справочник заболеваний</a></li>
+                    <li><a href="#">Конфиденциальность</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="doctor_page">
+
+        <section class="search_section search_absolute">
+            <div class="container">
+                <form action="" class="search">
+                    <label class="input_search">
+                        <input type="text" name="input_search" placeholder="Фамилия врача, специальность, больница">
+                        <div class="input_search_results">
+                            <div>
+                                <p>Фамилия врача</p>
+                                <ul>
+                                    <li><a href="#"><span>Па</span>влов Геннадий Аркадьевич, Андролог</a></li>
+                                    <li><a href="#"><span>Па</span>лий Виктор Андреевич, Маммолог</a></li>
+                                    <li><a href="#"><span>Па</span>мпович Сергей Маркович, Стоматолог</a></li>
+                                    <li><a href="#"><span>Па</span>влов Геннадий Аркадьевич, Андролог</a></li>
+                                    <li><a href="#"><span>Па</span>лий Виктор Андреевич, Маммолог</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>Больница</p>
+                                <ul>
+                                    <li><a href="#"><span>Па</span>вловская Городская Больница</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>Специальность</p>
+                                <ul>
+                                    <li><a href="#"><span>Па</span>разитолог</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="input_area">
+                        <input type="text" name="input_area" placeholder="Район" class="input_place">
+                    </label>
+                    <label class="input_date">
+                        <input name="input_date" class="date" type="text" placeholder="18 Сентября 2017" required>
+                    </label>
+                    <button class="btn btn-primary" type="submit"><img src="img/iconfinder_magnifier_18140752.svg" alt="submit"></button>
+                </form>
+
+                <div class="search_form_result" style="display: none;">
+                    <a href="#">
+                        <div class="text">
+                            <p>Петров</p>
+                            <p>Оболонский</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/iconfinder_ic_mode_edit_48px_352547.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <a href="search.html" class="back_btn">Результати пошука</a>
+            </div>
+        </section>
+
+        <section class="doctor_section">
+            <div class="container">
+                <div class="doctors_item">
+                    <div>
+                        <div class="short_description">
+                            <div class="img_box">
+                                <img src="img/avatar1.png" alt="doctor">
+                            </div>
+                            <div class="text">
+                                <p class="name">Глазачев Николай Сергеевич</p>
+                                <div class="specialty">
+                                    <p>АНДРОЛОГ</p>
+                                    <span>Врач высшей категории</span>
+                                </div>
+                                <p class="experience">Стаж: <span>22</span> года</p>
+                            </div>
+                            <div class="main_info">
+                                <div class="address">
+                                    <a href="#">Клиника Чудо Доктор на Школьной 49</a>
+                                    <p>г. Киев, ул. Школьная, д. 49</p>
+                                    <span class="metro">м. Кловская</span>
+                                </div>
+                                <a href="#" class="btn btn-primary mob" data-toggle="modal" data-target="#working_hours_box">Записаться онлайн</a>
+                                <h3>Информация о враче</h3>
+                                <p>Евмененко Артем Анатольевич - врач кардиохирург, стаж 12 лет. Все отзывы о враче. Запись онлайн или по телефону.</p>
+                                <p>Диагностирует, лечит и предупреждает воспалительные, метаболические и дегенеративно-дисторофические патологии сердца, сосудов. Занимается реабилитацией пациентов, которые перенесли сердечно-сосудистые заболевания, операции на сердце, сосудах. Выполняет все виды вмешательств при всевозможных нарушениях ритма</p>
+                                <h3>Подробная информация о специалисте</h3>
+                                <p><b>Образование</b></p>
+                                <ul>
+                                    <li>Первый Московский государственный медицинский университет имени И. М. Сеченова (2006 г.)</li>
+                                    <li>Ординатура по специальности "Сердечно-сосудистая хирургия", Национальный медицинский исследовательский центр сердечно-сосудистой хирургии имени А. Н. Бакулева (2015 г.)</li>
+                                </ul>
+                                <p><b>Курсы повышения квалификации</b></p>
+                                <ul>
+                                    <li>"Детская кардиология" (2011 г.)</li>
+                                    <li>"Детская хирургия" (2013 г.)</li>
+                                </ul>
+                                <p><b>Все виды вмешательств при всевозможных нарушениях ритма:</b></p>
+                                <ul>
+                                    <li>имплантация антиаритмических устройств (электрокардиостимуляторы (ЭКС) и имплантируемые кардиовертеры-дефибрилляторы (ИКД) при бради- и тахиситолических нарушениях ритма;</li>
+                                    <li>радиочастотные (РЧА) и криодеструкции аритмогенных очагов при различных тахисистолических нарушения ритма, включая фибрилляцию предсердий.</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary mob" data-toggle="modal" data-target="#working_hours_box">Записаться онлайн</a>
+                        </div>
+                        <div class="working_hours_box modal fade" id="working_hours_box" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <a href="#" class="modal_back"><img src="img/arr_grey.svg" alt="back"></a>
+                                    <p class="modal_title">Записаться онлайн</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                                    <div class="nav_tabs_box">
+                                        <h3>Записаться онлайн</h3>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <a class="nav-item nav-link active" id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="nav-week" aria-selected="true">Неделя</a>
+                                            <a class="nav-item nav-link" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="nav-month" aria-selected="false">Месяц</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="week" role="tabpanel" aria-labelledby="week-tab">
+
+                                            <div class="week">
+                                                <div class="days_box">
+                                                    <div class="prev"></div>
+                                                    <p class="title">Сентябрь, 2019</p>
+                                                    <div class="next"></div>
+                                                </div>
+
+                                                <div class="wrapp">
+                                                    <div class="time_box mob_visible">
+                                                        <ul>
+                                                            <li><a href="#">Ср, 18</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                                            <li class="more"><a href="#">. . .</a>
+                                                                <ul>
+                                                                    <li><a href="#">15:30</a></li>
+                                                                    <li><a href="#">16:00</a></li>
+                                                                    <li><a href="#">16:30</a></li>
+                                                                    <li><a href="#">17:00</a></li>
+                                                                    <li><a href="#">17:30</a></li>
+                                                                    <li><a href="#">18:00</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="time_box mob_visible">
+                                                        <ul>
+                                                            <li><a href="#">Чт, 19</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                                            <li class="more"><a href="#">. . .</a>
+                                                                <ul>
+                                                                    <li><a href="#">15:30</a></li>
+                                                                    <li><a href="#">16:00</a></li>
+                                                                    <li><a href="#">16:30</a></li>
+                                                                    <li><a href="#">17:00</a></li>
+                                                                    <li><a href="#">17:30</a></li>
+                                                                    <li><a href="#">18:00</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="time_box mob_visible">
+                                                        <ul>
+                                                            <li><a href="#">Пт, 20</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                                            <li class="more"><a href="#">. . .</a>
+                                                                <ul>
+                                                                    <li><a href="#">15:30</a></li>
+                                                                    <li><a href="#">16:00</a></li>
+                                                                    <li><a href="#">16:30</a></li>
+                                                                    <li><a href="#">17:00</a></li>
+                                                                    <li><a href="#">17:30</a></li>
+                                                                    <li><a href="#">18:00</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="time_box mob_visible">
+                                                        <ul>
+                                                            <li><a href="#">Сб, 21</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                                            <li class="more"><a href="#">. . .</a>
+                                                                <ul>
+                                                                    <li><a href="#">15:30</a></li>
+                                                                    <li><a href="#">16:00</a></li>
+                                                                    <li><a href="#">16:30</a></li>
+                                                                    <li><a href="#">17:00</a></li>
+                                                                    <li><a href="#">17:30</a></li>
+                                                                    <li><a href="#">18:00</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="time_box">
+                                                        <ul>
+                                                            <li><a href="#">Чт, 22</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                                            <li class="more"><a href="#">. . .</a>
+                                                                <ul>
+                                                                    <li><a href="#">15:30</a></li>
+                                                                    <li><a href="#">16:00</a></li>
+                                                                    <li><a href="#">16:30</a></li>
+                                                                    <li><a href="#">17:00</a></li>
+                                                                    <li><a href="#">17:30</a></li>
+                                                                    <li><a href="#">18:00</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="time_box">
+                                                        <ul>
+                                                            <li><a href="#">Пт, 23</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                                            <li class="more"><a href="#">. . .</a>
+                                                                <ul>
+                                                                    <li><a href="#">15:30</a></li>
+                                                                    <li><a href="#">16:00</a></li>
+                                                                    <li><a href="#">16:30</a></li>
+                                                                    <li><a href="#">17:00</a></li>
+                                                                    <li><a href="#">17:30</a></li>
+                                                                    <li><a href="#">18:00</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="time_box">
+                                                        <ul>
+                                                            <li><a href="#">Сб, 24</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                                            <li class="more"><a href="#">. . .</a>
+                                                                <ul>
+                                                                    <li><a href="#">15:30</a></li>
+                                                                    <li><a href="#">16:00</a></li>
+                                                                    <li><a href="#">16:30</a></li>
+                                                                    <li><a href="#">17:00</a></li>
+                                                                    <li><a href="#">17:30</a></li>
+                                                                    <li><a href="#">18:00</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">
+
+                                            <div class="calendar_box">
+                                                <div class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+                                                    <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all">
+                                                        <a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="<Пред"><span class="ui-icon ui-icon-circle-triangle-w">&lt;Пред</span></a>
+                                                        <div class="ui-datepicker-title"><span class="ui-datepicker-month">Сентябрь</span>&nbsp;<span class="ui-datepicker-year">2019</span></div>
+                                                        <a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="След>"><span class="ui-icon ui-icon-circle-triangle-e">След&gt;</span></a>
+                                                    </div>
+                                                    <div class="ui-datepicker-calendar_box">
+                                                        <table class="ui-datepicker-calendar">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col"><span title="понедельник">Пн</span></th>
+                                                                    <th scope="col"><span title="вторник">Вт</span></th>
+                                                                    <th scope="col"><span title="среда">Ср</span></th>
+                                                                    <th scope="col"><span title="четверг">Чт</span></th>
+                                                                    <th scope="col"><span title="пятница">Пт</span></th>
+                                                                    <th scope="col" class="ui-datepicker-week-end"><span title="суббота">Сб</span></th>
+                                                                    <th scope="col" class="ui-datepicker-week-end"><span title="воскресенье">Вс</span></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">1</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="unavailable" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">2</a></td>
+                                                                    <td class="" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">3</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">4</a></td>
+                                                                    <td class="unavailable" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">5</a></td>
+                                                                    <td class="" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">6</a></td>
+                                                                    <td class="ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">7</a></td>
+                                                                    <td class="ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">8</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="unavailable" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">9</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">10</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">11</a></td>
+                                                                    <td class="unavailable" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">12</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">13</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">14</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">15</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">16</a></td>
+                                                                    <td class="unavailable" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">17</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">18</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">19</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">20</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">21</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">22</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">23</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">24</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">25</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">26</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">27</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">28</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">29</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2019"><a class="ui-state-default" href="#">30</a></td>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+                                                    <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all">
+                                                        <a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="<Пред"><span class="ui-icon ui-icon-circle-triangle-w">&lt;Пред</span></a>
+                                                        <div class="ui-datepicker-title"><span class="ui-datepicker-month">Октябрь</span>&nbsp;<span class="ui-datepicker-year">2019</span></div>
+                                                        <a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="След>"><span class="ui-icon ui-icon-circle-triangle-e">След&gt;</span></a>
+                                                    </div>
+                                                    <div class="ui-datepicker-calendar_box">
+                                                        <table class="ui-datepicker-calendar">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col"><span title="понедельник">Пн</span></th>
+                                                                    <th scope="col"><span title="вторник">Вт</span></th>
+                                                                    <th scope="col"><span title="среда">Ср</span></th>
+                                                                    <th scope="col"><span title="четверг">Чт</span></th>
+                                                                    <th scope="col"><span title="пятница">Пт</span></th>
+                                                                    <th scope="col" class="ui-datepicker-week-end"><span title="суббота">Сб</span></th>
+                                                                    <th scope="col" class="ui-datepicker-week-end"><span title="воскресенье">Вс</span></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-days-cell-over  ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default ui-state-highlight" href="#">1</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">2</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">3</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">4</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">5</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">6</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="unavailable" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">7</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">8</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">9</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">10</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">11</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">12</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">13</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="unavailable" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">14</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">15</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">16</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">17</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">18</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">19</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">20</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">21</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">22</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">23</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">24</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">25</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">26</a></td>
+                                                                    <td class=" ui-datepicker-week-end no_reception" data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">27</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">28</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">29</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">30</a></td>
+                                                                    <td class=" " data-handler="selectDay" data-event="click" data-month="9" data-year="2019"><a class="ui-state-default" href="#">31</a></td>
+                                                                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                    <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="calendar_time_box">
+                                                <div class="days_box">
+                                                    <p class="title">18 Сентября, 2019</p>
+                                                </div>
+                                                <div class="time_box">
+                                                    <ul>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                                        <li><a class="empty" href="#" data-toggle="modal" data-target="#modal">15:30</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">16:00</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">16:30</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">17:00</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">17:30</a></li>
+                                                        <li><a class="empty" href="#" data-toggle="modal" data-target="#modal">15:30</a></li>
+                                                        <li><a class="empty" href="#" data-toggle="modal" data-target="#modal">15:30</a></li>
+                                                        <li><a href="#" data-toggle="modal" data-target="#modal">18:00</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-auto">
+                    <p>© 2019 CIET</p>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <ul class="footer_nav">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                        <li><a href="#">Соглашение</a></li>
+                        <li><a href="search.html">Врачи</a></li>
+                        <li><a href="search.html">Клиники</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Справочник заболеваний</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 col-lg-5">
+                    <form action="" class="subscription">
+                        <p>Подпишитесь на новости</p>
+                        <input type="email" class="form-control" placeholder="Ваша почта" required>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                    <div class="social_network">
+                        <p>Мы в соц. сетях</p>
+                        <ul>
+                            <li><a href="#"><img src="img/if_Facebook_571122.svg" alt="Facebook"></a></li>
+                            <li><a href="#"><img src="img/if_Twitter_571116.svg" alt="Twitter"></a></li>
+                            <li><a href="#"><img src="img/if_medium_1608545.svg" alt="Medium"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <p class="modal_title">Підтвердження запису на прийом</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                <div class="info_box">
+                    <div class="doctor">
+                        <span>Лікар</span>
+                        <p>Іванова Ірина Петрівна</p>
+                    </div>
+                    <div class="reception_time">
+                        <span>Час прийому</span>
+                        <p>03.09.2019, вівторок, 13:40</p>
+                    </div>
+                    <div class="specialization">
+                        <span>Спеціалізація</span>
+                        <p>Сімейний лікар</p>
+                    </div>
+                    <div class="institution">
+                        <span>Заклад</span>
+                        <p>Амбулаторія сімейної медицини №2</p>
+                    </div>
+                    <div class="cabinet">
+                        <span>Кабінет</span>
+                        <p>12</p>
+                    </div>
+                    <div class="address">
+                        <span>Адреса</span>
+                        <p>м. Дніпро, вул. Циатдельна, 23</p>
+                    </div>
+                    <div class="phone">
+                        <span>Телефон реэстратуры</span>
+                        <p>(066) 156-65-90</p>
+                    </div>
+
+                </div>
+
+                <div class="warning">
+                    Увага! Якщо Ви не маєте мобільного телефону або не бажаєте його вказувати, запис на прийом можливий тільки через реєстратуру закладу (телефон вказаний вище)
+                </div>
+
+                <form action="" class="confirmation_of_entry">
+                    <p>Вкажіть номер телефону, який Ви вказували при укладення декларації з Вашим сімейним лікарем</p>
+                    <input type="tel" name="tel" placeholder="+38 (067) 111-22-33" required>
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <div class="checkbox__text">Я підтверджую готовність отримати на мій телефон SMS-запит з кодом підтведження</div>
+                    </label>
+                    <button type="submit" class="btn btn-primary">Підтверджую</button>
+                </form>
+
+                <form action="" class="confirmation_of_entry">
+                    <p>Вкажіть номер телефону, який Ви вказували при укладення декларації з Вашим сімейним лікарем</p>
+                    <label class="error">
+                        <input type="tel" name="tel" placeholder="+38 (067) 111-22-33" required>
+                        <span class="error_text">Пробачте, Ваш телефон не знайдений в БД декларацій. Будь ластка, перевірте вказаний номер, та повторіть запит</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <div class="checkbox__text">Я підтверджую готовність отримати на мій телефон SMS-запит з кодом підтведження</div>
+                    </label>
+                    <button type="submit" class="btn btn-primary">Підтверджую</button>
+                </form>
+
+                <form action="" class="confirmation_of_entry sms">
+                    <p>Вам відправлено на номер +38 (067) 111-22-33 повідомлення з кодом. Введіть його в поле нижче.</p>
+                    <div>
+                        <input type="number" required>
+                        <input type="number" required>
+                        <input type="number" required>
+                        <input type="number" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Підтверджую</button>
+                </form>
+
+                <form action="" class="confirmation_of_entry confirmed">
+                    <p>Код підтверджено. Виберіть кого ви хочете записати на прийом.</p>
+                    <div>
+                        <label class="radio">
+                            <input type="radio" name='doctor' checked>
+                            <div class="radio__text">Адрущенко Віктор Сергійович</div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="doctor">
+                            <div class="radio__text">Адрущенко Світлана Кирилівна</div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="doctor">
+                            <div class="radio__text">Адрущенко Максим Вікторович</div>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Підтверджую</button>
+                </form>
+
+                <form action="" class="confirmation_of_entry success">
+                    <p><span class="name">Адрущенко Светлана Кирилловна</span> записана на прийом.</p>
+                    <p>Просимо завітати до закладу не пізніше, ніж о <span class="time">13:35</span> та повідомити реєстратуру.</p>
+                    <button type="submit" class="btn btn-primary">Підтверджую</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/datepicker-ru.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

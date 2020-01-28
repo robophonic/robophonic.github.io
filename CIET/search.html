@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CIET</title>
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="Title" content="CIET" />
+    <meta name="description" content="описание" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="описание" />
+    <meta property="og:url" content="" />
+    <meta property="og:sitename" content="" />
+    <meta property="og:title" content="CIET">
+    <meta property="og:image" content="адрес" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:image:src" content="адрес" />
+    <meta itemprop="name" content="CIET" />
+    <meta itemprop="description" content="описание" />
+    <meta itemprop="image" content="адрес" />
+    <!--  <link rel="shortcut icon" href="адрес" type="image/x-icon">-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="city">
+                <a href="#">Днепр</a>
+            </div>
+            <div class="mob_menu_icon_container container"><div class="mob_menu_icon"></div></div>
+            <div class="mob_box_menu">
+                <a href="#" class="btn" data-toggle="modal" data-target="#modal_entry">Войти</a>
+                <div class="user_box">
+                    <a href="#">
+                        <img src="img/iconfinder_00-ELASTOFONT-STORE-READY_user-circle_2703062.svg" alt="user">
+                        <p>Александр Береговой</p>
+                    </a>
+                </div>
+                <div class="tel">
+                    <a href="tel">066 121-03-03,</a>
+                    <a href="tel">093 121-03-03,</a>
+                    <a href="tel">097 121-03-03</a>
+                </div>
+                <ul class="footer_nav">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Соглашение</a></li>
+                    <li><a href="#">Врачи</a></li>
+                    <li><a href="#">Клиники</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Справочник заболеваний</a></li>
+                    <li><a href="#">Конфиденциальность</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="search_page">
+
+        <section class="search_section search_absolute">
+            <div class="container">
+                <form action="" class="search">
+                    <label class="input_search">
+                        <input type="text" name="input_search" placeholder="Фамилия врача, специальность, больница">
+                        <div class="input_search_results">
+                            <div>
+                                <p>Фамилия врача</p>
+                                <ul>
+                                    <li><a href="#"><span>Па</span>влов Геннадий Аркадьевич, Андролог</a></li>
+                                    <li><a href="#"><span>Па</span>лий Виктор Андреевич, Маммолог</a></li>
+                                    <li><a href="#"><span>Па</span>мпович Сергей Маркович, Стоматолог</a></li>
+                                    <li><a href="#"><span>Па</span>влов Геннадий Аркадьевич, Андролог</a></li>
+                                    <li><a href="#"><span>Па</span>лий Виктор Андреевич, Маммолог</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>Больница</p>
+                                <ul>
+                                    <li><a href="#"><span>Па</span>вловская Городская Больница</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p>Специальность</p>
+                                <ul>
+                                    <li><a href="#"><span>Па</span>разитолог</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="input_area">
+                        <input type="text" name="input_area" placeholder="Район" class="input_place">
+                    </label>
+                    <label class="input_date">
+                        <input name="input_date" class="date" type="text" placeholder="18 Сентября 2017" required>
+                    </label>
+                    <button class="btn btn-primary" type="submit"><img src="img/iconfinder_magnifier_18140752.svg" alt="submit"></button>
+                </form>
+
+                <div class="search_form_result" style="display: none;">
+                    <a href="#">
+                        <div class="text">
+                            <p>Петров</p>
+                            <p>Оболонский</p>
+                        </div>
+                        <div class="icon">
+                            <img src="img/iconfinder_ic_mode_edit_48px_352547.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="search_result">
+            <div class="container">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="doctors-tab" data-toggle="tab" href="#doctors" role="tab" aria-controls="nav-home" aria-selected="true">Врачи</a>
+                    <a class="nav-item nav-link" id="hospitals-tab" data-toggle="tab" href="#hospitals" role="tab" aria-controls="nav-profile" aria-selected="false">Больницы</a>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="container">
+                    <div class="tab-pane fade show active" id="doctors" role="tabpanel" aria-labelledby="doctors-tab">
+
+                        <div class="days_box">
+                            <p class="title">Сентябрь, 2019</p>
+                            <div class="prev"></div>
+                            <ul>
+                                <li class="mob_visible active">
+                                    <a href="#">
+                                        <span class="desk_date"><span class="day_of_the_week">Ср</span>, 18</span>
+                                        <span class="mob_date">18 Сен, <span class="day_of_the_week">Ср</span></span>
+                                    </a>
+                                </li>
+                                <li class="mob_visible">
+                                    <a href="#">
+                                        <span class="desk_date"><span class="day_of_the_week">Чт</span>, 19</span>
+                                        <span class="mob_date">19 Сен, <span class="day_of_the_week">Чт</span></span>
+                                    </a>
+                                </li>
+                                <li class="mob_visible">
+                                    <a href="#">
+                                        <span class="desk_date"><span class="day_of_the_week">Пт</span>, 20</span>
+                                        <span class="mob_date">20 Сен, <span class="day_of_the_week">Пт</span></span>
+                                    </a>
+                                </li>
+                                <li class="mob_visible">
+                                    <a href="#">
+                                        <span class="desk_date"><span class="day_of_the_week">Сб</span>, 21</span>
+                                        <span class="mob_date">21 Сен, <span class="day_of_the_week">Сб</span></span>
+                                    </a>
+                                </li>
+                                <li> <a href="#">
+                                        <span class="desk_date"><span class="day_of_the_week">Нед</span>, 22</span>
+                                        <span class="mob_date">22 Сен, <span class="day_of_the_week">Нед</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="desk_date"><span class="day_of_the_week">Пн</span>, 23</span>
+                                        <span class="mob_date">23 Сен, <span class="day_of_the_week">Пн</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="desk_date"><span class="day_of_the_week">Вт</span>, 24</span>
+                                        <span class="mob_date">24 Сен, <span class="day_of_the_week">Вт</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="next"></div>
+                        </div>
+
+
+                        <div class="doctors_item">
+                            <a href="doctor.html" class="short_description">
+                                <div class="img_box">
+                                    <img src="img/avatar1.png" alt="doctor">
+                                </div>
+                                <div class="text">
+                                    <p class="name">Глазачев Николай Сергеевич</p>
+                                    <div class="specialty">
+                                        <p>АНДРОЛОГ</p>
+                                        <span>Врач высшей категории</span>
+                                    </div>
+                                    <p class="experience">Стаж: <span>22</span> года</p>
+                                    <div class="address">
+                                        <b>Клиника Чудо Доктор</b>
+                                        <p>г. Киев, ул. Школьная, д. 49</p>
+                                        <span class="metro">м. Кловская</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="working_hours_box">
+                                <div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:00</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10:30</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13:30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14:00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctors_item">
+                            <a href="doctor.html" class="short_description">
+                                <div class="img_box">
+                                    <img src="img/avatar.png" alt="doctor">
+                                </div>
+                                <div class="text">
+                                    <p class="name">Джабадари Важа Вахтангович</p>
+                                    <div class="specialty">
+                                        <p>АНДРОЛОГ</p>
+                                        <span>Врач высшей категории</span>
+                                    </div>
+                                    <p class="experience">Стаж: <span>22</span> года</p>
+                                    <div class="address">
+                                        <b>Клиника Чудо Доктор на Школьной 49</b>
+                                        <p>г. Киев, ул. Школьная, д. 49</p>
+                                        <span class="metro">м. Кловская</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="working_hours_box free_time">
+                                <div>
+                                    <p>Ближайшее свободное время 28 сентября</p>
+                                    <a href="#" class="btn btn-primary">Перейти к дате</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctors_item">
+                            <a href="doctor.html" class="short_description">
+                                <div class="img_box">
+                                    <img src="img/avatar1.png" alt="doctor">
+                                </div>
+                                <div class="text">
+                                    <p class="name">Глазачев Николай Сергеевич</p>
+                                    <div class="specialty">
+                                        <p>АНДРОЛОГ</p>
+                                        <span>Врач высшей категории</span>
+                                    </div>
+                                    <p class="experience">Стаж: <span>22</span> года</p>
+                                    <div class="address">
+                                        <b>Клиника Чудо Доктор</b>
+                                        <p>г. Киев, ул. Школьная, д. 49</p>
+                                        <span class="metro">м. Кловская</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="working_hours_box">
+                                <div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14-00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14-00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14-00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-00</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14-00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-00</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14-00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctors_item">
+                            <a href="doctor.html" class="short_description">
+                                <div class="img_box">
+                                    <img src="img/avatar1.png" alt="doctor">
+                                </div>
+                                <div class="text">
+                                    <p class="name">Глазачев Николай Сергеевич</p>
+                                    <div class="specialty">
+                                        <p>АНДРОЛОГ</p>
+                                        <span>Врач высшей категории</span>
+                                    </div>
+                                    <p class="experience">Стаж: <span>22</span> года</p>
+                                    <div class="address">
+                                        <b>Клиника Чудо Доктор</b>
+                                        <p>г. Киев, ул. Школьная, д. 49</p>
+                                        <span class="metro">м. Кловская</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="working_hours_box">
+                                <div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14-00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14-00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14-00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-00</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14-00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-00</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="time_box">
+                                        <ul>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">10-30</a></li>
+                                            <li><a class="empty" href="#" data-toggle="modal" data-target="#modal"></a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">11-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-00</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">13-30</a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#modal">14-00</a></li>
+                                            <li class="more"><a href="#" data-toggle="modal" data-target="#modal">. . .</a>
+                                                <ul>
+                                                    <li><a href="#">15:30</a></li>
+                                                    <li><a href="#">16:00</a></li>
+                                                    <li><a href="#">16:30</a></li>
+                                                    <li><a href="#">17:00</a></li>
+                                                    <li><a href="#">17:30</a></li>
+                                                    <li><a href="#">18:00</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link prev" href="#" tabindex="-1"><img src="img/Path.svg" alt="prev"></a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item next">
+                                <a class="page-link" href="#"><img src="img/Path.svg" alt="next"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="hospitals" role="tabpanel" aria-labelledby="hospitals-tab">
+
+                        <div class="hospitals_item">
+                            <a href="hospital.html" class="short_description">
+                                <div class="img_box">
+                                    <img src="img/hospital.png" alt="hospital">
+                                </div>
+                                <div class="text">
+                                    <p class="name">Дорожная Клиническая Больница Ст.днепропетровск ГП Приднеповской Железной Дороги</p>
+                                    <div class="address">
+                                        <p>г. Киев, ул. Школьная, д. 49</p>
+                                        <span class="time">08:00-18:00</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="main_specialties">
+                                <p>Основные специальности</p>
+                                <ul>
+                                    <li><a href="#">Акушер</a></li>
+                                    <li><a href="#">Аллерголог</a></li>
+                                    <li><a href="#">Андролог</a></li>
+                                    <li><a href="#">Анестезиолог</a></li>
+                                    <li><a href="#">Аритмолог</a></li>
+                                    <li><a href="#">Артролог</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="hospitals_item">
+                            <a href="hospital.html" class="short_description">
+                                <div class="img_box">
+                                    <img src="img/iconfinder_Hospital_2415604.png" alt="hospital">
+                                </div>
+                                <div class="text">
+                                    <p class="name">Дорожная Клиническая Больница Ст.днепропетровск ГП Приднеповской Железной Дороги</p>
+                                    <div class="address">
+                                        <p>г. Киев, ул. Школьная, д. 49</p>
+                                        <span class="time">08:00-18:00</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="main_specialties">
+                                <p>Основные специальности</p>
+                                <ul>
+                                    <li><a href="#">Акушер</a></li>
+                                    <li><a href="#">Аллерголог</a></li>
+                                    <li><a href="#">Андролог</a></li>
+                                    <li><a href="#">Анестезиолог</a></li>
+                                    <li><a href="#">Аритмолог</a></li>
+                                    <li><a href="#">Артролог</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="hospitals_item">
+                            <a href="hospital.html" class="short_description">
+                                <div class="img_box">
+                                    <img src="img/hospital.png" alt="hospital">
+                                </div>
+                                <div class="text">
+                                    <p class="name">Дорожная Клиническая Больница Ст.днепропетровск ГП Приднеповской Железной Дороги</p>
+                                    <div class="address">
+                                        <p>г. Киев, ул. Школьная, д. 49</p>
+                                        <span class="time">08:00-18:00</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="main_specialties">
+                                <p>Основные специальности</p>
+                                <ul>
+                                    <li><a href="#">Акушер</a></li>
+                                    <li><a href="#">Аллерголог</a></li>
+                                    <li><a href="#">Андролог</a></li>
+                                    <li><a href="#">Анестезиолог</a></li>
+                                    <li><a href="#">Аритмолог</a></li>
+                                    <li><a href="#">Артролог</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="hospitals_item">
+                            <a href="hospital.html" class="short_description">
+                                <div class="img_box">
+                                    <img src="img/hospital.png" alt="hospital">
+                                </div>
+                                <div class="text">
+                                    <p class="name">Дорожная Клиническая Больница Ст.днепропетровск ГП Приднеповской Железной Дороги</p>
+                                    <div class="address">
+                                        <p>г. Киев, ул. Школьная, д. 49</p>
+                                        <span class="time">08:00-18:00</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="main_specialties">
+                                <p>Основные специальности</p>
+                                <ul>
+                                    <li><a href="#">Акушер</a></li>
+                                    <li><a href="#">Аллерголог</a></li>
+                                    <li><a href="#">Андролог</a></li>
+                                    <li><a href="#">Анестезиолог</a></li>
+                                    <li><a href="#">Аритмолог</a></li>
+                                    <li><a href="#">Артролог</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link prev" href="#" tabindex="-1"><img src="img/Path.svg" alt="prev"></a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item next">
+                                <a class="page-link" href="#"><img src="img/Path.svg" alt="next"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-auto">
+                    <p>© 2019 CIET</p>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <ul class="footer_nav">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                        <li><a href="#">Соглашение</a></li>
+                        <li><a href="search.html">Врачи</a></li>
+                        <li><a href="search.html">Клиники</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Справочник заболеваний</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 col-lg-5">
+                    <form action="" class="subscription">
+                        <p>Подпишитесь на новости</p>
+                        <input type="email" class="form-control" placeholder="Ваша почта" required>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                    <div class="social_network">
+                        <p>Мы в соц. сетях</p>
+                        <ul>
+                            <li><a href="#"><img src="img/if_Facebook_571122.svg" alt="Facebook"></a></li>
+                            <li><a href="#"><img src="img/if_Twitter_571116.svg" alt="Twitter"></a></li>
+                            <li><a href="#"><img src="img/if_medium_1608545.svg" alt="Medium"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <p class="modal_title">Підтвердження запису на прийом</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                <div class="info_box">
+                    <div class="doctor">
+                        <span>Лікар</span>
+                        <p>Іванова Ірина Петрівна</p>
+                    </div>
+                    <div class="reception_time">
+                        <span>Час прийому</span>
+                        <p>03.09.2019, вівторок, 13:40</p>
+                    </div>
+                    <div class="specialization">
+                        <span>Спеціалізація</span>
+                        <p>Сімейний лікар</p>
+                    </div>
+                    <div class="institution">
+                        <span>Заклад</span>
+                        <p>Амбулаторія сімейної медицини №2</p>
+                    </div>
+                    <div class="cabinet">
+                        <span>Кабінет</span>
+                        <p>12</p>
+                    </div>
+                    <div class="address">
+                        <span>Адреса</span>
+                        <p>м. Дніпро, вул. Циатдельна, 23</p>
+                    </div>
+                    <div class="phone">
+                        <span>Телефон реэстратуры</span>
+                        <p>(066) 156-65-90</p>
+                    </div>
+
+                </div>
+
+                <div class="warning">
+                    Увага! Якщо Ви не маєте мобільного телефону або не бажаєте його вказувати, запис на прийом можливий тільки через реєстратуру закладу (телефон вказаний вище)
+                </div>
+
+                <form action="" class="confirmation_of_entry">
+                    <p>Вкажіть номер телефону, який Ви вказували при укладення декларації з Вашим сімейним лікарем</p>
+                    <input type="tel" name="tel" placeholder="+38 (067) 111-22-33" required>
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <div class="checkbox__text">Я підтверджую готовність отримати на мій телефон SMS-запит з кодом підтведження</div>
+                    </label>
+                    <button type="submit" class="btn btn-primary">Підтверджую</button>
+                </form>
+
+                <form action="" class="confirmation_of_entry">
+                    <p>Вкажіть номер телефону, який Ви вказували при укладення декларації з Вашим сімейним лікарем</p>
+                    <label class="error">
+                        <input type="tel" name="tel" placeholder="+38 (067) 111-22-33" required>
+                        <span class="error_text">Пробачте, Ваш телефон не знайдений в БД декларацій. Будь ластка, перевірте вказаний номер, та повторіть запит</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <div class="checkbox__text">Я підтверджую готовність отримати на мій телефон SMS-запит з кодом підтведження</div>
+                    </label>
+                    <button type="submit" class="btn btn-primary">Підтверджую</button>
+                </form>
+
+                <form action="" class="confirmation_of_entry sms">
+                    <p>Вам відправлено на номер +38 (067) 111-22-33 повідомлення з кодом. Введіть його в поле нижче.</p>
+                    <div>
+                        <input type="number" required>
+                        <input type="number" required>
+                        <input type="number" required>
+                        <input type="number" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Підтверджую</button>
+                </form>
+
+                <form action="" class="confirmation_of_entry confirmed">
+                    <p>Код підтверджено. Виберіть кого ви хочете записати на прийом.</p>
+                    <div>
+                        <label class="radio">
+                            <input type="radio" name='doctor' checked>
+                            <div class="radio__text">Адрущенко Віктор Сергійович</div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="doctor">
+                            <div class="radio__text">Адрущенко Світлана Кирилівна</div>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="doctor">
+                            <div class="radio__text">Адрущенко Максим Вікторович</div>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Підтверджую</button>
+                </form>
+
+                <form action="" class="confirmation_of_entry success">
+                    <p><span class="name">Адрущенко Светлана Кирилловна</span> записана на прийом.</p>
+                    <p>Просимо завітати до закладу не пізніше, ніж о <span class="time">13:35</span> та повідомити реєстратуру.</p>
+                    <button type="submit" class="btn btn-primary">Підтверджую</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/datepicker-ru.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
