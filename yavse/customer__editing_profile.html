@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Title" content="Заголовок" />
+    <meta name="description" content="описание" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="описание" />
+    <meta property="og:url" content="" />
+    <meta property="og:sitename" content="" />
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:image" content="адрес" />
+    <meta itemprop="name" content="Заголовок" />
+    <meta itemprop="description" content="описание" />
+    <meta itemprop="image" content="адрес" />
+    <!--  <link rel="shortcut icon" href="адрес" type="image/x-icon">-->
+
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="aside">
+        <div class="aside__header">
+            <div class="aside__container">
+                <div class="aside__promo-text">
+                    <p class="aside__title">Найдёт лучших специалистов</p>
+                    <p class="aside_sub-title">для решения любой задачи</p>
+                    <p class="red-label">Ремонт</p>
+                </div>
+                <div class="aside__main">
+                    <div class="aside__select">
+                        <p class="aside__small-title">Категория:</p>
+                        <div class="aside__el-box">
+                            <a href="#" class="aside__button category__open" tabindex="0">Выберите категорию</a>
+                            <a id="category__animation" href="#" class="aside__button-pick button-pick__arrow  category__open"></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="aside__question-link" href="#">Как это работает?</a>
+            </div>
+        </div>
+        <div class="aside__footer">
+            <div class="aside__social-links">
+                <a href="#"><img src="images/aside/facebook.svg"></a>
+                <a href="#"><img src="images/aside/instagram.svg"></a>
+            </div>
+            <a href="#" class="link">Условия использование</a>
+            <p class="aside__copyright">© 2020 | Я Все</p>
+        </div>
+    </div>
+    <main>
+        <header>
+            <a class="aside__logo" href="index.html">
+                <img src="images/aside/logo.svg" alt="logo">
+            </a>
+            <div class="header-user-wrapp">
+                <div tabindex="1" class="header-user">
+                    <p class="header-user__name">Alex Kuper</p>
+                    <img class="header-user__photo" src="images/header/user.jpg" alt="">
+                </div>
+                <div class="header-profile-menu">
+                    <ul>
+                        <li> <a href="customer__editing_profile.html"><img src="images/profile-menu/bx_bxs-user.svg" alt="">Посмотреть профиль</a></li>
+                        <li> <a href="customer_featured_users.html"><img src="images/profile-menu/bx_bxs-heart.svg" alt="">Избранное</a></li>
+                        <li> <a href="customer_inquiries.html"><img src="images/profile-menu/ic_round-textsms.svg" alt="">Запросы</a></li>
+                        <li> <a href="customer_authorized.html"><img src="images/profile-menu/mdi_account-search.svg" alt="">Поиск по исполнителям</a></li>
+                        <li> <a href="index.html"><img src="images/profile-menu/bx_bxs-exit.svg" alt="">Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <form action="#" class="profile">
+            <div class="user">
+                <div class="user__img_box">
+                    <div class="user__img">
+                        <img src="images/user/ava.jpg" alt="user">
+                    </div>
+                    <label for="img_upload" class="img_upload">
+                        <img src="images/user/camera.svg" alt="camera">
+                    </label>
+                    <input id="img_upload" type="file">
+                </div>
+                <p class="user__name h3">Антон Семенов</p>
+                <p class="user__text">На сайте с декабря 2020</p>
+                <div class="user__num_box">
+                    <p>Всего просмотров <span>1124</span></p>
+                    <p>За 30 дней <span>92</span></p>
+                </div>
+            </div>
+            <div class="user__general_information editing_profile">
+                <p class="h3">Общая информация</p>
+                <div class="item">
+                    <label class="input-box">
+                        <span class="sub-title">Имя</span>
+                        <input class="input" type="text" name="first_name" value="Ведите ваше имя">
+                    </label>
+                    <label class="input-box">
+                        <span class="sub-title">Адрес</span>
+                        <input class="input" type="text" name="address" value="проспект Архитектора Алёшина, Харьков 39">
+                    </label>
+                    <label class="input-box">
+                        <span class="sub-title">Телефон</span>
+                        <input class="input" type="tel" name="phone" value="+38(093) 590-96-23">
+                    </label>
+                    <label class="input-box">
+                        <span class="sub-title">E-mail</span>
+                        <input class="input" type="tel" name="email" value="a.garynych@gmail.com">
+                    </label>
+                </div>
+                <p class="h3">Изменить пароль</p>
+                <div class="item">
+                    <label class="input-box">
+                        <span class="sub-title">Старый пароль</span>
+                        <input class="input" type="password" name="old_password" placeholder="Введите cтарый пароль">
+                    </label>
+                    <label class="input-box">
+
+                        <span class="sub-title">Новый пароль</span>
+                        <input class="input" type="text" name="new_password" placeholder="Введите новый пароль">
+                    </label>
+                    <label class="input-box">
+                        <span class="sub-title">Подтверждение нового пароля</span>
+                        <input class="input" type="text" name="new_password_repeat" placeholder="Введите пароль еще раз">
+                    </label>
+                    <button class="btn popup__yellow-btn yellow-btn" type="submit">Изменить</button>
+                </div>
+                <a class="delete_btn" data-fancybox data-src="#delete_account" href="javascript:;">Удалить аккаунт и все данные</a>
+            </div>
+        </form>
+        <!--нужно добавить класс active-->
+        <div class="buttons_box">
+            <button type="button" name="button" class="btn white-btn">Отменить</button>
+            <button type="button" name="button" class="btn yellow-btn">Сохранить</button>
+        </div>
+
+    </main>
+
+    <!--нужно добавить класс active-->
+    <div class="alert">
+        <i class="far fa-check"></i>
+        <span>Настройки успешно сохраненны</span>
+    </div>
+
+    <!--нужно добавить класс active-->
+    <div class="alert bad">
+        <i class="fal fa-times"></i>
+        <span>Что-то пошло не так</span>
+    </div>
+
+    <form class="popup" id="delete_account">
+        <h2 class="popup__title">Удаление аккаунта</h2>
+        <p class="popup__text center">Вы действительно хотите удалить профиль и все данные?</p>
+        <button class="btn popup__yellow-btn black-btn" type="submit" name="login_customer">Да</button>
+        <button class="btn popup__yellow-btn yellow-btn fancybox_close" type="button" name="login_executor">Нет</button>
+    </form>
+
+    <div class="popup" id="delete_account_info">
+        <h2 class="popup__title">Удаление аккаунта</h2>
+        <p class="popup__text center">Чтобы завершить удаление профиля, перейдите по ссылке, которую мы отправили Вам на e-mail, указанный при регистрации </p>
+    </div>
+
+    <div id="category">
+        <button class="category__close"><i class="fal fa-times"></i></button>
+        <div class="search">
+            <input class="search__search-box" type="text" name="search" value="" placeholder="Поиск по ключевым словам">
+        </div>
+        <div class="category__container">
+            <div class="category__first-col">
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">КУРЬЕРСКИЕ УСЛУГИ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">УСЛУГИ ДЛЯ ЖИВОТНЫХ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">БЫТОВЫЕ УСЛУГИ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">ДОМАШНИЙ МАСТЕР</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">РАБОТА В ИНТЕРНЕТЕ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">УСЛУГИ РЕПЕТИТОРОВ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">УСЛУГИ КРАСОТЫ И ЗДОРОВЬЯ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">РАЗРАБОТКА САЙТОВ И ПРИЛОЖЕНИЙ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">РЕКЛАМА И МАРКЕТИНГ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">ОТДЕЛОЧНЫЕ РАБОТЫ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">МЕБЕЛЬНЫЕ РАБОТЫ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">ФОТО- И ВИДЕО- УСЛУГИ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+            </div>
+            <div class="category__two-col">
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">КЛИНИНГОВЫЕ УСЛУГИ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">БЮРО ПЕРЕВОДОВ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">РЕМОНТ ТЕХНИКИ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">ОРГАНИЗАЦИЯ ПРАЗДНИКОВ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">ЛОГИСТИЧЕСКИЕ И СКЛАДСКИЕ УСЛУГИ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">УСЛУГИ ТРЕНЕРОВ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">ДЕЛОВЫЕ УСЛУГИ</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+                <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                        <div class="accordion-header js-accordion-header">РЕМОНТ АВТО</div>
+                        <div class="accordion-body js-accordion-body">
+                            <div class="accordion-body__contents">
+                            </div>
+                            <div class="accordion js-accordion">
+
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 1</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 2</a>
+                                <a href="#" class="accordion-sub-no-arrow">No Sub Panel 3</a>
+
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 1</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                                <div class="accordion__item js-accordion-item">
+                                    <div class="accordion-header js-accordion-header">Sub Panel 2</div>
+                                    <div class="accordion-body js-accordion-body">
+                                        <div class="accordion-body__contents">
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                            <a href="#">Lorem</a>
+                                        </div><!-- end of sub accordion item body contents -->
+                                    </div><!-- end of sub accordion item body -->
+                                </div><!-- end of sub accordion item -->
+                            </div><!-- end of sub accordion -->
+                        </div> <!-- end of accordion body -->
+                    </div><!-- end of accordion item -->
+                </div><!-- end of accordion -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/main.js"></script>
+</body></html>

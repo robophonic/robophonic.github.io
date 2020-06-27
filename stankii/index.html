@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Title" content="Заголовок" />
+    <meta name="description" content="описание" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="описание" />
+    <meta property="og:url" content="" />
+    <meta property="og:sitename" content="" />
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:image" content="адрес" />
+    <meta itemprop="name" content="Заголовок" />
+    <meta itemprop="description" content="описание" />
+    <meta itemprop="image" content="адрес" />
+    <!--  <link rel="shortcut icon" href="адрес" type="image/x-icon">-->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header_top">
+            <div class="container">
+                <div class="mob_menu click_box desk_hidden">
+                    <div class="click_area">
+                        <i class="far fa-bars"></i>
+                    </div>
+                    <div class="hidden_box">
+                        <ul class="menu">
+                            <li class="active"><a href="#">Все станки</a></li>
+                            <li class="has_dropdown">
+                                <a href="#">Металлообработка</a>
+                                <i class="fal fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li><a href="#">Станки лазерной резки</a></li>
+                                    <li><a href="#">Ленточнопильные станки</a></li>
+                                    <li><a href="#">Листогибочные станки</a></li>
+                                    <li><a href="#">Резьбонакатные станки</a></li>
+                                    <li><a href="#">Токарные станки</a></li>
+                                    <li><a href="#">Фрезерные станки</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="#">Деревообработка</a>
+                                <i class="fal fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li><a href="#">Станки лазерной резки</a></li>
+                                    <li><a href="#">Ленточнопильные станки</a></li>
+                                    <li><a href="#">Листогибочные станки</a></li>
+                                    <li><a href="#">Резьбонакатные станки</a></li>
+                                    <li><a href="#">Токарные станки</a></li>
+                                    <li><a href="#">Фрезерные станки</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="#">Обработка пластика</a>
+                                <i class="fal fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li><a href="#">Станки лазерной резки</a></li>
+                                    <li><a href="#">Ленточнопильные станки</a></li>
+                                    <li><a href="#">Листогибочные станки</a></li>
+                                    <li><a href="#">Резьбонакатные станки</a></li>
+                                    <li><a href="#">Токарные станки</a></li>
+                                    <li><a href="#">Фрезерные станки</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="#">Для автосервисов</a>
+                                <i class="fal fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li><a href="#">Станки лазерной резки</a></li>
+                                    <li><a href="#">Ленточнопильные станки</a></li>
+                                    <li><a href="#">Листогибочные станки</a></li>
+                                    <li><a href="#">Резьбонакатные станки</a></li>
+                                    <li><a href="#">Токарные станки</a></li>
+                                    <li><a href="#">Фрезерные станки</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="#">Производственные линии</a>
+                                <i class="fal fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li><a href="#">Станки лазерной резки</a></li>
+                                    <li><a href="#">Ленточнопильные станки</a></li>
+                                    <li><a href="#">Листогибочные станки</a></li>
+                                    <li><a href="#">Резьбонакатные станки</a></li>
+                                    <li><a href="#">Токарные станки</a></li>
+                                    <li><a href="#">Фрезерные станки</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="#">Строительные</a>
+                                <i class="fal fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li><a href="#">Станки лазерной резки</a></li>
+                                    <li><a href="#">Ленточнопильные станки</a></li>
+                                    <li><a href="#">Листогибочные станки</a></li>
+                                    <li><a href="#">Резьбонакатные станки</a></li>
+                                    <li><a href="#">Токарные станки</a></li>
+                                    <li><a href="#">Фрезерные станки</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="#">Пищевое</a>
+                                <i class="fal fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li><a href="#">Станки лазерной резки</a></li>
+                                    <li><a href="#">Ленточнопильные станки</a></li>
+                                    <li><a href="#">Листогибочные станки</a></li>
+                                    <li><a href="#">Резьбонакатные станки</a></li>
+                                    <li><a href="#">Токарные станки</a></li>
+                                    <li><a href="#">Фрезерные станки</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="#">Другое</a>
+                                <i class="fal fa-chevron-down"></i>
+                                <ul class="dropdown">
+                                    <li><a href="#">Станки лазерной резки</a></li>
+                                    <li><a href="#">Ленточнопильные станки</a></li>
+                                    <li><a href="#">Листогибочные станки</a></li>
+                                    <li><a href="#">Резьбонакатные станки</a></li>
+                                    <li><a href="#">Токарные станки</a></li>
+                                    <li><a href="#">Фрезерные станки</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="category.html">Станки</a></li>
+                        <li><a href="category.html">Запчасти</a></li>
+                        <li><a href="ad_advert.html">Запросы на покупку</a></li>
+                    </ul>
+                </div>
+                <div class="header_top__right">
+                    <div class="social_box">
+                        <ul>
+                            <li><a href="#"><i class="fal fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fal fa-bell"></i></a></li>
+                            <li><a href="#"><i class="fal fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="advert_link">Мои объявления</a>
+                    <div class="account click_box">
+                        <div class="visible_box">
+                            <a href="#">
+                                <div class="img_box"><img src="images/ava.png" alt="ava"></div>
+                                <p>Личный кабинет</p>
+                            </a>
+                            <div class="click_area">
+                                <div class="img_box desk_hidden"><img src="images/ava.png" alt="ava"></div>
+                                <i class="fal fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="hidden_box">
+                            <div class="account_link">
+                                <a href="#">
+                                    <div class="img_box"><img src="images/ava.png" alt="ava"></div>
+                                    <div>
+                                        <p class="name">Екатерина Волынская</p>
+                                        <span>Личный кабинет</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <ul>
+                                <li><a href="#">Мои объявления</a></li>
+                                <li><a href="#">Сообщения</a></li>
+                                <li><a href="#">Избранное</a></li>
+                                <li><a href="#">Настройки</a></li>
+                                <li><a href="#">Выход</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_main">
+            <div class="container">
+                <div class="logo">
+                    <a href="./">
+                        <img src="images/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="info">
+                    <p>Нужно купить или быстро продать станок?</p>
+                    <p>Более 100 000 объявлений о продаже и покупке новых и БУ станков, а также запчастей к ним.</p>
+                </div>
+                <a href="#" class="btn1">Добавить объявление</a>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <form action="#" class="search_form">
+                    <div class="custom-select">
+                        <select>
+                            <option value="0">Любая категория</option>
+                            <option value="1">Металлообработка</option>
+                            <option value="2">Деревообработка</option>
+                        </select>
+                    </div>
+                    <div class="search_form__mob click_box">
+                        <div class="mob_icon">
+                            <i class="fal fa-search desk_hidden"></i>
+                            <input type="text" placeholder="Найти станок...">
+                        </div>
+                        <div class="click_area">
+                            <i class="far fa-sliders-v"></i>
+                        </div>
+                        <div class="hidden_box">
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Любая категория</option>
+                                    <option value="1">Металлообработка</option>
+                                    <option value="2">Деревообработка</option>
+                                </select>
+                            </div>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Вся Россия</option>
+                                    <option value="1">Москва</option>
+                                    <option value="2">Санкт-Петербург</option>
+                                </select>
+                            </div>
+                            <label class="label">
+                                <span>Цена</span>
+                                <div class="price_box">
+                                    <input type="text" placeholder="от">
+                                    <input type="text" placeholder="до">
+                                </div>
+                            </label>
+                            <div class="label">
+                                <span>Состояние</span>
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Любое</option>
+                                        <option value="1">Любое</option>
+                                        <option value="2">Любое</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="label">
+                                <span>Производитель</span>
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Любое</option>
+                                        <option value="1">Любое</option>
+                                        <option value="2">Любое</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn1">Показать объявления</button>
+                        </div>
+                    </div>
+
+                    <div class="custom-select">
+                        <select>
+                            <option value="0">Вся Россия</option>
+                            <option value="1">Москва</option>
+                            <option value="2">Санкт-Петербург</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn2">Найти</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="products_section">
+            <div class="container">
+                <div class="general_categories">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <ul>
+                                <li class="active"><a href="#">Все станки <span class="num">103 953</span></a></li>
+                                <li><a href="#">Металлообработка <span class="num">13 051</span></a></li>
+                                <li><a href="#">Обработка пластика <span class="num">62 345</span></a></li>
+                                <li><a href="#">Производственные линии <span class="num">13 051</span></a></li>
+                                <li><a href="#">Пищевое <span class="num">13 051</span></a></li>
+                                <li><a href="#">Деревообработка <span class="num">42 859</span></a></li>
+                                <li><a href="#">Для автосервисов <span class="num">26 850</span></a></li>
+                                <li><a href="#">Строительные <span class="num">38 811</span></a></li>
+                                <li><a href="#">Другое <span class="num">38 811</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <h2>Покупка и продажа новых и БУ станков</h2>
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="product.html">
+                                            <div class="info">Хит продаж</div>
+                                            <div class="img_box">
+                                                <img src="images/img1.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">980 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="product.html">
+                                            <div class="info">Хит продаж</div>
+                                            <div class="img_box">
+                                                <img src="images/img2.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">2 800 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="product.html">
+                                            <div class="img_box">
+                                                <img src="images/img3.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">6 000 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img4.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">800 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img5.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">2 000 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="info">Хит продаж</div>
+                                            <div class="img_box">
+                                                <img src="images/img6.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">1 100 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img5.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">590 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img1.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">980 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img2.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">2 800 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img7.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">2 800 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img8.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">1 100 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img5.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">2 800 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img1.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">2 800 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img9.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">2 800 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_item">
+                                        <a href="#">
+                                            <div class="img_box">
+                                                <img src="images/img4.jpg" alt="img">
+                                            </div>
+                                            <div class="text_box">
+                                                <p class="price">2 800 000 ₽</p>
+                                                <p class="name">Электроэрозионный станок</p>
+                                                <span>Электроэрозионная обработка</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="more_btn desk_hidden">Показать еще</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 d-none d-lg-block">
+                            <div class="popular_cities">
+                                <p>Популярные города</p>
+                                <ul>
+                                    <li><a href="#">Москва</a></li>
+                                    <li><a href="#">Санкт-Петербург</a></li>
+                                    <li><a href="#">Екатеринбург</a></li>
+                                    <li><a href="#">Новосибирск</a></li>
+                                    <li><a href="#">Челябинск</a></li>
+                                    <li><a href="#">Уфа</a></li>
+                                    <li><a href="#">Магнитогорск</a></li>
+                                    <li><a href="#">Стерлитамак</a></li>
+                                    <li><a href="#">Нижний Новгород</a></li>
+                                    <li><a href="#">Калининград</a></li>
+                                    <li><a href="#">Казань</a></li>
+                                    <li><a href="#">Мытищи</a></li>
+                                    <li><a href="#">Ногинск</a></li>
+                                    <li><a href="#">Одинцово</a></li>
+                                    <li><a href="#">Орехово-Зуево</a></li>
+                                    <li><a href="#">Подольск</a></li>
+                                    <li><a href="#">Пушкино</a></li>
+                                    <li><a href="#">Раменское</a></li>
+                                    <li><a href="#">Сергиев Посад</a></li>
+                                    <li><a href="#">Серпухов</a></li>
+                                    <li><a href="#">Чехов</a></li>
+                                    <li><a href="#">Щелково</a></li>
+                                    <li><a href="#">Электросталь</a></li>
+                                    <li><a href="#">Жуковский</a></li>
+                                    <li><a href="#">Бутово</a></li>
+                                    <li><a href="#">Истра</a></li>
+                                    <li><a href="#">Клин</a></li>
+                                    <li><a href="#">Калуга</a></li>
+                                    <li><a href="#">Воронеж</a></li>
+                                    <li><a href="#">Саратов</a></li>
+                                    <li><a href="#">Самара</a></li>
+                                    <li><a href="#">Волгоград</a></li>
+                                </ul>
+                            </div>
+                            <div class="favorite">
+                                <h2>Избранное</h2>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <img src="images/img1.jpg" alt="">
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="name">Электроэрозионный станок</p>
+                                            <p class="price">2 800 000 ₽</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <img src="images/img1.jpg" alt="">
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="name">Желтый станок</p>
+                                            <p class="price">5 000 000 ₽</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <img src="images/img1.jpg" alt="">
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="name">Непонятный станок</p>
+                                            <p class="price">700 000 ₽</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="requests">
+            <div class="container">
+                <h2>Запросы на покупку станка</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="requests_item">
+                            <p><b>Куплю станок для резки по дереву</b></p>
+                            <p>Мощный электродвигатель с передачей крутящего момента на два клиновых ремня, что обеспечивает высокую надежность и долговечность...</p>
+                            <div class="link_box">
+                                <a href="#">Посмотреть полностью</a>
+                                <a href="#">Связаться</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="requests_item">
+                            <p><b>Куплю станок для резки по дереву</b></p>
+                            <p>Мощный электродвигатель с передачей крутящего момента на два клиновых ремня, что обеспечивает высокую надежность и долговечность...</p>
+                            <div class="link_box">
+                                <a href="#">Посмотреть полностью</a>
+                                <a href="#">Связаться</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="requests_item">
+                            <p><b>Куплю станок для резки по дереву</b></p>
+                            <p>Мощный электродвигатель с передачей крутящего момента на два клиновых ремня, что обеспечивает высокую надежность и долговечность...</p>
+                            <div class="link_box">
+                                <a href="#">Посмотреть полностью</a>
+                                <a href="#">Связаться</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="requests_item">
+                            <p><b>Куплю станок для резки по дереву</b></p>
+                            <p>Мощный электродвигатель с передачей крутящего момента на два клиновых ремня, что обеспечивает высокую надежность и долговечность...</p>
+                            <div class="link_box">
+                                <a href="#">Посмотреть полностью</a>
+                                <a href="#">Связаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="more_btn desk_hidden">Показать еще</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="left">
+                    <div class="logo_box">
+                        <a href="./"><img src="images/logo.svg" alt="logo"></a>
+                    </div>
+                    <p>г. Москва, ул. Маросейка, дом. 6/8, стр.4 <br> м. Китай-город</p>
+                    <ul>
+                        <li><a href="tel:84951492083">8 (495) 149 20 83</a></li>
+                        <li><a href="tel:89283442273">8 (928) 344 22 73</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <p>Промышленный сервис “Станки” - это сервис бесплатных объявлений по продаже и покупке новых и БУ станков в россии. Какие возможности предлагает наш сервис? <br>Давайте разберемся.</p>
+                    <p>У нас Вы можете всего в несколько кликов добавить предложения о продаже промышленного бу оборудовния для пищевого производства. На просторах интернет нет узкопрофильного сервиса, которы позволит охватить все сегменты пищевой индустрии.У нас Вы можете всего в несколько кликов добавить предложения о продаже промышленного бу оборудовния для пищевого производства.На просторах интернет нет узкоспециализированного сервиса, которы позволит охватить все сегменты пищевой индустрии.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Станки</a></li>
+                    <li><a href="#">Запчасти</a></li>
+                    <li><a href="#">Запросы на покупку</a></li>
+                </ul>
+            </div>
+            <div class="social_box">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <span>© 2019 Stankii.ru</span>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dropzone.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/inputmask.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

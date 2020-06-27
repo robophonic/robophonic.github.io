@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Title" content="Заголовок" />
+    <meta name="description" content="описание" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="описание" />
+    <meta property="og:url" content="" />
+    <meta property="og:sitename" content="" />
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:image" content="адрес" />
+    <meta itemprop="name" content="Заголовок" />
+    <meta itemprop="description" content="описание" />
+    <meta itemprop="image" content="адрес" />
+    <!--  <link rel="shortcut icon" href="адрес" type="image/x-icon">-->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo_box">
+                <a href="/">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trading.html">Trading</a></li>
+                    <li><a href="support.html">Support <span class="link__info">2</span></a></li>
+                    <li><a class="active" href="wallet-balance.html">Wallet</a></li>
+                </ul>
+            </nav>
+            <div class="btn_box">
+                <a href="login.html" class="btn1"><span class="wrapp"><i class="fal fa-sign-in"></i><span>Login</span></span>
+                </a>
+                <a href="register.html" class="btn2"><span class="wrapp"><i class="fal fa-edit"></i><span>Register</span></span></a>
+            </div>
+            <div class="menu_btn"><i class="fal fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="wallet_page">
+
+        <div class="container">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="wallet-balance.html">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 8.25H17.25M1.85 15H16.15C16.7575 15 17.25 14.5523 17.25 14V4C17.25 3.44772 16.7575 3 16.15 3H1.85C1.24249 3 0.75 3.44772 0.75 4V14C0.75 14.5523 1.24249 15 1.85 15Z" stroke-width="1.5" />
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="9" y1="4.75" x2="9" y2="13.25" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F8BC28" />
+                                        <stop offset="1" stop-color="#FF6C39" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>Balance</span>
+                        </a></li>
+                    <li><a href="wallet-deposit.html">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.25 2.25H15.75M15.75 2.25V6.75M15.75 2.25L10.5 7.5M6.75 15.75H2.25M2.25 15.75V11.25M2.25 15.75L7.5 10.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="9" y1="4.75" x2="9" y2="13.25" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F8BC28" />
+                                        <stop offset="1" stop-color="#FF6C39" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>Deposit</span>
+                        </a></li>
+                    <li><a href="wallet-withdraw.html">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.25 9H3.75M3.75 9L8 13.25M3.75 9L8 4.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="9" y1="4.75" x2="9" y2="13.25" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F8BC28" />
+                                        <stop offset="1" stop-color="#FF6C39" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>Withdraw</span>
+                        </a></li>
+                    <li><a href="wallet-giftcodes.html" class="active">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 8.25H17.25M1.85 15H16.15C16.7575 15 17.25 14.5523 17.25 14V4C17.25 3.44772 16.7575 3 16.15 3H1.85C1.24249 3 0.75 3.44772 0.75 4V14C0.75 14.5523 1.24249 15 1.85 15Z" stroke-width="1.5" />
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="9" y1="4.75" x2="9" y2="13.25" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F8BC28" />
+                                        <stop offset="1" stop-color="#FF6C39" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>Gift codes</span>
+                        </a></li>
+                    <li><a href="wallet-history.html">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path x="1.5" y="1.75" width="15" height="6.5" rx="0.75" stroke="#3B445B" stroke-width="1.5" />
+                                <path x="1.125" y="11.375" width="15.75" height="0.75" rx="0.375" stroke="#3B445B" stroke-width="0.75" />
+                                <path x="1.125" y="15.375" width="15.75" height="0.75" rx="0.375" stroke="#3B445B" stroke-width="0.75" />
+                            </svg>
+                            <span>History</span>
+                        </a></li>
+                    <li><a href="wallet-settings.html">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 15.75V10.5M3 7.5V2.25M9 15.75V9M9 6V2.25M15 15.75V12M15 9V2.25M0.75 10.5H5.25M6.75 5.99999H11.25M12.75 12H17.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="9" y1="4.75" x2="9" y2="13.25" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F8BC28" />
+                                        <stop offset="1" stop-color="#FF6C39" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>Settings</span>
+                        </a></li>
+                </ul>
+                <span class="cop">© 2020 cryptooo</span>
+            </div>
+            <div class="content">
+                <div class="giftcodes_section">
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p class="h5">Choose currency</p>
+                            <ul class="nav nav-tabs vertical" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#BTC" role="tab" aria-selected="true">
+                                        <div class="img_box">
+                                            <img src="images/bitc.svg" alt="bitc">
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="num">0.512</p>
+                                            <p class="name">BTC</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#ETH" role="tab" aria-selected="true">
+                                        <div class="img_box">
+                                            <img src="images/eth2.svg" alt="eth">
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="num">0.512</p>
+                                            <p class="name">BTC</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#LTC" role="tab" aria-selected="true">
+                                        <div class="img_box">
+                                            <img src="images/ltc.svg" alt="ltc">
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="num">0.512</p>
+                                            <p class="name">LTC</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#BTH" role="tab" aria-selected="true">
+                                        <div class="img_box">
+                                            <img src="images/bth.svg" alt="bth">
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="num">0.512</p>
+                                            <p class="name">BTH</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-8 order-first">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="BTC" role="tabpanel">
+                                    <p class="h5">Create Your goft code</p>
+                                    <div class="tab-pane-item">
+                                        <div class="withdraw_input__box with_comission">
+                                            <div class="comission">
+                                                <label>
+                                                    <input type="number">
+                                                    <span>ETH</span>
+                                                </label>
+                                                <div>
+                                                    <span class="comission__title">Comission</span>
+                                                    <p class="comission_num">0.03 ETH (1%)</p>
+                                                </div>
+                                            </div>
+                                            <div class="withdraw_balance">
+                                                <p>Total</p>
+                                                <p class="num">0,483</p>
+                                                <p class="name">ETH</p>
+                                            </div>
+                                        </div>
+                                        <div class="one_input__form">
+                                            <div class="copy_box white">
+                                                <span>Your Code</span>
+                                                <input type="text" class="copy_text" value="q9wKL8jBJHe6NH3cr2Lsd7xdH9tdb7WnRpX" readonly>
+                                                <button class="copy_btn">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.16666 12.5H3.33332C2.8913 12.5 2.46737 12.3244 2.15481 12.0118C1.84225 11.6993 1.66666 11.2754 1.66666 10.8333V3.33333C1.66666 2.89131 1.84225 2.46738 2.15481 2.15482C2.46737 1.84226 2.8913 1.66667 3.33332 1.66667H10.8333C11.2754 1.66667 11.6993 1.84226 12.0118 2.15482C12.3244 2.46738 12.5 2.89131 12.5 3.33333V4.16667M9.16666 7.5H16.6667C17.5871 7.5 18.3333 8.24619 18.3333 9.16667V16.6667C18.3333 17.5871 17.5871 18.3333 16.6667 18.3333H9.16666C8.24619 18.3333 7.49999 17.5871 7.49999 16.6667V9.16667C7.49999 8.24619 8.24619 7.5 9.16666 7.5Z" stroke="#3B445B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button type="button" class="btn1"><span class="wrapp"><span>Generate code</span></span></button>
+                                        </div>
+                                    </div>
+                                    <p class="h5">Write gift code</p>
+                                    <div class="tab-pane-item">
+                                        <form action="#" class="one_input__form">
+                                            <label>
+                                                <input type="email" name="email">
+                                                <span>ADDRESS</span>
+                                            </label>
+                                            <button type="submit" class="btn1"><span class="wrapp"><span>Activate code</span></span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="ETH" role="tabpanel">...</div>
+                                <div class="tab-pane fade" id="LTC" role="tabpanel">...</div>
+                                <div class="tab-pane fade" id="BTH" role="tabpanel">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

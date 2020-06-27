@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Title" content="Заголовок" />
+    <meta name="description" content="описание" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="описание" />
+    <meta property="og:url" content="" />
+    <meta property="og:sitename" content="" />
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:image" content="адрес" />
+    <meta itemprop="name" content="Заголовок" />
+    <meta itemprop="description" content="описание" />
+    <meta itemprop="image" content="адрес" />
+    <!--  <link rel="shortcut icon" href="адрес" type="image/x-icon">-->
+
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-404">
+    <aside class="aside">
+        <div class="aside__header">
+            <div class="aside__logo">
+                <a href="index.html">
+                    <img src="images/aside/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="aside__container">
+                <p class="page-404__title">Такой страницы не существует</p>
+                <p class="page-404__text">Страница, которую Вы запрашиваете еще не создана или, возможно, была удалена. Если вы считаете, что это ошибочная ситуация, сообщите, пожалуйста, разработчикам об ошибке.</p>
+                <a href="index.html" class="btn black-btn">Вернуться на главную</a>
+            </div>
+        </div>
+        <div class="aside__footer">
+            <div class="aside__social-links">
+                <a href="#"><img src="images/aside/facebook.svg"></a>
+                <a href="#"><img src="images/aside/instagram.svg"></a>
+            </div>
+            <a href="#" class="link">Условия использование</a>
+            <p class="aside__copyright">© 2020 | Я Все</p>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <a class="sm-logo" href="index.html"><img src="images/header/sm-logo.svg"></a>
+            <a class="btn yellow-btn" data-fancybox data-src="#login" href="javascript:;">Вход</a>
+        </header>
+        <div class="map_big">
+            <img src="images/404/404.svg" alt="">
+        </div>
+        <div class="aside__container">
+            <div class="aside__container">
+                <p class="page-404__title">Такой страницы  не существует</p>
+                <p class="page-404__text">Страница, которую Вы запрашиваете еще не создана или, возможно, была удалена. Если вы считаете, что это ошибочная ситуация, сообщите,
+                    пожалуйста, разработчикам об ошибке.</p>
+                <a href="index.html" class="btn black-btn">Вернуться на главную</a>
+            </div>
+        </div>
+    </main>
+    <form class="popup" id="login">
+        <h2 class="popup__title">Вход</h2>
+        <label class="input-box">
+            <span class="sub-title">Телефон</span>
+            <input class="input" type="tel" name="phone" placeholder="Ведите ваш телефон">
+        </label>
+        <label class="input-box">
+            <span class="sub-title">Пароль</span>
+            <input class="input" type="password" name="password" placeholder="Ведите ваш пароль">
+        </label>
+        <button class="btn popup__yellow-btn yellow-btn" type="submit" name="login">Авторизоваться</button>
+        <a class="link__type1 link fancybox_close" href="javascript:;" data-fancybox data-src="#password_recovery">Забыли пароль?</a>
+        <p class="link fancybox_close" data-fancybox data-src="#registration">Нет аккаунта?</p>
+        <a class="link__type2 link" href="javascript:;" data-fancybox data-src="#registration">Зарегистрируйтесь</a>
+    </form>
+
+    <form class="popup" id="registration">
+        <h2 class="popup__title">Регистрация</h2>
+        <div class="tab">
+            <button type="button" class="tablinks active" onclick="tab(event, 'executor')">Исполнитель</button>
+            <button type="button" class="tablinks" onclick="tab(event, 'customer')">Заказчик</button>
+        </div>
+        <div id="executor" class="tabcontent active">
+            <label class="input-box">
+                <span class="sub-title">Имя</span>
+                <input class="input" type="text" name="first_name" placeholder="Ведите ваше имя">
+            </label>
+            <label class="input-box">
+                <span class="sub-title">Адрес</span>
+                <input class="input" type="text" name="address" placeholder="Ведите ваш адрес">
+            </label>
+            <label class="input-box">
+                <span class="sub-title">Телефон</span>
+                <input class="input" type="tel" name="phone" placeholder="Ведите ваш телефон">
+            </label>
+            <label class="input-box">
+                <span class="sub-title">E-mail</span>
+                <input class="input" type="email" name="email" placeholder="Ведите ваш E-mail">
+            </label>
+            <label class="input-box">
+                <span class="sub-title">Пароль</span>
+                <input class="input" type="password" name="password" placeholder="Ведите ваш пароль">
+            </label>
+            <label class="input-box">
+                <span class="sub-title">Повторите пароль</span>
+                <input class="input" type="text" name="password_repeat" placeholder="Введите пароль еще раз">
+            </label>
+            <!--            class empty показывает adding_category__text-->
+            <div class="adding_category">
+                <div class="adding_category__item">
+                    <span class="name">Ремонт авто</span>
+                    <span class="delete"><i class="fal fa-times"></i></span>
+                </div>
+                <div class="adding_category__item">
+                    <span class="name">Ремонт авто</span>
+                    <span class="delete"><i class="fal fa-times"></i></span>
+                </div>
+                <div class="adding_category__item">
+                    <span class="name">Ремонт авто</span>
+                    <span class="delete"><i class="fal fa-times"></i></span>
+                </div>
+                <div class="adding_category__item">
+                    <span class="name">Ремонт авто</span>
+                    <span class="delete"><i class="fal fa-times"></i></span>
+                </div>
+                <div class="adding_category__item">
+                    <span class="name">Ремонт авто</span>
+                    <span class="delete"><i class="fal fa-times"></i></span>
+                </div>
+                <a class="adding_category__btn" href="javascript:;" data-fancybox data-src="#password_recovery"><i class="fal fa-plus"></i></a>
+            </div>
+            <div class="adding_category empty">
+                <a class="adding_category__btn" href="javascript:;" data-fancybox data-src="#password_recovery"><i class="fal fa-plus"></i></a>
+                <span class="adding_category__text">Добавте основную специальность</span>
+            </div>
+            <div class="working_hours">
+                <p class="sub-title">Рабочие часы</p>
+                <input class="input" type="time" value="09:30" name="time_at">
+                <span>-</span>
+                <input class="input" type="time" value="19:00" name="time_to">
+                <label class="checkbox">
+                    <input type="checkbox" name="weekends">
+                    <span class="checkbox__text">Работаю по выходным</span>
+                </label>
+            </div>
+            <label class="promo_code">
+                <p class="sub-title">Промо-код</p>
+                <input class="input" type="text" name="promo_code">
+                <p>Воспользуйтесь промо-кодом</p>
+            </label>
+            <div class="input-box">
+                <p class="link">Регистрируясь, вы соглашаетесь с</p>
+                <a class="link" href="#"><b>Условиями использования сервиса</b></a>
+            </div>
+            <button class="btn popup__yellow-btn yellow-btn" type="submit">Зарегистрироваться</button>
+        </div>
+        <div id="customer" class="tabcontent">
+            <label class="input-box">
+                <span class="sub-title">Имя</span>
+                <input class="input" type="text" name="first_name" placeholder="Ведите ваше имя">
+            </label>
+            <label class="input-box">
+                <span class="sub-title">Адрес</span>
+                <input class="input" type="text" name="address" placeholder="Ведите ваш адрес">
+            </label>
+            <label class="input-box">
+                <span class="sub-title">Телефон</span>
+                <input class="input" type="tel" name="phone" placeholder="Ведите ваш телефон">
+            </label>
+            <label class="input-box">
+                <span class="sub-title">E-mail</span>
+                <input class="input" type="email" name="email" placeholder="Ведите ваш E-mail">
+            </label>
+            <label class="input-box">
+                <span class="sub-title">Пароль</span>
+                <input class="input" type="text" name="password" placeholder="Ведите ваш пароль">
+            </label>
+            <label class="input-box">
+                <span class="sub-title">Повторите пароль</span>
+                <input class="input" type="text" name="password_repeat" placeholder="Введите пароль еще раз">
+            </label>
+            <div class="input-box">
+                <p class="link">Регистрируясь, вы соглашаетесь с</p>
+                <a class="link" href="#"><b>Условиями использования сервиса</b></a>
+            </div>
+            <button class="btn popup__yellow-btn yellow-btn" type="submit">Зарегистрироваться</button>
+        </div>
+    </form>
+
+    <form class="popup" id="password_recovery">
+        <div class="popup__img_box">
+            <img src="images/modals/restore.svg" alt="restore">
+        </div>
+        <h2 class="popup__title">Восстановление пароля</h2>
+        <p class="popup__text">Введите адрес электронной почты, который вы использовали при регистрации</p>
+        <label class="input-box">
+            <span class="sub-title">E-mail</span>
+            <input class="input" type="email" name="email" placeholder="Ведите ваш E-mail">
+        </label>
+        <button class="btn popup__yellow-btn yellow-btn" type="submit">Востановить пароль</button>
+    </form>
+
+    <div class="popup" id="password_recovery__info_letter">
+        <h2 class="popup__title">Письмо отправлено</h2>
+        <p class="popup__text">Инструкции по восстановлению пароля были отправлены на ваш e-mail sazonovmax@gmail.com. Вы получите его в течение 5 минут. Не забудьте проверить папку “Спам”.</p>
+    </div>
+
+    <form class="popup" id="new_password">
+        <h2 class="popup__title">Новый пароль</h2>
+        <label class="input-box">
+            <span class="sub-title">Новый пароль</span>
+            <input class="input" type="text" name="new_password" placeholder="Введите новый пароль">
+        </label>
+        <label class="input-box">
+            <span class="sub-title">Подтверждение нового пароля</span>
+            <input class="input" type="text" name="new_password_repeat" placeholder="Введите пароль еще раз">
+        </label>
+        <button class="btn popup__yellow-btn yellow-btn" type="submit">Сохранить</button>
+    </form>
+
+    <div class="popup" id="password_changed">
+        <h2 class="popup__title">Пароль успешно изменен</h2>
+        <p class="popup__text">Новый пароль был успешно установлен. Теперь вы можете войти используя новый пароль.</p>
+        <a class="btn yellow-btn fancybox_close" data-fancybox data-src="#login" href="javascript:;">Вход</a>
+    </div>
+
+    <form class="popup" id="search_request">
+        <h2 class="popup__title">Создать запрос
+            на поиск исполнителя</h2>
+        <label class="input-box">
+            <span class="sub-title">Название</span>
+            <input class="input" type="text" name="name_request" placeholder="Введите название запроса">
+        </label>
+        <label class="input-box">
+            <span class="sub-title">Адрес</span>
+            <input class="input" type="text" name="address" placeholder="Ведите ваш адрес">
+        </label>
+        <label class="input-box">
+            <span class="sub-title">Описание задачи</span>
+            <textarea class="input" name="description" rows="4" placeholder="Опишите задачу"></textarea>
+        </label>
+        <label class="input-box">
+            <span class="sub-title">Дата</span>
+            <input class="input" type="date" name="date" placeholder="Ведите дату">
+        </label>
+        <div class="input-box">
+            <p class="sub-title">Получатели</p>
+            <label class="radio">
+                <input type="radio" name="restore_radio" checked="checked">
+                <span class="radio__text">Отправить ближайшим пятерым исполнителям</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="restore_radio">
+                <span class="radio__text">Отправить ближайшим пятерым исполнителям</span>
+            </label>
+        </div>
+        <button class="btn popup__yellow-btn yellow-btn" type="submit">Отправить запрос</button>
+    </form>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
